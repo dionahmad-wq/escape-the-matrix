@@ -11,7 +11,7 @@
     {
       "id": "seed-verkehrszeichen-001",
       "category": "verkehrszeichen",
-      "subcategory": "Vorschriftzeichen",
+      "subcategory": "Vorschrift- & Verbotszeichen",
       "material": "grundstoff",
       "type": "single",
       "points": 3,
@@ -28,7 +28,7 @@
     {
       "id": "seed-verkehrszeichen-002",
       "category": "verkehrszeichen",
-      "subcategory": "Vorschriftzeichen",
+      "subcategory": "Vorschrift- & Verbotszeichen",
       "material": "grundstoff",
       "type": "single",
       "points": 3,
@@ -45,7 +45,7 @@
     {
       "id": "seed-verkehrszeichen-003",
       "category": "verkehrszeichen",
-      "subcategory": "Vorschriftzeichen",
+      "subcategory": "Vorschrift- & Verbotszeichen",
       "material": "grundstoff",
       "type": "single",
       "points": 3,
@@ -92,7 +92,7 @@
     {
       "id": "seed-verkehrszeichen-006",
       "category": "verkehrszeichen",
-      "subcategory": "Verbote",
+      "subcategory": "Vorschrift- & Verbotszeichen",
       "material": "grundstoff",
       "type": "single",
       "points": 3,
@@ -109,7 +109,7 @@
     {
       "id": "seed-verkehrszeichen-007",
       "category": "verkehrszeichen",
-      "subcategory": "Verbote",
+      "subcategory": "Vorschrift- & Verbotszeichen",
       "material": "grundstoff",
       "type": "single",
       "points": 3,
@@ -126,7 +126,7 @@
     {
       "id": "seed-verkehrszeichen-008",
       "category": "verkehrszeichen",
-      "subcategory": "Verbote",
+      "subcategory": "Vorschrift- & Verbotszeichen",
       "material": "grundstoff",
       "type": "single",
       "points": 4,
@@ -177,7 +177,7 @@
     {
       "id": "seed-verkehrszeichen-011",
       "category": "verkehrszeichen",
-      "subcategory": "Richtzeichen",
+      "subcategory": "Richtzeichen & Zonen",
       "material": "grundstoff",
       "type": "single",
       "points": 4,
@@ -194,7 +194,7 @@
     {
       "id": "seed-verkehrszeichen-012",
       "category": "verkehrszeichen",
-      "subcategory": "Zonen",
+      "subcategory": "Richtzeichen & Zonen",
       "material": "grundstoff",
       "type": "multiple",
       "points": 3,
@@ -211,7 +211,7 @@
     {
       "id": "seed-verkehrszeichen-013",
       "category": "verkehrszeichen",
-      "subcategory": "Richtzeichen",
+      "subcategory": "Richtzeichen & Zonen",
       "material": "grundstoff",
       "type": "single",
       "points": 3,
@@ -228,7 +228,7 @@
     {
       "id": "seed-verkehrszeichen-014",
       "category": "verkehrszeichen",
-      "subcategory": "Richtzeichen",
+      "subcategory": "Richtzeichen & Zonen",
       "material": "grundstoff",
       "type": "number",
       "points": 2,
@@ -241,7 +241,7 @@
     {
       "id": "seed-verkehrszeichen-015",
       "category": "verkehrszeichen",
-      "subcategory": "Verbote",
+      "subcategory": "Vorschrift- & Verbotszeichen",
       "material": "zusatzstoff",
       "type": "single",
       "points": 4,
@@ -258,7 +258,7 @@
     {
       "id": "seed-verkehrszeichen-016",
       "category": "verkehrszeichen",
-      "subcategory": "Richtzeichen",
+      "subcategory": "Richtzeichen & Zonen",
       "material": "zusatzstoff",
       "type": "multiple",
       "points": 4,
@@ -275,7 +275,7 @@
     {
       "id": "seed-verkehrszeichen-017",
       "category": "verkehrszeichen",
-      "subcategory": "Zusatzzeichen",
+      "subcategory": "Vorschrift- & Verbotszeichen",
       "material": "zusatzstoff",
       "type": "single",
       "points": 3,

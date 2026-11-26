@@ -1,8 +1,9 @@
-import { useMemo, useState } from 'react';
+import { Fragment, useMemo, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { CheckCircle2, XCircle } from 'lucide-react';
+import { CheckCircle2, ChevronRight, XCircle } from 'lucide-react';
 import { catalog } from '@/data/catalog';
 import { computeCategoryStats, computeOverall, computeReadiness, computeStreak, lastDays } from '@/domain/stats';
+import { listSubtopics } from '@/domain/subtopics';
 import { Badge, Button, Card, EmptyState, PageTitle, ProgressBar, SectionTitle, formatDateTime, formatPercent } from '@/components/ui';
 import { usePracticeLauncher } from '@/features/practice/usePracticeLauncher';
 import { useAppStore } from '@/store/useAppStore';
@@ -25,6 +26,8 @@ export function StatsPage() {
 
   const overall = useMemo(() => computeOverall(catalog.questions, progress, Date.now()), [progress]);
   const cats = useMemo(() => computeCategoryStats(catalog.questions, progress), [progress]);
+  const subtopics = useMemo(() => listSubtopics(catalog.questions, progress), [progress]);
+  const [openCats, setOpenCats] = useState<string[]>([]);
   const readiness = computeReadiness(overall, exams);
   const streak = computeStreak(activity, settings.dailyGoal);
   const passed = exams.filter((e) => e.passed).length;
@@ -104,25 +107,62 @@ export function StatsPage() {
               </tr>
             </thead>
             <tbody className="divide-y divide-slate-100">
-              {cats.filter((c) => c.total > 0).map((c) => (
-                <tr key={c.id}>
-                  <td className="px-4 py-2.5 font-medium">{c.label}</td>
-                  <td className="px-4 py-2.5">
-                    <div className="flex items-center gap-2">
-                      <ProgressBar value={c.masteryShare} tone="emerald" label={`${c.label} gemeistert`} />
-                      <span className="w-14 shrink-0 text-right tabular-nums text-slate-500">{c.mastered}/{c.total}</span>
-                    </div>
-                  </td>
-                  <td className="px-4 py-2.5 text-right tabular-nums">{c.seen}/{c.total}</td>
-                  <td className={`px-4 py-2.5 text-right tabular-nums ${c.accuracy !== null && c.accuracy < 0.75 ? 'font-medium text-rose-700' : ''}`}>{formatPercent(c.accuracy)}</td>
-                  <td className="px-4 py-2.5 text-right tabular-nums">{c.wrongNow}</td>
-                  <td className="px-4 py-2.5 text-right">
-                    <Button variant="ghost" size="sm" onClick={() => navigate(`/training?kategorie=${c.id}`)}>
-                      Üben
-                    </Button>
-                  </td>
-                </tr>
-              ))}
+              {cats.filter((c) => c.total > 0).map((c) => {
+                const open = openCats.includes(c.id);
+                const subs = subtopics.filter((st) => st.category === c.id);
+                return (
+                  <Fragment key={c.id}>
+                    <tr>
+                      <td className="px-4 py-2.5 font-medium">
+                        <button
+                          type="button"
+                          onClick={() => setOpenCats((o) => (open ? o.filter((x) => x !== c.id) : [...o, c.id]))}
+                          aria-expanded={open}
+                          className="inline-flex items-center gap-1 text-left hover:text-blue-700"
+                          title="Unterthemen anzeigen"
+                        >
+                          <ChevronRight size={16} className={`shrink-0 text-slate-400 transition-transform ${open ? 'rotate-90' : ''}`} />
+                          {c.label}
+                        </button>
+                      </td>
+                      <td className="px-4 py-2.5">
+                        <div className="flex items-center gap-2">
+                          <ProgressBar value={c.masteryShare} tone="emerald" label={`${c.label} gemeistert`} />
+                          <span className="w-14 shrink-0 text-right tabular-nums text-slate-500">{c.mastered}/{c.total}</span>
+                        </div>
+                      </td>
+                      <td className="px-4 py-2.5 text-right tabular-nums">{c.seen}/{c.total}</td>
+                      <td className={`px-4 py-2.5 text-right tabular-nums ${c.accuracy !== null && c.accuracy < 0.75 ? 'font-medium text-rose-700' : ''}`}>{formatPercent(c.accuracy)}</td>
+                      <td className="px-4 py-2.5 text-right tabular-nums">{c.wrongNow}</td>
+                      <td className="px-4 py-2.5 text-right">
+                        <Button variant="ghost" size="sm" onClick={() => navigate(`/training?kategorie=${c.id}`)}>
+                          Üben
+                        </Button>
+                      </td>
+                    </tr>
+                    {open &&
+                      subs.map((st) => (
+                        <tr key={st.key} className="bg-slate-50/70 text-[13px]">
+                          <td className="py-2 pl-11 pr-4 text-slate-700">{st.label}</td>
+                          <td className="px-4 py-2">
+                            <div className="flex items-center gap-2">
+                              <ProgressBar value={st.masteryShare} tone="emerald" className="!h-1.5" label={`${st.label} gemeistert`} />
+                              <span className="w-14 shrink-0 text-right tabular-nums text-slate-500">{st.mastered}/{st.total}</span>
+                            </div>
+                          </td>
+                          <td className="px-4 py-2 text-right tabular-nums">{st.seen}/{st.total}</td>
+                          <td className={`px-4 py-2 text-right tabular-nums ${st.accuracy !== null && st.accuracy < 0.75 ? 'font-medium text-rose-700' : ''}`}>{formatPercent(st.accuracy)}</td>
+                          <td className="px-4 py-2" />
+                          <td className="px-4 py-2 text-right">
+                            <Button variant="ghost" size="sm" onClick={() => launcher.topic(st.category, st.key)}>
+                              Üben
+                            </Button>
+                          </td>
+                        </tr>
+                      ))}
+                  </Fragment>
+                );
+              })}
             </tbody>
           </table>
         </Card>

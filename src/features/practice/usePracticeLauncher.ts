@@ -1,6 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import { catalog } from '@/data/catalog';
 import { CATEGORIES, type CategoryId } from '@/domain/categories';
+import { parseSubtopicKey, subtopicKey } from '@/domain/subtopics';
 import { selectDueQuestions, selectQuickRound, selectWeakQuestions, shuffle } from '@/domain/selection';
 import { useAppStore, type PracticeMode } from '@/store/useAppStore';
 import { resetPracticeExitTarget } from './PracticePage';
@@ -40,12 +41,15 @@ export function usePracticeLauncher() {
       const ids = catalog.questions.filter((q) => bookmarks[q.id]).map((q) => q.id);
       return start('bookmarks', 'Lesezeichen', shuffle(ids));
     },
-    topic: (category: CategoryId) => {
+    /** Thema (optional eingeschränkt auf ein Unterthema): nicht gemeisterte zuerst, max. 15 Fragen. */
+    topic: (category: CategoryId, subtopic?: string) => {
       const { progress } = useAppStore.getState();
-      const qs = catalog.questions.filter((q) => q.category === category);
+      const qs = catalog.questions.filter((q) => q.category === category && (!subtopic || subtopicKey(q) === subtopic));
       const unmastered = shuffle(qs.filter((q) => !progress[q.id]?.mastered));
-      const ids = (unmastered.length ? unmastered : shuffle(qs)).slice(0, 15).map((q) => q.id);
-      return start('topic', `Thema: ${CATEGORIES[category].label}`, ids);
+      const mastered = shuffle(qs.filter((q) => progress[q.id]?.mastered));
+      const ids = [...unmastered, ...mastered].slice(0, 15).map((q) => q.id);
+      const title = subtopic ? `${CATEGORIES[category].short}: ${parseSubtopicKey(subtopic).label}` : `Thema: ${CATEGORIES[category].label}`;
+      return start('topic', title, ids);
     },
   };
 }

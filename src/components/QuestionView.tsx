@@ -35,7 +35,7 @@ export const QuestionView = forwardRef<HTMLInputElement, QuestionViewProps>(func
   return (
     <article className="space-y-4" aria-label="Frage">
       <div className="flex flex-wrap items-center gap-1.5">
-        <Badge>{CATEGORIES[q.category].short}</Badge>
+        <Badge>{CATEGORIES[q.category].short}{q.subcategory ? ` · ${q.subcategory}` : ''}</Badge>
         <Badge>{q.material === 'grundstoff' ? 'Grundstoff' : 'Zusatzstoff'}</Badge>
         <Badge tone="blue">{q.points} Punkte</Badge>
         {q.officialNumber && <span className="font-mono text-xs text-slate-400">{q.officialNumber}</span>}

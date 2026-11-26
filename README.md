@@ -13,7 +13,8 @@ Läuft komplett im Browser, offline-fähig (PWA). Der Lernstand bleibt lokal auf
 
 **Lernmodi**
 - **Schnelle Runde**: 10 Fragen (einstellbar), intelligent gemischt aus etwa 40 % Schwächen, 20 % fälligen Wiederholungen und 30 % neuen Fragen
-- **Themen-Training**: Filter nach Kategorie (mehrere wählbar), Grund- oder Zusatzstoff, Status (neu, nicht gemeistert, zuletzt falsch, Lesezeichen, gemeistert), Reihenfolge und Anzahl
+- **Themen-Training**: Filter nach Kategorie und **Unterthema** (beides mehrfach wählbar, 32 Unterthemen, z. B. „Ampeln & Polizei“), Grund- oder Zusatzstoff, Status (neu, nicht gemeistert, zuletzt falsch, Lesezeichen, gemeistert), Reihenfolge und Anzahl
+- **Thema wechseln jederzeit**: In jeder Lernsitzung öffnet `T` (oder der Knopf „Thema“) die Themenauswahl mit allen Unterthemen und ihrem Fortschritt
 - **Schwächen-Training**: falsch oder unsicher beantwortete Fragen, die dringendsten zuerst
 - **Wiederholung**: gemeisterte Fragen werden nach 3, 7, 14 bzw. 30 Tagen wieder fällig (vereinfachte Spaced Repetition)
 - **Lesezeichen**: Fragen markieren und gesammelt üben
@@ -45,6 +46,7 @@ Läuft komplett im Browser, offline-fähig (PWA). Der Lernstand bleibt lokal auf
 | `U` | Als unsicher markieren | |
 | `B` | Lesezeichen | |
 | `E` | Erklärung ein-/ausblenden | |
+| `T` | Thema/Unterthema wechseln | |
 | `M` | | Frage markieren |
 | `Esc` | Sitzung beenden (mit Auswertung) | |
 

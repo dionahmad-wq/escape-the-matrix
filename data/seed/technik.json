@@ -11,7 +11,7 @@
     {
       "id": "seed-technik-001",
       "category": "technik",
-      "subcategory": "Reifen",
+      "subcategory": "Reifen & Fahrwerk",
       "material": "zusatzstoff",
       "type": "number",
       "points": 3,
@@ -23,7 +23,7 @@
     {
       "id": "seed-technik-002",
       "category": "technik",
-      "subcategory": "Bremsen",
+      "subcategory": "Bremsen & Assistenzsysteme",
       "material": "grundstoff",
       "type": "multiple",
       "points": 4,
@@ -39,7 +39,7 @@
     {
       "id": "seed-technik-003",
       "category": "technik",
-      "subcategory": "Assistenzsysteme",
+      "subcategory": "Bremsen & Assistenzsysteme",
       "material": "grundstoff",
       "type": "single",
       "points": 3,
@@ -55,7 +55,7 @@
     {
       "id": "seed-technik-004",
       "category": "technik",
-      "subcategory": "Bremsen",
+      "subcategory": "Bremsen & Assistenzsysteme",
       "material": "grundstoff",
       "type": "multiple",
       "points": 4,
@@ -71,7 +71,7 @@
     {
       "id": "seed-technik-005",
       "category": "technik",
-      "subcategory": "Reifen",
+      "subcategory": "Reifen & Fahrwerk",
       "material": "grundstoff",
       "type": "single",
       "points": 3,
@@ -87,7 +87,7 @@
     {
       "id": "seed-technik-006",
       "category": "technik",
-      "subcategory": "Bremsen",
+      "subcategory": "Bremsen & Assistenzsysteme",
       "material": "grundstoff",
       "type": "single",
       "points": 3,
@@ -103,7 +103,7 @@
     {
       "id": "seed-technik-007",
       "category": "technik",
-      "subcategory": "Reifen",
+      "subcategory": "Reifen & Fahrwerk",
       "material": "zusatzstoff",
       "type": "single",
       "points": 4,
@@ -119,7 +119,7 @@
     {
       "id": "seed-technik-008",
       "category": "technik",
-      "subcategory": "Fahrwerk",
+      "subcategory": "Reifen & Fahrwerk",
       "material": "zusatzstoff",
       "type": "multiple",
       "points": 3,
@@ -135,7 +135,7 @@
     {
       "id": "seed-technik-009",
       "category": "technik",
-      "subcategory": "Kontrollleuchten",
+      "subcategory": "Störungen & Wartung",
       "material": "zusatzstoff",
       "type": "single",
       "points": 4,
@@ -151,7 +151,7 @@
     {
       "id": "seed-technik-010",
       "category": "technik",
-      "subcategory": "Reifen",
+      "subcategory": "Reifen & Fahrwerk",
       "material": "zusatzstoff",
       "type": "number",
       "points": 2,
@@ -163,7 +163,7 @@
     {
       "id": "seed-technik-011",
       "category": "technik",
-      "subcategory": "Assistenzsysteme",
+      "subcategory": "Bremsen & Assistenzsysteme",
       "material": "zusatzstoff",
       "type": "multiple",
       "points": 4,
@@ -179,7 +179,7 @@
     {
       "id": "seed-technik-012",
       "category": "technik",
-      "subcategory": "Batterie",
+      "subcategory": "Störungen & Wartung",
       "material": "zusatzstoff",
       "type": "single",
       "points": 3,

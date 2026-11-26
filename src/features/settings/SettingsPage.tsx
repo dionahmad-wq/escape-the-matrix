@@ -60,6 +60,7 @@ export function SettingsPage() {
             [['U'], 'Als unsicher markieren (Lernen)'],
             [['B'], 'Lesezeichen setzen (Lernen)'],
             [['E'], 'Erklärung ein-/ausblenden'],
+            [['T'], 'Thema wechseln (Lernen)'],
             [['M'], 'Frage markieren (Prüfung)'],
             [['Esc'], 'Sitzung beenden'],
           ].map(([keys, label]) => (

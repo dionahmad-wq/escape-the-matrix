@@ -43,7 +43,7 @@
     {
       "id": "seed-umwelt-003",
       "category": "umwelt",
-      "subcategory": "Leerlauf",
+      "subcategory": "Kraftstoff sparen",
       "material": "grundstoff",
       "type": "single",
       "points": 3,
@@ -59,7 +59,7 @@
     {
       "id": "seed-umwelt-004",
       "category": "umwelt",
-      "subcategory": "Vorausschauend fahren",
+      "subcategory": "Kraftstoff sparen",
       "material": "grundstoff",
       "type": "single",
       "points": 3,
@@ -75,7 +75,7 @@
     {
       "id": "seed-umwelt-005",
       "category": "umwelt",
-      "subcategory": "Lärm",
+      "subcategory": "Lärm & Entsorgung",
       "material": "grundstoff",
       "type": "multiple",
       "points": 2,
@@ -91,7 +91,7 @@
     {
       "id": "seed-umwelt-006",
       "category": "umwelt",
-      "subcategory": "Entsorgung",
+      "subcategory": "Lärm & Entsorgung",
       "material": "grundstoff",
       "type": "single",
       "points": 3,
@@ -107,7 +107,7 @@
     {
       "id": "seed-umwelt-007",
       "category": "umwelt",
-      "subcategory": "Luftwiderstand",
+      "subcategory": "Kraftstoff sparen",
       "material": "zusatzstoff",
       "type": "multiple",
       "points": 3,
@@ -123,7 +123,7 @@
     {
       "id": "seed-umwelt-008",
       "category": "umwelt",
-      "subcategory": "Nebenverbraucher",
+      "subcategory": "Kraftstoff sparen",
       "material": "zusatzstoff",
       "type": "single",
       "points": 2,

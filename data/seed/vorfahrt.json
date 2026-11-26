@@ -11,7 +11,7 @@
     {
       "id": "seed-vorfahrt-001",
       "category": "vorfahrt",
-      "subcategory": "Rechts vor links",
+      "subcategory": "Grundregeln & Vorfahrtzeichen",
       "material": "grundstoff",
       "type": "single",
       "points": 5,
@@ -28,7 +28,7 @@
     {
       "id": "seed-vorfahrt-002",
       "category": "vorfahrt",
-      "subcategory": "Vorfahrtregelnde Zeichen",
+      "subcategory": "Grundregeln & Vorfahrtzeichen",
       "material": "grundstoff",
       "type": "multiple",
       "points": 5,
@@ -45,7 +45,7 @@
     {
       "id": "seed-vorfahrt-003",
       "category": "vorfahrt",
-      "subcategory": "Polizeibeamte",
+      "subcategory": "Ampeln & Polizei",
       "material": "grundstoff",
       "type": "single",
       "points": 4,
@@ -61,7 +61,7 @@
     {
       "id": "seed-vorfahrt-004",
       "category": "vorfahrt",
-      "subcategory": "Lichtzeichen",
+      "subcategory": "Ampeln & Polizei",
       "material": "grundstoff",
       "type": "single",
       "points": 4,
@@ -78,7 +78,7 @@
     {
       "id": "seed-vorfahrt-005",
       "category": "vorfahrt",
-      "subcategory": "Abbiegen",
+      "subcategory": "Abbiegen & Kreisverkehr",
       "material": "grundstoff",
       "type": "single",
       "points": 5,
@@ -95,7 +95,7 @@
     {
       "id": "seed-vorfahrt-006",
       "category": "vorfahrt",
-      "subcategory": "Kreisverkehr",
+      "subcategory": "Abbiegen & Kreisverkehr",
       "material": "grundstoff",
       "type": "multiple",
       "points": 5,
@@ -113,7 +113,7 @@
     {
       "id": "seed-vorfahrt-007",
       "category": "vorfahrt",
-      "subcategory": "Lichtzeichen",
+      "subcategory": "Ampeln & Polizei",
       "material": "grundstoff",
       "type": "single",
       "points": 4,
@@ -129,7 +129,7 @@
     {
       "id": "seed-vorfahrt-008",
       "category": "vorfahrt",
-      "subcategory": "Polizeibeamte",
+      "subcategory": "Ampeln & Polizei",
       "material": "grundstoff",
       "type": "single",
       "points": 4,
@@ -145,7 +145,7 @@
     {
       "id": "seed-vorfahrt-009",
       "category": "vorfahrt",
-      "subcategory": "Feld- und Waldwege",
+      "subcategory": "Grundregeln & Vorfahrtzeichen",
       "material": "grundstoff",
       "type": "single",
       "points": 4,
@@ -161,7 +161,7 @@
     {
       "id": "seed-vorfahrt-010",
       "category": "vorfahrt",
-      "subcategory": "Vorfahrtregelnde Zeichen",
+      "subcategory": "Grundregeln & Vorfahrtzeichen",
       "material": "grundstoff",
       "type": "single",
       "points": 4,
@@ -178,7 +178,7 @@
     {
       "id": "seed-vorfahrt-011",
       "category": "vorfahrt",
-      "subcategory": "Vorfahrtregelnde Zeichen",
+      "subcategory": "Grundregeln & Vorfahrtzeichen",
       "material": "grundstoff",
       "type": "single",
       "points": 4,
@@ -211,7 +211,7 @@
     {
       "id": "seed-vorfahrt-013",
       "category": "vorfahrt",
-      "subcategory": "Einsatzfahrzeuge",
+      "subcategory": "Ampeln & Polizei",
       "material": "zusatzstoff",
       "type": "single",
       "points": 4,
@@ -227,7 +227,7 @@
     {
       "id": "seed-vorfahrt-014",
       "category": "vorfahrt",
-      "subcategory": "Fußgängerüberweg",
+      "subcategory": "Fußgänger",
       "material": "grundstoff",
       "type": "multiple",
       "points": 4,
@@ -244,7 +244,7 @@
     {
       "id": "seed-vorfahrt-015",
       "category": "vorfahrt",
-      "subcategory": "Straßenbahn",
+      "subcategory": "Abbiegen & Kreisverkehr",
       "material": "zusatzstoff",
       "type": "single",
       "points": 5,

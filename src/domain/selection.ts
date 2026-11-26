@@ -1,5 +1,6 @@
 import type { CategoryId } from './categories';
 import { getStatus, isDueForReview, weaknessScore, type ProgressMap } from './progress';
+import { subtopicKey } from './subtopics';
 import type { Material, Question } from './types';
 
 export type Rng = () => number;
@@ -29,6 +30,8 @@ export type StatusFilter = 'all' | 'new' | 'unmastered' | 'wrong' | 'mastered' |
 
 export interface QuestionFilter {
   categories?: CategoryId[];
+  /** Unterthemen-Schlüssel („kategorie/Unterthema“), siehe subtopics.ts */
+  subtopics?: string[];
   material?: Material | 'all';
   status?: StatusFilter;
   search?: string;
@@ -43,6 +46,7 @@ export function filterQuestions(
   const search = filter.search?.trim().toLowerCase();
   return questions.filter((q) => {
     if (filter.categories?.length && !filter.categories.includes(q.category)) return false;
+    if (filter.subtopics?.length && !filter.subtopics.includes(subtopicKey(q))) return false;
     if (filter.material && filter.material !== 'all' && q.material !== filter.material) return false;
     const status = getStatus(progress[q.id]);
     switch (filter.status) {

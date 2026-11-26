@@ -27,7 +27,7 @@
     {
       "id": "seed-betrieb-002",
       "category": "betrieb",
-      "subcategory": "Beleuchtung",
+      "subcategory": "Ausrüstung & Beleuchtung",
       "material": "grundstoff",
       "type": "multiple",
       "points": 3,
@@ -43,7 +43,7 @@
     {
       "id": "seed-betrieb-003",
       "category": "betrieb",
-      "subcategory": "Dokumente",
+      "subcategory": "Papiere & Hauptuntersuchung",
       "material": "grundstoff",
       "type": "multiple",
       "points": 3,
@@ -59,7 +59,7 @@
     {
       "id": "seed-betrieb-004",
       "category": "betrieb",
-      "subcategory": "Ausrüstung",
+      "subcategory": "Ausrüstung & Beleuchtung",
       "material": "grundstoff",
       "type": "number",
       "points": 2,
@@ -71,7 +71,7 @@
     {
       "id": "seed-betrieb-005",
       "category": "betrieb",
-      "subcategory": "Hauptuntersuchung",
+      "subcategory": "Papiere & Hauptuntersuchung",
       "material": "zusatzstoff",
       "type": "number",
       "points": 3,
@@ -83,7 +83,7 @@
     {
       "id": "seed-betrieb-006",
       "category": "betrieb",
-      "subcategory": "Hauptuntersuchung",
+      "subcategory": "Papiere & Hauptuntersuchung",
       "material": "zusatzstoff",
       "type": "number",
       "points": 2,
@@ -95,7 +95,7 @@
     {
       "id": "seed-betrieb-007",
       "category": "betrieb",
-      "subcategory": "Anhänger",
+      "subcategory": "Anhänger & Fahrerlaubnis",
       "material": "zusatzstoff",
       "type": "multiple",
       "points": 4,
@@ -112,7 +112,7 @@
     {
       "id": "seed-betrieb-008",
       "category": "betrieb",
-      "subcategory": "Fahrerlaubnis",
+      "subcategory": "Anhänger & Fahrerlaubnis",
       "material": "zusatzstoff",
       "type": "number",
       "points": 4,
@@ -124,7 +124,7 @@
     {
       "id": "seed-betrieb-009",
       "category": "betrieb",
-      "subcategory": "Fahrerlaubnis",
+      "subcategory": "Anhänger & Fahrerlaubnis",
       "material": "zusatzstoff",
       "type": "number",
       "points": 3,

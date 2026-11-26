@@ -22,7 +22,7 @@ export function QuestionListItem({ question: q, progress }: { question: Question
           <div className="min-w-0 flex-1">
             <div className="mb-1 flex flex-wrap items-center gap-1.5">
               <Badge tone={STATUS_TONE[status]}>{STATUS_LABEL[status]}</Badge>
-              <Badge>{CATEGORIES[q.category].short}</Badge>
+              <Badge>{CATEGORIES[q.category].short}{q.subcategory ? ` · ${q.subcategory}` : ''}</Badge>
               <Badge>{q.material === 'grundstoff' ? 'G' : 'Z'}</Badge>
               <Badge tone="blue">{q.points} P</Badge>
               {progress && (

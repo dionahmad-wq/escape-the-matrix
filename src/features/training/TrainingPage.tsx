@@ -5,6 +5,7 @@ import { catalog } from '@/data/catalog';
 import { CATEGORY_LIST, type CategoryId } from '@/domain/categories';
 import { filterQuestions, orderQuestions, type Ordering, type StatusFilter } from '@/domain/selection';
 import { computeCategoryStats, computeOverall } from '@/domain/stats';
+import { listSubtopics, parseSubtopicKey } from '@/domain/subtopics';
 import type { Material } from '@/domain/types';
 import { Button, Card, PageTitle, ProgressBar, SectionTitle } from '@/components/ui';
 import { usePracticeLauncher } from '@/features/practice/usePracticeLauncher';
@@ -30,6 +31,8 @@ export function TrainingPage() {
   const launcher = usePracticeLauncher();
 
   const [categories, setCategories] = useState<CategoryId[]>(initialCat && CATEGORY_LIST.some((c) => c.id === initialCat) ? [initialCat] : []);
+  const initialSub = params.get('unterthema');
+  const [subtopics, setSubtopics] = useState<string[]>(initialSub ? [initialSub] : []);
   const [material, setMaterial] = useState<Material | 'all'>('all');
   const [status, setStatus] = useState<StatusFilter>('unmastered');
   const [ordering, setOrdering] = useState<Ordering>('unmastered-first');
@@ -37,19 +40,33 @@ export function TrainingPage() {
 
   const cats = useMemo(() => computeCategoryStats(catalog.questions, progress), [progress]);
   const overall = useMemo(() => computeOverall(catalog.questions, progress, Date.now()), [progress]);
+  const subtopicList = useMemo(() => (categories.length ? listSubtopics(catalog.questions, progress, categories) : []), [categories, progress]);
   const matching = useMemo(
-    () => filterQuestions(catalog.questions, { categories, material, status }, progress, bookmarks),
-    [categories, material, status, progress, bookmarks],
+    () => filterQuestions(catalog.questions, { categories, subtopics, material, status }, progress, bookmarks),
+    [categories, subtopics, material, status, progress, bookmarks],
   );
 
-  const toggleCat = (id: CategoryId) =>
-    setCategories((cs) => (cs.includes(id) ? cs.filter((c) => c !== id) : [...cs, id]));
+  const toggleCat = (id: CategoryId) => {
+    const removing = categories.includes(id);
+    setCategories((cs) => (removing ? cs.filter((c) => c !== id) : [...cs, id]));
+    // Unterthemen einer abgewählten Kategorie mit entfernen
+    if (removing) setSubtopics((ss) => ss.filter((k) => parseSubtopicKey(k).category !== id));
+  };
+  const toggleSub = (key: string) => setSubtopics((ss) => (ss.includes(key) ? ss.filter((k) => k !== key) : [...ss, key]));
 
   const start = () => {
     const ordered = orderQuestions(matching, ordering, progress);
     const picked = count ? ordered.slice(0, count) : ordered;
     const title =
-      categories.length === 1 ? `Thema: ${CATEGORY_LIST.find((c) => c.id === categories[0])!.label}` : categories.length ? `${categories.length} Themen` : 'Themen-Training';
+      subtopics.length === 1
+        ? `${CATEGORY_LIST.find((c) => c.id === parseSubtopicKey(subtopics[0]!).category)!.short}: ${parseSubtopicKey(subtopics[0]!).label}`
+        : subtopics.length > 1
+          ? `${subtopics.length} Unterthemen`
+          : categories.length === 1
+            ? `Thema: ${CATEGORY_LIST.find((c) => c.id === categories[0])!.label}`
+            : categories.length
+              ? `${categories.length} Themen`
+              : 'Themen-Training';
     launcher.start('topic', title, picked.map((q) => q.id));
   };
 
@@ -93,6 +110,51 @@ export function TrainingPage() {
                 );
               })}
             </div>
+          </fieldset>
+
+          <fieldset>
+            <legend className="mb-2 text-sm font-medium">
+              Unterthemen{' '}
+              <span className="font-normal text-slate-500">
+                {categories.length === 0 ? '(erst ein Thema wählen)' : subtopics.length === 0 ? '(alle)' : `(${subtopics.length} gewählt)`}
+              </span>
+            </legend>
+            {categories.length > 0 && (
+              <div className="space-y-3">
+                {categories.map((cat) => (
+                  <div key={cat}>
+                    {categories.length > 1 && <p className="mb-1.5 text-xs font-medium text-slate-500">{CATEGORY_LIST.find((c) => c.id === cat)!.label}</p>}
+                    <div className="flex flex-wrap gap-2">
+                      {subtopicList
+                        .filter((st) => st.category === cat)
+                        .map((st) => {
+                          const active = subtopics.includes(st.key);
+                          return (
+                            <button
+                              key={st.key}
+                              type="button"
+                              role="checkbox"
+                              aria-checked={active}
+                              onClick={() => toggleSub(st.key)}
+                              className={`inline-flex items-center gap-2 rounded-full border px-3 py-1.5 text-sm transition-colors ${active ? 'border-blue-600 bg-blue-600 text-white' : 'border-slate-300 bg-white hover:border-slate-500'}`}
+                            >
+                              {st.label}
+                              <span className={`tabular-nums text-xs ${active ? 'text-blue-100' : 'text-slate-500'}`}>
+                                {st.mastered}/{st.total}
+                              </span>
+                            </button>
+                          );
+                        })}
+                    </div>
+                  </div>
+                ))}
+                {subtopics.length > 0 && (
+                  <button type="button" onClick={() => setSubtopics([])} className="text-sm text-blue-700 hover:underline">
+                    Auswahl aufheben
+                  </button>
+                )}
+              </div>
+            )}
           </fieldset>
 
           <div className="grid gap-4 sm:grid-cols-2">

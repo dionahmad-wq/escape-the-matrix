@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { Navigate } from 'react-router-dom';
-import { ArrowLeft, ArrowRight, Bookmark, BookmarkCheck, CircleHelp, X } from 'lucide-react';
+import { ArrowLeft, ArrowRight, Bookmark, BookmarkCheck, CircleHelp, Layers, X } from 'lucide-react';
 import { catalog } from '@/data/catalog';
 import { describeMistake, emptyAnswer, evaluateAnswer, isAnswered, type UserAnswer } from '@/domain/answers';
 import { MASTERY_STREAK, remainingForMastery } from '@/domain/progress';
@@ -9,6 +9,8 @@ import { Button, Kbd, ProgressBar } from '@/components/ui';
 import { useHotkeys } from '@/hooks/useHotkeys';
 import { useAppStore } from '@/store/useAppStore';
 import { PracticeSummary } from './PracticeSummary';
+import { TopicSwitchDialog } from './TopicSwitchDialog';
+import { usePracticeLauncher } from './usePracticeLauncher';
 
 /**
  * Ziel nach dem Beenden einer Sitzung. Wird gesetzt, BEVOR die Sitzung im Store gelöscht wird,
@@ -69,6 +71,8 @@ function PracticeRunner() {
   const setUnsure = (fn: (u: boolean) => boolean) => setUnsureId(fn(unsure) ? q.id : null);
   const justAnswered = justAnsweredId === q.id;
   const [showExplanation, setShowExplanation] = useState(settings.autoShowExplanation);
+  const [topicOpen, setTopicOpen] = useState(false);
+  const launcher = usePracticeLauncher();
   const numberRef = useRef<HTMLInputElement>(null);
 
   // Bei Fragewechsel: Erklärung-Voreinstellung, Fokus und Scrollposition
@@ -140,8 +144,9 @@ function PracticeRunner() {
     b: () => toggleBookmark(q.id),
     u: () => !checked && setUnsure((u) => !u),
     e: () => checked && setShowExplanation((s) => !s),
+    t: () => setTopicOpen(true),
     Escape: exit,
-  }, { allowInInputs: ['Enter', 'Escape', 'u', 'b', 'e'] }); // Das einzige Feld ist numerisch, Buchstaben sind dort Kürzel
+  }, { enabled: !topicOpen, allowInInputs: ['Enter', 'Escape', 'u', 'b', 'e', 't'] }); // Das einzige Feld ist numerisch, Buchstaben sind dort Kürzel
 
   const evaluation = checked ? evaluateAnswer(q, stored.answer) : null;
   const p = progress[q.id];
@@ -174,8 +179,19 @@ function PracticeRunner() {
             </div>
             <ProgressBar value={answeredCount / questions.length} className="mt-1.5 !h-1.5" label="Fortschritt der Sitzung" />
           </div>
+          <Button variant="secondary" size="sm" onClick={() => setTopicOpen(true)} title="Thema wechseln (T)" aria-label="Thema wechseln (T)">
+            <Layers size={16} /> <span className="hidden sm:inline">Thema</span>
+          </Button>
         </div>
       </header>
+      <TopicSwitchDialog
+        open={topicOpen}
+        onClose={() => setTopicOpen(false)}
+        onPick={(category, subtopic) => {
+          setTopicOpen(false);
+          launcher.topic(category, subtopic);
+        }}
+      />
 
       <main className="mx-auto w-full max-w-3xl flex-1 px-4 py-6 pb-32">
         <QuestionView
@@ -240,6 +256,7 @@ function PracticeRunner() {
             <span><Kbd>1</Kbd>–<Kbd>5</Kbd> Antwort</span>
             <span><Kbd>U</Kbd> unsicher</span>
             <span><Kbd>B</Kbd> merken</span>
+            <span><Kbd>T</Kbd> Thema</span>
             <span><Kbd>Esc</Kbd> beenden</span>
           </div>
           <div className="ml-auto lg:ml-3">

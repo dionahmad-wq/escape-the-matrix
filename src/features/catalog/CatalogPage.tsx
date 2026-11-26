@@ -4,6 +4,7 @@ import { PlayCircle, Search } from 'lucide-react';
 import { catalog } from '@/data/catalog';
 import { CATEGORY_LIST, type CategoryId } from '@/domain/categories';
 import { filterQuestions, type StatusFilter } from '@/domain/selection';
+import { listSubtopics } from '@/domain/subtopics';
 import type { Material } from '@/domain/types';
 import { QuestionListItem } from '@/components/QuestionListItem';
 import { Button, EmptyState, PageTitle } from '@/components/ui';
@@ -17,6 +18,7 @@ export function CatalogPage() {
   const category = params.get('kategorie') as CategoryId | null;
   const material = (params.get('stoff') as Material | null) ?? 'all';
   const status = (params.get('status') as StatusFilter | null) ?? 'all';
+  const subtopic = params.get('unterthema');
   const [search, setSearch] = useState('');
   const [limit, setLimit] = useState(PAGE);
   const progress = useAppStore((s) => s.progress);
@@ -24,14 +26,22 @@ export function CatalogPage() {
   const launcher = usePracticeLauncher();
 
   const questions = useMemo(
-    () => filterQuestions(catalog.questions, { categories: category ? [category] : [], material, status, search }, progress, bookmarks),
-    [category, material, status, search, progress, bookmarks],
+    () =>
+      filterQuestions(
+        catalog.questions,
+        { categories: category ? [category] : [], subtopics: subtopic ? [subtopic] : [], material, status, search },
+        progress,
+        bookmarks,
+      ),
+    [category, subtopic, material, status, search, progress, bookmarks],
   );
+  const subtopicOptions = useMemo(() => (category ? listSubtopics(catalog.questions, {}, [category]) : []), [category]);
 
   const update = (key: string, value: string) => {
     const next = new URLSearchParams(params);
     if (value && value !== 'all') next.set(key, value);
     else next.delete(key);
+    if (key === 'kategorie') next.delete('unterthema'); // Unterthema gehört zur Kategorie
     setParams(next, { replace: true });
     setLimit(PAGE);
   };
@@ -65,6 +75,16 @@ export function CatalogPage() {
             </option>
           ))}
         </select>
+        {subtopicOptions.length > 0 && (
+          <select aria-label="Unterthema" value={subtopic ?? ''} onChange={(e) => update('unterthema', e.target.value)} className={select}>
+            <option value="">Alle Unterthemen</option>
+            {subtopicOptions.map((st) => (
+              <option key={st.key} value={st.key}>
+                {st.label} ({st.total})
+              </option>
+            ))}
+          </select>
+        )}
         <select aria-label="Stoff" value={material} onChange={(e) => update('stoff', e.target.value)} className={select}>
           <option value="all">Grund- & Zusatzstoff</option>
           <option value="grundstoff">Grundstoff</option>

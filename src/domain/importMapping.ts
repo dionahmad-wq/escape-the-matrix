@@ -43,6 +43,7 @@ const HEADER_ALIASES: Record<string, string> = {
   kategorie: 'category',
   thema: 'category',
   unterkategorie: 'subcategory',
+  unterthema: 'subcategory',
   stoff: 'material',
   typ: 'type',
   punkte: 'points',
@@ -158,7 +159,8 @@ export function mapFlatRecord(record: Record<string, unknown>, options: ImportOp
     id,
     officialNumber: official,
     category,
-    subcategory: r.get('subcategory'),
+    // Ohne Unterthema-Spalte: Abschnitt der amtlichen Nummer verwenden (z. B. „Abschnitt 1.3.01“)
+    subcategory: r.get('subcategory') ?? (official ? `Abschnitt ${official.split('-')[0]}` : undefined),
     material,
     licenseClasses: parseList(r.get('licenseclasses')) ?? options.licenseClasses ?? ['B'],
     type,

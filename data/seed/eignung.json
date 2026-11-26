@@ -11,7 +11,7 @@
     {
       "id": "seed-eignung-001",
       "category": "eignung",
-      "subcategory": "Alkohol",
+      "subcategory": "Alkohol & Medikamente",
       "material": "grundstoff",
       "type": "number",
       "points": 4,
@@ -23,7 +23,7 @@
     {
       "id": "seed-eignung-002",
       "category": "eignung",
-      "subcategory": "Alkohol",
+      "subcategory": "Alkohol & Medikamente",
       "material": "grundstoff",
       "type": "multiple",
       "points": 5,
@@ -40,7 +40,7 @@
     {
       "id": "seed-eignung-003",
       "category": "eignung",
-      "subcategory": "Alkohol",
+      "subcategory": "Alkohol & Medikamente",
       "material": "grundstoff",
       "type": "single",
       "points": 3,
@@ -56,7 +56,7 @@
     {
       "id": "seed-eignung-004",
       "category": "eignung",
-      "subcategory": "Alkohol",
+      "subcategory": "Alkohol & Medikamente",
       "material": "grundstoff",
       "type": "number",
       "points": 3,
@@ -68,7 +68,7 @@
     {
       "id": "seed-eignung-005",
       "category": "eignung",
-      "subcategory": "Alkohol",
+      "subcategory": "Alkohol & Medikamente",
       "material": "grundstoff",
       "type": "number",
       "points": 4,
@@ -80,7 +80,7 @@
     {
       "id": "seed-eignung-006",
       "category": "eignung",
-      "subcategory": "Müdigkeit",
+      "subcategory": "Müdigkeit & Ablenkung",
       "material": "grundstoff",
       "type": "multiple",
       "points": 4,
@@ -96,7 +96,7 @@
     {
       "id": "seed-eignung-007",
       "category": "eignung",
-      "subcategory": "Medikamente",
+      "subcategory": "Alkohol & Medikamente",
       "material": "grundstoff",
       "type": "multiple",
       "points": 4,
@@ -112,7 +112,7 @@
     {
       "id": "seed-eignung-008",
       "category": "eignung",
-      "subcategory": "Verhalten bei Unfällen",
+      "subcategory": "Unfall & Erste Hilfe",
       "material": "grundstoff",
       "type": "multiple",
       "points": 5,
@@ -130,7 +130,7 @@
     {
       "id": "seed-eignung-009",
       "category": "eignung",
-      "subcategory": "Verhalten bei Unfällen",
+      "subcategory": "Unfall & Erste Hilfe",
       "material": "grundstoff",
       "type": "number",
       "points": 2,
@@ -159,7 +159,7 @@
     {
       "id": "seed-eignung-011",
       "category": "eignung",
-      "subcategory": "Ablenkung",
+      "subcategory": "Müdigkeit & Ablenkung",
       "material": "zusatzstoff",
       "type": "single",
       "points": 4,
