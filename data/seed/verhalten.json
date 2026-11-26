@@ -1,0 +1,36 @@
+{
+  "$schema": "../schema/question-catalog.schema.json",
+  "meta": {
+    "id": "seed-verhalten",
+    "title": "Übungsfragen: Verhalten im Straßenverkehr",
+    "version": "2026.11-1",
+    "source": "seed",
+    "license": "Eigene Übungsfragen (keine amtlichen Prüfungsfragen)"
+  },
+  "questions": [
+    {
+      "id": "seed-verhalten-001",
+      "category": "verhalten",
+      "subcategory": "Anhalteweg",
+      "material": "grundstoff",
+      "type": "number",
+      "points": 3,
+      "text": "Sie fahren 50 km/h. Wie lang ist der Reaktionsweg nach der Faustformel?",
+      "numberAnswer": { "value": 15, "unit": "m", "prefix": "Reaktionsweg:" },
+      "explanation": "Faustformel Reaktionsweg: (Geschwindigkeit ÷ 10) × 3. Bei 50 km/h: 5 × 3 = 15 m.",
+      "mnemonic": "Reaktion: Zehntel mal drei."
+    },
+    {
+      "id": "seed-verhalten-002",
+      "category": "verhalten",
+      "subcategory": "Anhalteweg",
+      "material": "grundstoff",
+      "type": "number",
+      "points": 4,
+      "text": "Sie fahren 50 km/h. Wie lang ist der Anhalteweg bei einer normalen Bremsung nach der Faustformel?",
+      "numberAnswer": { "value": 40, "unit": "m", "prefix": "Anhalteweg:" },
+      "explanation": "Anhalteweg = Reaktionsweg + Bremsweg. Reaktionsweg: (50 ÷ 10) × 3 = 15 m. Bremsweg (normal): (50 ÷ 10)² = 25 m. Zusammen ergibt das 40 m.",
+      "mnemonic": "Bremsweg: Zehntel zum Quadrat. Anhalteweg: Reaktion plus Bremsen."
+    }
+  ]
+}

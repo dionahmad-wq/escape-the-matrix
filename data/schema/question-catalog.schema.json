@@ -1,0 +1,252 @@
+{
+  "$ref": "#/definitions/QuestionCatalog",
+  "definitions": {
+    "QuestionCatalog": {
+      "type": "object",
+      "properties": {
+        "$schema": {
+          "type": "string"
+        },
+        "meta": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "pattern": "^[a-z0-9][a-z0-9._-]*$"
+            },
+            "title": {
+              "type": "string",
+              "minLength": 1
+            },
+            "version": {
+              "type": "string",
+              "minLength": 1
+            },
+            "source": {
+              "type": "string",
+              "enum": [
+                "seed",
+                "official",
+                "custom"
+              ]
+            },
+            "license": {
+              "type": "string"
+            },
+            "description": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "title",
+            "version",
+            "source"
+          ],
+          "additionalProperties": false
+        },
+        "questions": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^[a-z0-9][a-z0-9._-]*$"
+              },
+              "officialNumber": {
+                "type": "string",
+                "pattern": "^\\d\\.\\d{1,2}\\.\\d{2}-\\d{3}(-[A-Z])?$"
+              },
+              "category": {
+                "type": "string",
+                "enum": [
+                  "gefahrenlehre",
+                  "verhalten",
+                  "vorfahrt",
+                  "verkehrszeichen",
+                  "umwelt",
+                  "betrieb",
+                  "technik",
+                  "eignung"
+                ]
+              },
+              "subcategory": {
+                "type": "string",
+                "minLength": 1
+              },
+              "material": {
+                "type": "string",
+                "enum": [
+                  "grundstoff",
+                  "zusatzstoff"
+                ]
+              },
+              "licenseClasses": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "minItems": 1,
+                "default": [
+                  "B"
+                ]
+              },
+              "type": {
+                "type": "string",
+                "enum": [
+                  "single",
+                  "multiple",
+                  "number"
+                ]
+              },
+              "points": {
+                "type": "number",
+                "enum": [
+                  2,
+                  3,
+                  4,
+                  5
+                ]
+              },
+              "text": {
+                "type": "string",
+                "minLength": 5
+              },
+              "media": {
+                "type": "object",
+                "properties": {
+                  "kind": {
+                    "type": "string",
+                    "enum": [
+                      "image",
+                      "video",
+                      "sign"
+                    ]
+                  },
+                  "src": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "placeholder": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "alt": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "signNumber": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "kind",
+                  "placeholder",
+                  "alt"
+                ],
+                "additionalProperties": false
+              },
+              "answers": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "text": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "correct": {
+                      "type": "boolean"
+                    },
+                    "explanation": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "text",
+                    "correct"
+                  ],
+                  "additionalProperties": false
+                },
+                "minItems": 2,
+                "maxItems": 5
+              },
+              "numberAnswer": {
+                "type": "object",
+                "properties": {
+                  "value": {
+                    "type": "number"
+                  },
+                  "unit": {
+                    "type": "string"
+                  },
+                  "tolerance": {
+                    "type": "number",
+                    "minimum": 0
+                  },
+                  "prefix": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "value"
+                ],
+                "additionalProperties": false
+              },
+              "explanation": {
+                "type": "string",
+                "minLength": 1
+              },
+              "mnemonic": {
+                "type": "string",
+                "minLength": 1
+              },
+              "tags": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "source": {
+                "type": "string",
+                "enum": [
+                  "seed",
+                  "official",
+                  "custom"
+                ]
+              },
+              "version": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "id",
+              "category",
+              "material",
+              "type",
+              "points",
+              "text",
+              "explanation"
+            ],
+            "additionalProperties": false
+          }
+        }
+      },
+      "required": [
+        "meta",
+        "questions"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

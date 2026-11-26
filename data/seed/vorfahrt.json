@@ -1,0 +1,71 @@
+{
+  "$schema": "../schema/question-catalog.schema.json",
+  "meta": {
+    "id": "seed-vorfahrt",
+    "title": "Übungsfragen: Vorfahrt & Vorrang",
+    "version": "2026.11-1",
+    "source": "seed",
+    "license": "Eigene Übungsfragen (keine amtlichen Prüfungsfragen)"
+  },
+  "questions": [
+    {
+      "id": "seed-vorfahrt-001",
+      "category": "vorfahrt",
+      "subcategory": "Rechts vor links",
+      "material": "grundstoff",
+      "type": "single",
+      "points": 5,
+      "text": "Sie erreichen eine Kreuzung ohne Verkehrszeichen und ohne Ampel. Von rechts nähert sich ein Pkw. Wer darf zuerst fahren?",
+      "media": {
+        "kind": "image",
+        "placeholder": "Kreuzung ohne Beschilderung, eigenes Fahrzeug von unten, blauer Pkw von rechts",
+        "alt": "Ungeregelte Kreuzung mit Pkw von rechts"
+      },
+      "answers": [
+        { "id": "a", "text": "Der Pkw von rechts", "correct": true, "explanation": "Ohne Regelung durch Zeichen oder Ampel gilt „rechts vor links“ (§ 8 StVO)." },
+        { "id": "b", "text": "Ich, weil ich zuerst an der Kreuzung war", "correct": false, "explanation": "Wer zuerst ankommt, spielt keine Rolle, entscheidend ist allein die Richtung." },
+        { "id": "c", "text": "Wer schneller ist", "correct": false, "explanation": "Vorfahrt richtet sich nie nach der Geschwindigkeit." }
+      ],
+      "explanation": "An Kreuzungen und Einmündungen ohne Verkehrszeichen hat Vorfahrt, wer von rechts kommt. Sie müssen warten.",
+      "mnemonic": "Rechts kommt zuerst, links muss warten."
+    },
+    {
+      "id": "seed-vorfahrt-002",
+      "category": "vorfahrt",
+      "subcategory": "Vorfahrtregelnde Zeichen",
+      "material": "grundstoff",
+      "type": "multiple",
+      "points": 5,
+      "text": "Wie verhalten Sie sich an diesem Verkehrszeichen?",
+      "media": {
+        "kind": "sign",
+        "placeholder": "Achteckiges rotes Schild mit weißer Aufschrift „STOP“",
+        "alt": "Verkehrszeichen 206: Halt. Vorfahrt gewähren.",
+        "signNumber": "206"
+      },
+      "answers": [
+        { "id": "a", "text": "Ich muss an der Haltlinie anhalten, auch wenn die Straße frei ist", "correct": true, "explanation": "Das Stoppschild verlangt immer vollständiges Anhalten, unabhängig vom Verkehr." },
+        { "id": "b", "text": "Ich muss dem Verkehr auf der Querstraße Vorfahrt gewähren", "correct": true, "explanation": "Zeichen 206 bedeutet „Halt. Vorfahrt gewähren.“" },
+        { "id": "c", "text": "Ich muss nur anhalten, wenn sich Querverkehr nähert", "correct": false, "explanation": "Das wäre die Regel bei Zeichen 205. Am Stoppschild muss immer angehalten werden." }
+      ],
+      "explanation": "Am Stoppschild (Zeichen 206) muss man immer anhalten, an der Haltlinie oder, wenn keine vorhanden ist, an der Stelle mit Einblick in die Kreuzung. Danach gewährt man Vorfahrt.",
+      "mnemonic": "STOP heißt Räder stehen, auch wenn niemand kommt."
+    },
+    {
+      "id": "seed-vorfahrt-003",
+      "category": "vorfahrt",
+      "subcategory": "Polizeibeamte",
+      "material": "grundstoff",
+      "type": "single",
+      "points": 4,
+      "text": "Ein Polizeibeamter steht auf der Kreuzung und hat beide Arme seitlich ausgestreckt. Sie kommen von vorn auf ihn zu und sehen seine Brust. Was gilt für Sie?",
+      "answers": [
+        { "id": "a", "text": "Halt vor der Kreuzung", "correct": true, "explanation": "Wer auf Brust oder Rücken des Beamten zufährt, muss anhalten." },
+        { "id": "b", "text": "Ich darf geradeaus fahren", "correct": false, "explanation": "Freie Fahrt hat nur der Verkehr, der seitlich am Beamten vorbeifährt." },
+        { "id": "c", "text": "Ich darf rechts abbiegen", "correct": false, "explanation": "Auch Abbiegen ist nicht erlaubt, wenn man auf die Brust zufährt." }
+      ],
+      "explanation": "Zeichen von Polizeibeamten gehen allen anderen Regeln vor. Seitlich ausgestreckte Arme wirken wie Rot für den Verkehr von vorn und hinten und wie Grün für den Verkehr von der Seite.",
+      "mnemonic": "Brust oder Rücken: rote Lücken. Von der Seite: freie Weite."
+    }
+  ]
+}

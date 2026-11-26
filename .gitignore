@@ -1,0 +1,10 @@
+node_modules
+dist
+*.log
+.DS_Store
+.vite
+coverage
+# Lizenzierte Fragenkataloge nicht committen
+data/imports/*
+!data/imports/README.md
+!data/imports/.gitkeep

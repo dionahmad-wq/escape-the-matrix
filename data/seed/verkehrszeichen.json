@@ -1,0 +1,34 @@
+{
+  "$schema": "../schema/question-catalog.schema.json",
+  "meta": {
+    "id": "seed-verkehrszeichen",
+    "title": "Übungsfragen: Verkehrszeichen",
+    "version": "2026.11-1",
+    "source": "seed",
+    "license": "Eigene Übungsfragen (keine amtlichen Prüfungsfragen)"
+  },
+  "questions": [
+    {
+      "id": "seed-verkehrszeichen-001",
+      "category": "verkehrszeichen",
+      "subcategory": "Vorschriftzeichen",
+      "material": "grundstoff",
+      "type": "single",
+      "points": 3,
+      "text": "Was bedeutet dieses Verkehrszeichen?",
+      "media": {
+        "kind": "sign",
+        "placeholder": "Auf der Spitze stehendes Dreieck mit rotem Rand und weißer Fläche",
+        "alt": "Verkehrszeichen 205: Vorfahrt gewähren",
+        "signNumber": "205"
+      },
+      "answers": [
+        { "id": "a", "text": "Vorfahrt gewähren", "correct": true },
+        { "id": "b", "text": "Vorfahrt an der nächsten Kreuzung", "correct": false, "explanation": "Das ist Zeichen 301: ein aufrecht stehendes Dreieck mit schwarzem Pfeil." },
+        { "id": "c", "text": "Gefahrstelle", "correct": false, "explanation": "Gefahrzeichen sind Dreiecke, die mit der Spitze nach oben stehen." }
+      ],
+      "explanation": "Zeichen 205 verlangt, dem Querverkehr Vorfahrt zu gewähren. Anhalten muss man nur, wenn es nötig ist.",
+      "mnemonic": "Dreieck auf der Spitze: Ich bin nicht der Spitzenreiter und lasse andere vor."
+    }
+  ]
+}

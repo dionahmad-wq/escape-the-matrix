@@ -1,0 +1,24 @@
+{
+  "$schema": "../schema/question-catalog.schema.json",
+  "meta": {
+    "id": "seed-technik",
+    "title": "Übungsfragen: Technik",
+    "version": "2026.11-1",
+    "source": "seed",
+    "license": "Eigene Übungsfragen (keine amtlichen Prüfungsfragen)"
+  },
+  "questions": [
+    {
+      "id": "seed-technik-001",
+      "category": "technik",
+      "subcategory": "Reifen",
+      "material": "zusatzstoff",
+      "type": "number",
+      "points": 3,
+      "text": "Wie tief muss das Hauptprofil von Pkw-Reifen gesetzlich mindestens sein?",
+      "numberAnswer": { "value": 1.6, "unit": "mm", "prefix": "Mindestprofiltiefe:" },
+      "explanation": "Gesetzlich vorgeschrieben sind mindestens 1,6 mm Profiltiefe. Empfohlen werden für Sommerreifen 3 mm und für Winterreifen 4 mm, weil die Haftung bei Nässe stark nachlässt.",
+      "mnemonic": "1,6 ist das Minimum, 3 bis 4 sind sicher."
+    }
+  ]
+}

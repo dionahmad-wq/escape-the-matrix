@@ -1,0 +1,28 @@
+{
+  "$schema": "../schema/question-catalog.schema.json",
+  "meta": {
+    "id": "seed-umwelt",
+    "title": "Übungsfragen: Umweltschutz",
+    "version": "2026.11-1",
+    "source": "seed",
+    "license": "Eigene Übungsfragen (keine amtlichen Prüfungsfragen)"
+  },
+  "questions": [
+    {
+      "id": "seed-umwelt-001",
+      "category": "umwelt",
+      "subcategory": "Kraftstoff sparen",
+      "material": "grundstoff",
+      "type": "multiple",
+      "points": 3,
+      "text": "Wie können Sie kraftstoffsparend fahren?",
+      "answers": [
+        { "id": "a", "text": "Früh in den nächsthöheren Gang schalten", "correct": true, "explanation": "Niedrige Drehzahlen senken den Verbrauch." },
+        { "id": "b", "text": "Den Motor bei längeren Wartezeiten abstellen", "correct": true, "explanation": "Im Leerlauf verbraucht der Motor Kraftstoff, ohne dass man vorankommt." },
+        { "id": "c", "text": "Den Motor im Stand warmlaufen lassen", "correct": false, "explanation": "Warmlaufen im Stand ist verboten (§ 30 StVO) und erhöht Verbrauch und Verschleiß." }
+      ],
+      "explanation": "Vorausschauend fahren, früh hochschalten und unnötigen Leerlauf vermeiden spart Kraftstoff und reduziert Lärm und Abgase.",
+      "mnemonic": "Früh hoch, spät runter, Motor aus im Stau."
+    }
+  ]
+}
