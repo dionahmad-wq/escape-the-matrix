@@ -17,7 +17,7 @@ Läuft komplett im Browser, offline-fähig (PWA). Der Lernstand bleibt lokal auf
 - **Wiederholung**: gemeisterte Fragen werden nach 3, 7, 14 bzw. 30 Tagen wieder fällig (vereinfachte Spaced Repetition)
 - **Lesezeichen**: Fragen markieren und gesammelt üben
 - **Prüfungssimulation**: 20 Grundstoff- und 10 Zusatzstofffragen mit genau 110 Punkten, über die Kategorien gestreut
-  - Zeitlimit wählbar (Standard 45 Minuten)
+  - Zeitlimit wählbar (Standard 45 Minuten als Trainingswert, keine amtliche Vorgabe)
   - Fragen markieren, Übersichtsraster, Antworten bis zur Abgabe änderbar
   - Bewertung nach Fehlerpunkten: bestanden mit höchstens 10, **nicht bestanden bei zwei falschen 5-Punkte-Fragen**
   - Auswertung nach Bereich mit Musterlösung für jede Frage

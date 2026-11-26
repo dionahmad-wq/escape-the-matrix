@@ -32,6 +32,7 @@ export const EXAM_CONFIG_B: ExamConfig = {
   targetPoints: 110,
   maxErrorPoints: 10,
   failOnFivePointErrors: 2,
+  /** Trainingswert (einstellbar) – keine amtliche Vorgabe. */
   durationMinutes: 45,
 };
 

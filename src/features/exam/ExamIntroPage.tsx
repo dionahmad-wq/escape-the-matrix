@@ -76,6 +76,9 @@ export function ExamIntroPage() {
             <PlayCircle size={20} /> {activeExam ? 'Neue Prüfung starten' : 'Prüfung starten'}
           </Button>
         </div>
+        <p className="mt-2 text-xs text-slate-500">
+          Das Zeitlimit dient dem Training unter Zeitdruck und ist keine amtliche Vorgabe.
+        </p>
         {reduced && (
           <p className="mt-3 rounded-lg bg-amber-50 px-3 py-2 text-sm text-amber-800">
             Der Katalog enthält derzeit nur {available.grundstoff} Grundstoff- und {available.zusatzstoff} Zusatzstofffragen, die Simulation wird entsprechend verkürzt.
