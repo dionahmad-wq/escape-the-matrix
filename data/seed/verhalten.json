@@ -31,6 +31,230 @@
       "numberAnswer": { "value": 40, "unit": "m", "prefix": "Anhalteweg:" },
       "explanation": "Anhalteweg = Reaktionsweg + Bremsweg. Reaktionsweg: (50 ÷ 10) × 3 = 15 m. Bremsweg (normal): (50 ÷ 10)² = 25 m. Zusammen ergibt das 40 m.",
       "mnemonic": "Bremsweg: Zehntel zum Quadrat. Anhalteweg: Reaktion plus Bremsen."
+    },
+    {
+      "id": "seed-verhalten-003",
+      "category": "verhalten",
+      "subcategory": "Überholen",
+      "material": "grundstoff",
+      "type": "number",
+      "points": 4,
+      "text": "Welchen Seitenabstand müssen Sie innerorts beim Überholen von Radfahrern mindestens einhalten?",
+      "media": { "kind": "image", "placeholder": "Pkw überholt Radfahrer innerorts, Abstand mit Maßpfeil markiert", "alt": "Pkw überholt Radfahrer mit Seitenabstand" },
+      "numberAnswer": { "value": 1.5, "unit": "m", "prefix": "Mindestens" },
+      "explanation": "Beim Überholen von Radfahrern, Fußgängern und Elektrokleinstfahrzeugen gilt innerorts ein Mindestseitenabstand von 1,5 m, außerorts von 2 m.",
+      "mnemonic": "Innen anderthalb, außen zwei."
+    },
+    {
+      "id": "seed-verhalten-004",
+      "category": "verhalten",
+      "subcategory": "Überholen",
+      "material": "grundstoff",
+      "type": "number",
+      "points": 3,
+      "text": "Welchen Seitenabstand müssen Sie außerorts beim Überholen von Radfahrern mindestens einhalten?",
+      "numberAnswer": { "value": 2, "unit": "m", "prefix": "Mindestens" },
+      "explanation": "Außerhalb geschlossener Ortschaften beträgt der Mindestseitenabstand beim Überholen von Radfahrern und Fußgängern 2 m, innerorts 1,5 m.",
+      "mnemonic": "Innen anderthalb, außen zwei."
+    },
+    {
+      "id": "seed-verhalten-005",
+      "category": "verhalten",
+      "subcategory": "Geschwindigkeit",
+      "material": "grundstoff",
+      "type": "number",
+      "points": 3,
+      "text": "Wie schnell dürfen Sie mit einem Pkw außerhalb geschlossener Ortschaften (nicht auf Autobahnen) höchstens fahren, wenn keine Verkehrszeichen etwas anderes anordnen?",
+      "numberAnswer": { "value": 100, "unit": "km/h", "prefix": "Höchstens" },
+      "explanation": "Für Pkw gilt außerorts eine Höchstgeschwindigkeit von 100 km/h, innerorts 50 km/h. Auf Autobahnen gibt es keine allgemeine Höchstgeschwindigkeit, die Richtgeschwindigkeit liegt bei 130 km/h.",
+      "mnemonic": "50 – 100 – 130: Ort, Land, Autobahn (Richtwert)."
+    },
+    {
+      "id": "seed-verhalten-006",
+      "category": "verhalten",
+      "subcategory": "Autobahn",
+      "material": "grundstoff",
+      "type": "number",
+      "points": 2,
+      "text": "Wie hoch ist die Autobahn-Richtgeschwindigkeit?",
+      "numberAnswer": { "value": 130, "unit": "km/h" },
+      "explanation": "Die Richtgeschwindigkeit auf Autobahnen beträgt 130 km/h. Wer schneller fährt, kann bei einem Unfall eine Mithaftung tragen, auch wenn er ihn nicht verschuldet hat.",
+      "mnemonic": "130 ist der Richtwert, kein Muss, aber klug."
+    },
+    {
+      "id": "seed-verhalten-007",
+      "category": "verhalten",
+      "subcategory": "Halten und Parken",
+      "material": "grundstoff",
+      "type": "multiple",
+      "points": 4,
+      "text": "Wo ist das Halten verboten?",
+      "answers": [
+        { "id": "a", "text": "Auf Fußgängerüberwegen und bis zu 5 m davor", "correct": true },
+        { "id": "b", "text": "Im Bereich von scharfen Kurven", "correct": true },
+        { "id": "c", "text": "Vor Grundstückseinfahrten", "correct": false, "explanation": "Vor Grundstückseinfahrten ist nur das Parken verboten, kurzes Halten ist erlaubt." }
+      ],
+      "explanation": "Halten ist unter anderem an engen und unübersichtlichen Stellen, im Bereich scharfer Kurven, auf Bahnübergängen sowie auf Fußgängerüberwegen und bis zu 5 m davor verboten. Vor Grundstückseinfahrten gilt dagegen nur ein Parkverbot.",
+      "mnemonic": "Halten verboten, wo andere dich nicht sehen oder nicht vorbeikommen."
+    },
+    {
+      "id": "seed-verhalten-008",
+      "category": "verhalten",
+      "subcategory": "Halten und Parken",
+      "material": "grundstoff",
+      "type": "multiple",
+      "points": 3,
+      "text": "Wo dürfen Sie nicht parken?",
+      "answers": [
+        { "id": "a", "text": "Vor Grundstückseinfahrten", "correct": true },
+        { "id": "b", "text": "Bis zu je 5 m vor und hinter Kreuzungen und Einmündungen", "correct": true },
+        { "id": "c", "text": "Auf einem gekennzeichneten Parkstreifen", "correct": false }
+      ],
+      "explanation": "Parken ist unter anderem vor Grundstückseinfahrten, bis zu 5 m vor und hinter Kreuzungen und Einmündungen sowie vor Bordsteinabsenkungen verboten.",
+      "mnemonic": "Fünf Meter Kreuzung frei, damit jeder sieht, wer kommt herbei."
+    },
+    {
+      "id": "seed-verhalten-009",
+      "category": "verhalten",
+      "subcategory": "Abstand",
+      "material": "grundstoff",
+      "type": "number",
+      "points": 3,
+      "text": "Sie fahren außerorts 100 km/h. Welchen Abstand zum Vorausfahrenden sollten Sie nach der Faustformel „halber Tacho“ mindestens einhalten?",
+      "numberAnswer": { "value": 50, "unit": "m", "prefix": "Abstand:" },
+      "explanation": "Außerorts gilt als Faustregel: Abstand in Metern = halbe Geschwindigkeit in km/h. Bei 100 km/h also 50 m, das entspricht etwa 1,8 Sekunden.",
+      "mnemonic": "Halber Tacho in Metern."
+    },
+    {
+      "id": "seed-verhalten-010",
+      "category": "verhalten",
+      "subcategory": "Bahnübergänge",
+      "material": "grundstoff",
+      "type": "single",
+      "points": 5,
+      "text": "Sie nähern sich einem Bahnübergang mit Andreaskreuz. Ein Zug kommt. Was gilt?",
+      "media": { "kind": "sign", "placeholder": "Andreaskreuz: weißes X mit roten Rändern", "alt": "Verkehrszeichen 201: Andreaskreuz", "signNumber": "201" },
+      "answers": [
+        { "id": "a", "text": "Schienenfahrzeuge haben Vorrang, ich muss warten", "correct": true },
+        { "id": "b", "text": "Ich darf noch zügig vor dem Zug drüberfahren", "correct": false },
+        { "id": "c", "text": "Wer zuerst am Bahnübergang ist, darf zuerst fahren", "correct": false }
+      ],
+      "explanation": "Am Andreaskreuz haben Schienenfahrzeuge immer Vorrang. Ein Zug kann nicht ausweichen und hat einen extrem langen Bremsweg. Vor dem Andreaskreuz wartet man, bis der Zug vollständig vorbei ist.",
+      "mnemonic": "Der Zug bremst nicht für dich."
+    },
+    {
+      "id": "seed-verhalten-011",
+      "category": "verhalten",
+      "subcategory": "Bahnübergänge",
+      "material": "grundstoff",
+      "type": "number",
+      "points": 3,
+      "text": "Bis zu wie vielen Metern vor und hinter einem Andreaskreuz ist das Parken außerhalb geschlossener Ortschaften verboten?",
+      "numberAnswer": { "value": 50, "unit": "m", "prefix": "Bis zu je" },
+      "explanation": "Vor und hinter Andreaskreuzen ist das Parken außerorts bis zu je 50 m und innerorts bis zu je 5 m verboten.",
+      "mnemonic": "Andreaskreuz: innen 5, außen 50."
+    },
+    {
+      "id": "seed-verhalten-012",
+      "category": "verhalten",
+      "subcategory": "Überholen",
+      "material": "grundstoff",
+      "type": "multiple",
+      "points": 4,
+      "text": "Wann dürfen Sie nicht überholen?",
+      "answers": [
+        { "id": "a", "text": "Bei unklarer Verkehrslage", "correct": true },
+        { "id": "b", "text": "Wenn der Gegenverkehr behindert werden könnte", "correct": true },
+        { "id": "c", "text": "Wenn der Vorausfahrende langsamer als erlaubt fährt", "correct": false }
+      ],
+      "explanation": "Überholen ist verboten bei unklarer Verkehrslage und wenn der Gegenverkehr gefährdet oder behindert werden könnte. Außerdem muss man deutlich schneller fahren können als der zu Überholende.",
+      "mnemonic": "Im Zweifel nie."
+    },
+    {
+      "id": "seed-verhalten-013",
+      "category": "verhalten",
+      "subcategory": "Rettungsgasse",
+      "material": "grundstoff",
+      "type": "single",
+      "points": 4,
+      "text": "Auf einer dreistreifigen Autobahn stockt der Verkehr. Sie fahren auf dem mittleren Fahrstreifen. Wie bilden Sie die Rettungsgasse?",
+      "media": { "kind": "image", "placeholder": "Draufsicht: dreistreifige Autobahn im Stau, Rettungsgasse zwischen linkem und mittlerem Streifen", "alt": "Rettungsgasse auf dreistreifiger Autobahn" },
+      "answers": [
+        { "id": "a", "text": "Ich weiche nach rechts aus", "correct": true },
+        { "id": "b", "text": "Ich weiche nach links aus", "correct": false },
+        { "id": "c", "text": "Gar nicht, nur der linke Fahrstreifen bildet die Rettungsgasse", "correct": false }
+      ],
+      "explanation": "Die Rettungsgasse wird zwischen dem äußerst linken und dem unmittelbar rechts daneben liegenden Fahrstreifen gebildet. Wer ganz links fährt, weicht nach links aus, alle anderen nach rechts. Sie ist schon zu bilden, sobald der Verkehr nur noch mit Schrittgeschwindigkeit fährt oder steht.",
+      "mnemonic": "Links fährt links, alle anderen nach rechts."
+    },
+    {
+      "id": "seed-verhalten-014",
+      "category": "verhalten",
+      "subcategory": "Fahrstreifen",
+      "material": "grundstoff",
+      "type": "single",
+      "points": 3,
+      "text": "Ein Fahrstreifen endet, der Verkehr muss sich einordnen. Wo wird das Reißverschlussverfahren angewendet?",
+      "answers": [
+        { "id": "a", "text": "Unmittelbar vor Beginn der Verengung", "correct": true },
+        { "id": "b", "text": "So früh wie möglich, sobald das Schild erscheint", "correct": false, "explanation": "Frühes Einordnen verschenkt Platz und verlängert den Stau." },
+        { "id": "c", "text": "Erst nach der Engstelle", "correct": false }
+      ],
+      "explanation": "Beim Reißverschlussverfahren fahren die Fahrzeuge bis unmittelbar vor die Verengung und ordnen sich dort abwechselnd ein.",
+      "mnemonic": "Bis zum Ende fahren, dann abwechselnd: wie ein Reißverschluss."
+    },
+    {
+      "id": "seed-verhalten-015",
+      "category": "verhalten",
+      "subcategory": "Anhänger",
+      "material": "zusatzstoff",
+      "type": "number",
+      "points": 3,
+      "text": "Wie schnell dürfen Sie mit einem Pkw mit Anhänger (ohne Tempo-100-Zulassung) außerorts und auf Autobahnen höchstens fahren?",
+      "numberAnswer": { "value": 80, "unit": "km/h", "prefix": "Höchstens" },
+      "explanation": "Pkw mit Anhänger dürfen außerorts und auf der Autobahn höchstens 80 km/h fahren. Mit einer Tempo-100-Zulassung (Plakette am Anhänger) sind auf Autobahnen und Kraftfahrstraßen bis zu 100 km/h erlaubt.",
+      "mnemonic": "Anhänger dran: 80 ist der Plan."
+    },
+    {
+      "id": "seed-verhalten-016",
+      "category": "verhalten",
+      "subcategory": "Autobahn",
+      "material": "zusatzstoff",
+      "type": "number",
+      "points": 3,
+      "text": "Welche bauartbedingte Höchstgeschwindigkeit muss ein Kraftfahrzeug überschreiten, damit es Autobahnen benutzen darf?",
+      "numberAnswer": { "value": 60, "unit": "km/h", "prefix": "Mehr als" },
+      "explanation": "Autobahnen und Kraftfahrstraßen dürfen nur mit Kraftfahrzeugen benutzt werden, deren durch die Bauart bestimmte Höchstgeschwindigkeit mehr als 60 km/h beträgt.",
+      "mnemonic": "Über 60 bauartbedingt, sonst bleibt die Autobahn verwehrt."
+    },
+    {
+      "id": "seed-verhalten-017",
+      "category": "verhalten",
+      "subcategory": "Winter",
+      "material": "zusatzstoff",
+      "type": "number",
+      "points": 3,
+      "text": "Wie schnell dürfen Sie mit Schneeketten höchstens fahren?",
+      "numberAnswer": { "value": 50, "unit": "km/h", "prefix": "Höchstens" },
+      "explanation": "Mit Schneeketten beträgt die zulässige Höchstgeschwindigkeit 50 km/h, auch wenn sonst mehr erlaubt wäre.",
+      "mnemonic": "Ketten dran: halb so schnell wie die Landstraße."
+    },
+    {
+      "id": "seed-verhalten-018",
+      "category": "verhalten",
+      "subcategory": "Panne",
+      "material": "zusatzstoff",
+      "type": "multiple",
+      "points": 4,
+      "text": "Sie haben auf der Autobahn eine Panne und stehen auf dem Seitenstreifen. Was tun Sie?",
+      "answers": [
+        { "id": "a", "text": "Warnblinklicht einschalten", "correct": true },
+        { "id": "b", "text": "Warnweste anziehen, bevor ich aussteige", "correct": true },
+        { "id": "c", "text": "Das Warndreieck in ausreichender Entfernung (auf Autobahnen etwa 200 m) aufstellen", "correct": true },
+        { "id": "d", "text": "Mit allen Insassen im Fahrzeug sitzen bleiben", "correct": false, "explanation": "Insassen sollten das Fahrzeug zur Leitplanke hin verlassen und sich hinter der Schutzplanke aufhalten." }
+      ],
+      "explanation": "Bei einer Panne auf der Autobahn: Warnblinklicht an, Warnweste anziehen, Insassen hinter die Schutzplanke bringen, Warndreieck mit großem Abstand aufstellen und Pannenhilfe rufen.",
+      "mnemonic": "Blinken, Weste, Leitplanke, Dreieck."
     }
   ]
 }

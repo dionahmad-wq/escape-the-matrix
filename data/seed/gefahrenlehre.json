@@ -1,0 +1,286 @@
+{
+  "$schema": "../schema/question-catalog.schema.json",
+  "meta": {
+    "id": "seed-gefahrenlehre",
+    "title": "Übungsfragen: Gefahrenlehre",
+    "version": "2026.11-1",
+    "source": "seed",
+    "license": "Eigene Übungsfragen (keine amtlichen Prüfungsfragen)"
+  },
+  "questions": [
+    {
+      "id": "seed-gefahrenlehre-001",
+      "category": "gefahrenlehre",
+      "subcategory": "Kinder",
+      "material": "grundstoff",
+      "type": "multiple",
+      "points": 4,
+      "text": "Ein Ball rollt zwischen geparkten Autos auf die Fahrbahn. Womit müssen Sie rechnen?",
+      "media": { "kind": "image", "placeholder": "Wohnstraße mit parkenden Autos, ein Ball rollt von rechts auf die Fahrbahn", "alt": "Ball rollt zwischen parkenden Autos auf die Straße" },
+      "answers": [
+        { "id": "a", "text": "Dass ein Kind hinter dem Ball herläuft", "correct": true, "explanation": "Kinder konzentrieren sich auf den Ball und achten nicht auf den Verkehr." },
+        { "id": "b", "text": "Dass keine Gefahr besteht, weil der Ball von allein weiterrollt", "correct": false, "explanation": "Der Ball ist ein Warnsignal: Fast immer folgt ein Kind." },
+        { "id": "c", "text": "Dass weitere Kinder in der Nähe sind", "correct": true, "explanation": "Kinder spielen selten allein, oft folgen mehrere." }
+      ],
+      "explanation": "Ein Ball auf der Fahrbahn kündigt fast immer spielende Kinder an. Sofort Fuß vom Gas, bremsbereit sein und notfalls anhalten.",
+      "mnemonic": "Wo ein Ball, da ein Kind."
+    },
+    {
+      "id": "seed-gefahrenlehre-002",
+      "category": "gefahrenlehre",
+      "subcategory": "Haltestellen",
+      "material": "grundstoff",
+      "type": "multiple",
+      "points": 4,
+      "text": "Ein Linienbus hält mit eingeschaltetem Warnblinklicht an einer Haltestelle. Was gilt beim Vorbeifahren?",
+      "media": { "kind": "image", "placeholder": "Linienbus mit Warnblinklicht an einer Haltestelle, Fahrgäste steigen aus", "alt": "Bus mit Warnblinklicht an Haltestelle" },
+      "answers": [
+        { "id": "a", "text": "Ich darf nur mit Schrittgeschwindigkeit vorbeifahren", "correct": true },
+        { "id": "b", "text": "Auch der Gegenverkehr darf nur mit Schrittgeschwindigkeit vorbeifahren", "correct": true, "explanation": "Die Regel gilt für beide Fahrtrichtungen, denn Fahrgäste überqueren oft vor oder hinter dem Bus die Straße." },
+        { "id": "c", "text": "Ich sollte hupen, damit die Fahrgäste auf mich achten", "correct": false, "explanation": "Hupen erschreckt eher und ist kein Ersatz für langsames, vorsichtiges Fahren." }
+      ],
+      "explanation": "An Linien- und Schulbussen, die mit Warnblinklicht an Haltestellen halten, darf nur mit Schrittgeschwindigkeit und so großem Abstand vorbeigefahren werden, dass Fahrgäste nicht gefährdet werden. Das gilt auch für den Gegenverkehr. Notfalls muss man warten.",
+      "mnemonic": "Bus blinkt warn, ich fahr wie im Schritt nebenher."
+    },
+    {
+      "id": "seed-gefahrenlehre-003",
+      "category": "gefahrenlehre",
+      "subcategory": "Haltestellen",
+      "material": "grundstoff",
+      "type": "single",
+      "points": 4,
+      "text": "Ein Linienbus nähert sich mit eingeschaltetem Warnblinklicht einer Haltestelle. Dürfen Sie ihn überholen?",
+      "answers": [
+        { "id": "a", "text": "Nein", "correct": true },
+        { "id": "b", "text": "Ja, aber nur mit Schrittgeschwindigkeit", "correct": false },
+        { "id": "c", "text": "Ja, wenn kein Gegenverkehr kommt", "correct": false }
+      ],
+      "explanation": "Nähert sich ein Linien- oder Schulbus mit eingeschaltetem Warnblinklicht einer Haltestelle, darf er nicht überholt werden.",
+      "mnemonic": "Blinkt er beim Anfahren an die Haltestelle, bleibe ich dahinter."
+    },
+    {
+      "id": "seed-gefahrenlehre-004",
+      "category": "gefahrenlehre",
+      "subcategory": "Witterung",
+      "material": "grundstoff",
+      "type": "multiple",
+      "points": 4,
+      "text": "Wo müssen Sie bei Temperaturen um den Gefrierpunkt besonders mit Glätte rechnen?",
+      "answers": [
+        { "id": "a", "text": "Auf Brücken", "correct": true, "explanation": "Brücken kühlen von oben und unten aus und vereisen deshalb früher." },
+        { "id": "b", "text": "In Waldschneisen und an schattigen Stellen", "correct": true, "explanation": "Wo keine Sonne hinkommt, taut Eis langsamer." },
+        { "id": "c", "text": "Auf sonnenbeschienenen Straßenabschnitten am Nachmittag", "correct": false }
+      ],
+      "explanation": "Brücken, Waldschneisen, schattige Stellen und Senken sind typische Glättestellen. Dort sind vorsichtiges Fahren und ein größerer Abstand nötig.",
+      "mnemonic": "Brücke, Wald und Schatten: Glätte kann sich gut ergatten."
+    },
+    {
+      "id": "seed-gefahrenlehre-005",
+      "category": "gefahrenlehre",
+      "subcategory": "Aquaplaning",
+      "material": "grundstoff",
+      "type": "multiple",
+      "points": 4,
+      "text": "Wodurch wird Aquaplaning begünstigt?",
+      "answers": [
+        { "id": "a", "text": "Durch hohe Geschwindigkeit", "correct": true },
+        { "id": "b", "text": "Durch abgefahrene Reifen", "correct": true, "explanation": "Wenig Profil kann weniger Wasser verdrängen." },
+        { "id": "c", "text": "Durch langsames Fahren auf trockener Fahrbahn", "correct": false }
+      ],
+      "explanation": "Aquaplaning entsteht, wenn die Reifen das Wasser nicht mehr verdrängen können und auf einem Wasserfilm aufschwimmen. Hohe Geschwindigkeit, geringe Profiltiefe, breite Reifen und Spurrillen mit Wasser erhöhen das Risiko.",
+      "mnemonic": "Schnell und glatt (Profil) lässt Reifen schwimmen."
+    },
+    {
+      "id": "seed-gefahrenlehre-006",
+      "category": "gefahrenlehre",
+      "subcategory": "Aquaplaning",
+      "material": "grundstoff",
+      "type": "multiple",
+      "points": 5,
+      "text": "Ihr Fahrzeug schwimmt auf (Aquaplaning). Wie reagieren Sie richtig?",
+      "answers": [
+        { "id": "a", "text": "Gas wegnehmen bzw. auskuppeln", "correct": true },
+        { "id": "b", "text": "Lenkrad ruhig und gerade halten", "correct": true, "explanation": "Eingeschlagene Räder können beim Wiederaufsetzen das Fahrzeug ausbrechen lassen." },
+        { "id": "c", "text": "Kräftig bremsen", "correct": false, "explanation": "Die Räder haben keine Haftung, eine Bremsung bewirkt kaum etwas und kann zum Schleudern führen." }
+      ],
+      "explanation": "Bei Aquaplaning haben die Reifen keinen Kontakt zur Fahrbahn. Gas weg bzw. auskuppeln, Lenkrad gerade halten und warten, bis die Reifen wieder greifen.",
+      "mnemonic": "Schwimmt das Auto: Fuß weg, Hände still."
+    },
+    {
+      "id": "seed-gefahrenlehre-007",
+      "category": "gefahrenlehre",
+      "subcategory": "Sicht",
+      "material": "grundstoff",
+      "type": "number",
+      "points": 3,
+      "text": "Nebel schränkt die Sichtweite auf unter 50 m ein. Wie schnell dürfen Sie höchstens fahren?",
+      "media": { "kind": "image", "placeholder": "Landstraße im dichten Nebel, Leitpfosten im Abstand von 50 m kaum erkennbar", "alt": "Landstraße bei dichtem Nebel" },
+      "numberAnswer": { "value": 50, "unit": "km/h", "prefix": "Höchstens" },
+      "explanation": "Beträgt die Sichtweite durch Nebel, Schneefall oder Regen weniger als 50 m, darf man nicht schneller als 50 km/h fahren, wenn nötig deutlich langsamer. Die Leitpfosten am Straßenrand stehen in der Regel 50 m auseinander und helfen beim Abschätzen.",
+      "mnemonic": "Unter 50 Meter Sicht: über 50 km/h nicht."
+    },
+    {
+      "id": "seed-gefahrenlehre-008",
+      "category": "gefahrenlehre",
+      "subcategory": "Sicht",
+      "material": "grundstoff",
+      "type": "single",
+      "points": 3,
+      "text": "Wann dürfen Sie die Nebelschlussleuchte einschalten?",
+      "answers": [
+        { "id": "a", "text": "Wenn die Sichtweite durch Nebel weniger als 50 m beträgt", "correct": true },
+        { "id": "b", "text": "Bei starkem Regen mit 100 m Sichtweite", "correct": false, "explanation": "Bei 100 m Sicht würde die sehr helle Leuchte den Nachfolgeverkehr blenden." },
+        { "id": "c", "text": "Grundsätzlich bei Dunkelheit", "correct": false }
+      ],
+      "explanation": "Die Nebelschlussleuchte darf nur eingeschaltet werden, wenn die Sichtweite durch Nebel weniger als 50 m beträgt. Dann gilt zugleich höchstens 50 km/h.",
+      "mnemonic": "Nebelschlusslicht: erst unter 50, sonst blendet’s nur."
+    },
+    {
+      "id": "seed-gefahrenlehre-009",
+      "category": "gefahrenlehre",
+      "subcategory": "Radfahrer",
+      "material": "grundstoff",
+      "type": "multiple",
+      "points": 5,
+      "text": "Sie wollen rechts abbiegen. Rechts neben Ihnen fährt ein Radfahrer auf dem Radweg geradeaus. Wie verhalten Sie sich?",
+      "media": { "kind": "image", "placeholder": "Kreuzung aus Fahrersicht: eigener Pkw blinkt rechts, daneben Radfahrer auf dem Radweg", "alt": "Rechtsabbiegen mit Radfahrer auf dem Radweg" },
+      "answers": [
+        { "id": "a", "text": "Den Radfahrer durchfahren lassen", "correct": true, "explanation": "Wer abbiegt, muss Radfahrer in gleicher Richtung durchfahren lassen." },
+        { "id": "b", "text": "Vor dem Abbiegen einen Schulterblick nach rechts machen", "correct": true, "explanation": "Radfahrer verschwinden leicht im toten Winkel." },
+        { "id": "c", "text": "Zügig vor dem Radfahrer abbiegen, solange er noch weit genug weg ist", "correct": false }
+      ],
+      "explanation": "Beim Abbiegen haben Radfahrer, die auf oder neben der Fahrbahn in gleicher Richtung geradeaus fahren, Vorrang. Spiegel und Schulterblick sind Pflicht.",
+      "mnemonic": "Spiegel, Schulter, Schauen, dann erst abbiegen."
+    },
+    {
+      "id": "seed-gefahrenlehre-010",
+      "category": "gefahrenlehre",
+      "subcategory": "Ältere Menschen",
+      "material": "grundstoff",
+      "type": "multiple",
+      "points": 4,
+      "text": "Womit müssen Sie bei älteren Fußgängern rechnen?",
+      "answers": [
+        { "id": "a", "text": "Dass sie die Fahrbahn langsam überqueren", "correct": true },
+        { "id": "b", "text": "Dass sie Entfernungen und Geschwindigkeiten falsch einschätzen", "correct": true },
+        { "id": "c", "text": "Dass sie grundsätzlich schneller reagieren als jüngere Menschen", "correct": false }
+      ],
+      "explanation": "Ältere Menschen sehen und hören oft schlechter, bewegen sich langsamer und schätzen Situationen manchmal falsch ein. Man sollte langsamer fahren, bremsbereit sein und ihnen Zeit lassen.",
+      "mnemonic": "Alt heißt: mehr Zeit geben, mehr Abstand halten."
+    },
+    {
+      "id": "seed-gefahrenlehre-011",
+      "category": "gefahrenlehre",
+      "subcategory": "Dunkelheit",
+      "material": "grundstoff",
+      "type": "multiple",
+      "points": 3,
+      "text": "Sie werden nachts vom Gegenverkehr geblendet. Wie verhalten Sie sich?",
+      "answers": [
+        { "id": "a", "text": "Geschwindigkeit verringern, notfalls anhalten", "correct": true },
+        { "id": "b", "text": "Auf den rechten Fahrbahnrand blicken", "correct": true, "explanation": "So bleibt man in der Spur, ohne direkt ins Licht zu schauen." },
+        { "id": "c", "text": "Zurückblenden, indem ich das Fernlicht einschalte", "correct": false, "explanation": "Gegenseitiges Blenden erhöht die Unfallgefahr für alle." }
+      ],
+      "explanation": "Wer geblendet wird, fährt praktisch blind. Langsamer werden, am rechten Fahrbahnrand orientieren und nie zurückblenden.",
+      "mnemonic": "Geblendet? Rechts schauen, runter vom Gas."
+    },
+    {
+      "id": "seed-gefahrenlehre-012",
+      "category": "gefahrenlehre",
+      "subcategory": "Wildwechsel",
+      "material": "grundstoff",
+      "type": "multiple",
+      "points": 4,
+      "text": "Nachts steht ein Reh im Scheinwerferlicht auf der Fahrbahn. Was tun Sie?",
+      "media": { "kind": "image", "placeholder": "Landstraße bei Nacht, Reh im Scheinwerferlicht", "alt": "Reh auf nächtlicher Landstraße" },
+      "answers": [
+        { "id": "a", "text": "Abblenden", "correct": true, "explanation": "Im Fernlicht bleiben Tiere oft geblendet stehen." },
+        { "id": "b", "text": "Hupen", "correct": true },
+        { "id": "c", "text": "Bremsen", "correct": true },
+        { "id": "d", "text": "Über die Gegenfahrbahn ausweichen", "correct": false, "explanation": "Riskante Ausweichmanöver führen häufig zu schwereren Unfällen als der Zusammenstoß mit dem Tier." }
+      ],
+      "explanation": "Bei Wild auf der Fahrbahn gilt: abblenden, hupen, bremsen und das Lenkrad festhalten. Nicht unkontrolliert ausweichen. Wo ein Tier ist, folgen oft weitere.",
+      "mnemonic": "Abblenden, Hupen, Bremsen: A-H-B."
+    },
+    {
+      "id": "seed-gefahrenlehre-013",
+      "category": "gefahrenlehre",
+      "subcategory": "Anhänger",
+      "material": "zusatzstoff",
+      "type": "single",
+      "points": 5,
+      "text": "Ihr Gespann (Pkw mit Anhänger) beginnt bei der Bergabfahrt zu pendeln. Wie reagieren Sie?",
+      "answers": [
+        { "id": "a", "text": "Möglichst in gestreckter Lage des Gespanns bremsen", "correct": true },
+        { "id": "b", "text": "Gas geben, damit sich das Gespann streckt", "correct": false, "explanation": "Mehr Geschwindigkeit verstärkt das Pendeln meist." },
+        { "id": "c", "text": "Stark gegenlenken", "correct": false, "explanation": "Gegenlenken schaukelt das Pendeln weiter auf." }
+      ],
+      "explanation": "Pendelt ein Gespann, hilft nur die Geschwindigkeit zu verringern: bremsen, möglichst wenn das Gespann gestreckt ist, und das Lenkrad ruhig halten. Ursachen sind oft zu hohe Geschwindigkeit, falsche Beladung oder zu geringe Stützlast.",
+      "mnemonic": "Pendelt’s hinten: bremsen statt lenken."
+    },
+    {
+      "id": "seed-gefahrenlehre-014",
+      "category": "gefahrenlehre",
+      "subcategory": "Beladung",
+      "material": "zusatzstoff",
+      "type": "multiple",
+      "points": 3,
+      "text": "Welche Auswirkungen hat eine schwere Dachlast auf das Fahrverhalten?",
+      "answers": [
+        { "id": "a", "text": "Der Schwerpunkt liegt höher, in Kurven steigt die Kippgefahr", "correct": true },
+        { "id": "b", "text": "Das Fahrzeug wird seitenwindempfindlicher", "correct": true },
+        { "id": "c", "text": "Der Bremsweg wird kürzer", "correct": false, "explanation": "Mehr Masse verlängert eher den Bremsweg." }
+      ],
+      "explanation": "Dachlast verlagert den Schwerpunkt nach oben. Das Fahrzeug neigt sich in Kurven stärker und reagiert empfindlicher auf Seitenwind. Die zulässige Dachlast laut Fahrzeugschein bzw. Betriebsanleitung darf nicht überschritten werden.",
+      "mnemonic": "Oben schwer, kippt eher."
+    },
+    {
+      "id": "seed-gefahrenlehre-015",
+      "category": "gefahrenlehre",
+      "subcategory": "Kinder im Fahrzeug",
+      "material": "zusatzstoff",
+      "type": "single",
+      "points": 5,
+      "text": "Sie wollen eine rückwärtsgerichtete Babyschale auf dem Beifahrersitz befestigen. Was müssen Sie beachten?",
+      "answers": [
+        { "id": "a", "text": "Der Beifahrer-Frontairbag muss deaktiviert sein", "correct": true },
+        { "id": "b", "text": "Der Airbag sollte aktiviert bleiben, weil er zusätzlich schützt", "correct": false, "explanation": "Ein auslösender Airbag trifft die Babyschale mit großer Wucht und kann das Kind tödlich verletzen." },
+        { "id": "c", "text": "Babyschalen sind auf dem Beifahrersitz generell verboten", "correct": false }
+      ],
+      "explanation": "Rückwärtsgerichtete Kindersitze dürfen auf dem Beifahrersitz nur verwendet werden, wenn der Frontairbag deaktiviert ist.",
+      "mnemonic": "Baby rückwärts vorn? Airbag aus, sonst Gefahr im Haus."
+    },
+    {
+      "id": "seed-gefahrenlehre-016",
+      "category": "gefahrenlehre",
+      "subcategory": "Anhänger",
+      "material": "zusatzstoff",
+      "type": "multiple",
+      "points": 3,
+      "text": "Sie fahren mit einem Pkw mit Anhänger. Womit müssen Sie rechnen?",
+      "answers": [
+        { "id": "a", "text": "Mit einem längeren Bremsweg", "correct": true },
+        { "id": "b", "text": "Mit größerem Platzbedarf beim Abbiegen, weil der Anhänger die Kurve schneidet", "correct": true },
+        { "id": "c", "text": "Mit einer besseren Beschleunigung beim Überholen", "correct": false }
+      ],
+      "explanation": "Ein Anhänger erhöht Masse und Länge. Bremsweg und Überholweg werden länger, und in Kurven läuft der Anhänger weiter innen als das Zugfahrzeug.",
+      "mnemonic": "Mit Anhang: länger bremsen, weiter ausholen."
+    },
+    {
+      "id": "seed-gefahrenlehre-017",
+      "category": "gefahrenlehre",
+      "subcategory": "Anhänger",
+      "material": "zusatzstoff",
+      "type": "single",
+      "points": 4,
+      "text": "Sie fahren mit Anhänger rückwärts. Wie müssen Sie lenken, damit der Anhänger nach links fährt?",
+      "answers": [
+        { "id": "a", "text": "Nach rechts", "correct": true },
+        { "id": "b", "text": "Nach links", "correct": false },
+        { "id": "c", "text": "Gar nicht, der Anhänger folgt automatisch", "correct": false }
+      ],
+      "explanation": "Beim Rückwärtsfahren mit Anhänger muss man zunächst entgegengesetzt lenken: Das Zugfahrzeug schiebt die Deichsel nach rechts, wodurch der Anhänger nach links schwenkt.",
+      "mnemonic": "Hand unten ans Lenkrad und dorthin bewegen, wohin der Anhänger soll."
+    }
+  ]
+}

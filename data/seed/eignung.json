@@ -1,0 +1,176 @@
+{
+  "$schema": "../schema/question-catalog.schema.json",
+  "meta": {
+    "id": "seed-eignung",
+    "title": "Übungsfragen: Eignung & Befähigung von Kraftfahrern",
+    "version": "2026.11-1",
+    "source": "seed",
+    "license": "Eigene Übungsfragen (keine amtlichen Prüfungsfragen)"
+  },
+  "questions": [
+    {
+      "id": "seed-eignung-001",
+      "category": "eignung",
+      "subcategory": "Alkohol",
+      "material": "grundstoff",
+      "type": "number",
+      "points": 4,
+      "text": "Wie viel Promille Alkohol im Blut darf ein Fahranfänger in der Probezeit höchstens haben?",
+      "numberAnswer": { "value": 0, "unit": "‰", "prefix": "Höchstens" },
+      "explanation": "Für Fahranfänger in der Probezeit und für alle unter 21 Jahren gilt ein absolutes Alkoholverbot (0,0 Promille). Schon ein Bier kann zu einem Bußgeld, Punkten und einem Aufbauseminar führen.",
+      "mnemonic": "Neu am Steuer: null ist teuer genug."
+    },
+    {
+      "id": "seed-eignung-002",
+      "category": "eignung",
+      "subcategory": "Alkohol",
+      "material": "grundstoff",
+      "type": "multiple",
+      "points": 5,
+      "text": "Wie wirkt sich Alkohol auf die Fahrtüchtigkeit aus?",
+      "answers": [
+        { "id": "a", "text": "Die Reaktionszeit verlängert sich", "correct": true },
+        { "id": "b", "text": "Die Risikobereitschaft steigt", "correct": true },
+        { "id": "c", "text": "Das Blickfeld verengt sich (Tunnelblick)", "correct": true },
+        { "id": "d", "text": "Die Konzentration verbessert sich", "correct": false }
+      ],
+      "explanation": "Alkohol verlängert die Reaktionszeit, verschlechtert das Sehen (Tunnelblick, schlechtere Hell-Dunkel-Anpassung), steigert die Risikobereitschaft und führt zur Selbstüberschätzung, und zwar schon in geringen Mengen.",
+      "mnemonic": "Alkohol macht mutig und langsam: die gefährlichste Kombination."
+    },
+    {
+      "id": "seed-eignung-003",
+      "category": "eignung",
+      "subcategory": "Alkohol",
+      "material": "grundstoff",
+      "type": "single",
+      "points": 3,
+      "text": "Wie können Sie den Abbau von Alkohol im Blut beschleunigen?",
+      "answers": [
+        { "id": "a", "text": "Gar nicht, der Körper baut nur etwa 0,1 Promille pro Stunde ab", "correct": true },
+        { "id": "b", "text": "Durch starken Kaffee", "correct": false },
+        { "id": "c", "text": "Durch eine kalte Dusche oder frische Luft", "correct": false }
+      ],
+      "explanation": "Der Alkoholabbau lässt sich nicht beschleunigen. Die Leber baut nur etwa 0,1 bis 0,2 Promille pro Stunde ab. Kaffee oder frische Luft machen höchstens wacher, aber nicht nüchtern. Auch am nächsten Morgen kann noch Restalkohol im Blut sein.",
+      "mnemonic": "Nur die Zeit macht nüchtern."
+    },
+    {
+      "id": "seed-eignung-004",
+      "category": "eignung",
+      "subcategory": "Alkohol",
+      "material": "grundstoff",
+      "type": "number",
+      "points": 3,
+      "text": "Ab wie viel Promille begeht man außerhalb der Probezeit und ab 21 Jahren auch ohne Ausfallerscheinungen eine Ordnungswidrigkeit?",
+      "numberAnswer": { "value": 0.5, "unit": "‰", "prefix": "Ab" },
+      "explanation": "Ab 0,5 Promille liegt eine Ordnungswidrigkeit vor (Bußgeld, Punkte, Fahrverbot). Schon ab 0,3 Promille kann man sich strafbar machen, wenn Ausfallerscheinungen auftreten oder es zu einem Unfall kommt.",
+      "mnemonic": "0,3 mit Fehlern, 0,5 ohne Fehler: beides teuer."
+    },
+    {
+      "id": "seed-eignung-005",
+      "category": "eignung",
+      "subcategory": "Alkohol",
+      "material": "grundstoff",
+      "type": "number",
+      "points": 4,
+      "text": "Ab wie viel Promille gilt ein Kraftfahrer als absolut fahruntüchtig (Straftat)?",
+      "numberAnswer": { "value": 1.1, "unit": "‰", "prefix": "Ab" },
+      "explanation": "Ab 1,1 Promille liegt absolute Fahruntüchtigkeit vor, das Fahren ist dann immer eine Straftat. Ab 1,6 Promille wird zusätzlich eine medizinisch-psychologische Untersuchung (MPU) angeordnet.",
+      "mnemonic": "1,1: Straftat. 1,6: MPU."
+    },
+    {
+      "id": "seed-eignung-006",
+      "category": "eignung",
+      "subcategory": "Müdigkeit",
+      "material": "grundstoff",
+      "type": "multiple",
+      "points": 4,
+      "text": "Sie merken am Steuer, dass Sie müde werden. Was hilft wirklich?",
+      "answers": [
+        { "id": "a", "text": "Eine Pause einlegen und gegebenenfalls kurz schlafen", "correct": true },
+        { "id": "b", "text": "Laute Musik und offenes Fenster, damit lässt sich die Fahrt sicher fortsetzen", "correct": false, "explanation": "Das hilft höchstens kurz, die Müdigkeit bleibt." },
+        { "id": "c", "text": "Die Fahrt unterbrechen", "correct": true }
+      ],
+      "explanation": "Gegen Müdigkeit hilft nur Pause bzw. Schlaf. Warnzeichen sind häufiges Gähnen, schwere Augenlider, Frösteln und nachlassende Konzentration. Sekundenschlaf bei 100 km/h bedeutet viele Meter Blindflug.",
+      "mnemonic": "Müde? Pause statt Pedal."
+    },
+    {
+      "id": "seed-eignung-007",
+      "category": "eignung",
+      "subcategory": "Medikamente",
+      "material": "grundstoff",
+      "type": "multiple",
+      "points": 4,
+      "text": "Sie müssen Medikamente einnehmen. Was beachten Sie in Bezug auf das Autofahren?",
+      "answers": [
+        { "id": "a", "text": "Den Beipackzettel auf Hinweise zur Fahrtüchtigkeit lesen", "correct": true },
+        { "id": "b", "text": "Bei Unsicherheit Arzt oder Apotheker fragen", "correct": true },
+        { "id": "c", "text": "Medikamente und Alkohol verstärken sich in ihrer Wirkung nicht", "correct": false, "explanation": "Viele Medikamente verstärken die Wirkung von Alkohol erheblich." }
+      ],
+      "explanation": "Viele Medikamente, zum Beispiel Schlaf-, Beruhigungs- oder bestimmte Schmerzmittel, beeinträchtigen die Fahrtüchtigkeit. In Kombination mit Alkohol kann sich die Wirkung vervielfachen.",
+      "mnemonic": "Erst lesen, dann fragen, dann fahren."
+    },
+    {
+      "id": "seed-eignung-008",
+      "category": "eignung",
+      "subcategory": "Verhalten bei Unfällen",
+      "material": "grundstoff",
+      "type": "multiple",
+      "points": 5,
+      "text": "Sie kommen als Erster an eine Unfallstelle mit Verletzten. Was tun Sie?",
+      "media": { "kind": "image", "placeholder": "Landstraße: Pkw im Graben, Warnblinklicht an, eine Person am Straßenrand", "alt": "Unfallstelle auf Landstraße" },
+      "answers": [
+        { "id": "a", "text": "Die Unfallstelle absichern", "correct": true },
+        { "id": "b", "text": "Den Notruf 112 wählen", "correct": true },
+        { "id": "c", "text": "Erste Hilfe leisten", "correct": true },
+        { "id": "d", "text": "Weiterfahren, weil sicher gleich andere helfen", "correct": false, "explanation": "Wer nicht hilft, obwohl es zumutbar ist, macht sich wegen unterlassener Hilfeleistung strafbar." }
+      ],
+      "explanation": "An einer Unfallstelle gilt: absichern (Warnblinklicht, Warnweste, Warndreieck), Notruf absetzen und Erste Hilfe leisten. Hilfeleistung ist Pflicht, soweit sie zumutbar ist.",
+      "mnemonic": "Sichern, Melden, Helfen."
+    },
+    {
+      "id": "seed-eignung-009",
+      "category": "eignung",
+      "subcategory": "Verhalten bei Unfällen",
+      "material": "grundstoff",
+      "type": "number",
+      "points": 2,
+      "text": "Welche Notrufnummer wählen Sie europaweit für Rettungsdienst und Feuerwehr?",
+      "numberAnswer": { "value": 112 },
+      "explanation": "Die 112 ist europaweit kostenlos erreichbar, auch ohne Guthaben. Beim Notruf helfen die W-Fragen: Wo? Was? Wie viele Verletzte? Welche Verletzungen? Warten auf Rückfragen.",
+      "mnemonic": "1-1-2: Hilfe kommt herbei."
+    },
+    {
+      "id": "seed-eignung-010",
+      "category": "eignung",
+      "subcategory": "Probezeit",
+      "material": "zusatzstoff",
+      "type": "multiple",
+      "points": 4,
+      "text": "Was gilt für die Probezeit?",
+      "answers": [
+        { "id": "a", "text": "Sie dauert in der Regel zwei Jahre", "correct": true },
+        { "id": "b", "text": "Nach einem schwerwiegenden (A-)Verstoß oder zwei weniger schwerwiegenden (B-)Verstößen muss ein Aufbauseminar besucht werden", "correct": true },
+        { "id": "c", "text": "Wird ein Aufbauseminar angeordnet, verlängert sich die Probezeit auf vier Jahre", "correct": true },
+        { "id": "d", "text": "In der Probezeit gilt eine Promillegrenze von 0,5", "correct": false, "explanation": "Für Fahranfänger gilt 0,0 Promille." }
+      ],
+      "explanation": "Die Probezeit dauert zwei Jahre. Bei einem A-Verstoß oder zwei B-Verstößen wird ein Aufbauseminar angeordnet und die Probezeit auf vier Jahre verlängert. Weitere Verstöße führen zur Verwarnung bzw. zum Entzug.",
+      "mnemonic": "Zwei Jahre Probe, bei Verstoß vier."
+    },
+    {
+      "id": "seed-eignung-011",
+      "category": "eignung",
+      "subcategory": "Ablenkung",
+      "material": "zusatzstoff",
+      "type": "single",
+      "points": 4,
+      "text": "Dürfen Sie während der Fahrt ein Mobiltelefon in die Hand nehmen, um zu telefonieren?",
+      "answers": [
+        { "id": "a", "text": "Nein", "correct": true },
+        { "id": "b", "text": "Ja, wenn ich langsamer als 30 km/h fahre", "correct": false },
+        { "id": "c", "text": "Ja, wenn der Motor durch die Start-Stopp-Automatik ausgeschaltet ist", "correct": false, "explanation": "Die automatische Motorabschaltung zählt nicht. Erlaubt ist es nur, wenn das Fahrzeug steht und der Motor vollständig ausgeschaltet ist." }
+      ],
+      "explanation": "Elektronische Geräte zur Kommunikation dürfen während der Fahrt nicht in der Hand gehalten werden. Erlaubt ist die Nutzung per Freisprecheinrichtung oder Sprachsteuerung, wenn dafür nur ein kurzer Blick nötig ist.",
+      "mnemonic": "Hände ans Steuer, Augen auf die Straße."
+    }
+  ]
+}

@@ -16,12 +16,7 @@
       "type": "single",
       "points": 3,
       "text": "Was bedeutet dieses Verkehrszeichen?",
-      "media": {
-        "kind": "sign",
-        "placeholder": "Auf der Spitze stehendes Dreieck mit rotem Rand und weißer Fläche",
-        "alt": "Verkehrszeichen 205: Vorfahrt gewähren",
-        "signNumber": "205"
-      },
+      "media": { "kind": "sign", "placeholder": "Auf der Spitze stehendes Dreieck mit rotem Rand und weißer Fläche", "alt": "Verkehrszeichen 205: Vorfahrt gewähren", "signNumber": "205" },
       "answers": [
         { "id": "a", "text": "Vorfahrt gewähren", "correct": true },
         { "id": "b", "text": "Vorfahrt an der nächsten Kreuzung", "correct": false, "explanation": "Das ist Zeichen 301: ein aufrecht stehendes Dreieck mit schwarzem Pfeil." },
@@ -29,6 +24,270 @@
       ],
       "explanation": "Zeichen 205 verlangt, dem Querverkehr Vorfahrt zu gewähren. Anhalten muss man nur, wenn es nötig ist.",
       "mnemonic": "Dreieck auf der Spitze: Ich bin nicht der Spitzenreiter und lasse andere vor."
+    },
+    {
+      "id": "seed-verkehrszeichen-002",
+      "category": "verkehrszeichen",
+      "subcategory": "Vorschriftzeichen",
+      "material": "grundstoff",
+      "type": "single",
+      "points": 3,
+      "text": "Was bedeutet dieses Verkehrszeichen?",
+      "media": { "kind": "sign", "placeholder": "Rundes weißes Schild mit rotem Rand und schwarzer Zahl 70", "alt": "Verkehrszeichen 274: Zulässige Höchstgeschwindigkeit 70", "signNumber": "274" },
+      "answers": [
+        { "id": "a", "text": "Ich darf höchstens 70 km/h fahren", "correct": true },
+        { "id": "b", "text": "Empfohlene Geschwindigkeit 70 km/h", "correct": false, "explanation": "Richtgeschwindigkeiten stehen auf eckigen blauen Schildern." },
+        { "id": "c", "text": "Ich muss mindestens 70 km/h fahren", "correct": false, "explanation": "Mindestgeschwindigkeiten stehen auf runden blauen Schildern (Zeichen 275)." }
+      ],
+      "explanation": "Zeichen 274 begrenzt die zulässige Höchstgeschwindigkeit auf den angegebenen Wert.",
+      "mnemonic": "Roter Rand: Grenze. Blaues Rund: Gebot."
+    },
+    {
+      "id": "seed-verkehrszeichen-003",
+      "category": "verkehrszeichen",
+      "subcategory": "Vorschriftzeichen",
+      "material": "grundstoff",
+      "type": "single",
+      "points": 3,
+      "text": "Was bedeutet dieses Verkehrszeichen?",
+      "media": { "kind": "sign", "placeholder": "Rundes blaues Schild mit weißer Zahl 30", "alt": "Verkehrszeichen 275: Vorgeschriebene Mindestgeschwindigkeit 30", "signNumber": "275" },
+      "answers": [
+        { "id": "a", "text": "Ich darf nicht langsamer als 30 km/h fahren, sofern nicht Verkehr, Sicht oder Wetter es erfordern", "correct": true },
+        { "id": "b", "text": "Ich darf höchstens 30 km/h fahren", "correct": false },
+        { "id": "c", "text": "Tempo-30-Zone", "correct": false }
+      ],
+      "explanation": "Zeichen 275 schreibt eine Mindestgeschwindigkeit vor. Langsamer fahren darf man nur, wenn Straßen-, Verkehrs-, Sicht- oder Wetterverhältnisse es erfordern.",
+      "mnemonic": "Blau und rund: so schnell muss es mindestens sein."
+    },
+    {
+      "id": "seed-verkehrszeichen-004",
+      "category": "verkehrszeichen",
+      "subcategory": "Halteverbote",
+      "material": "grundstoff",
+      "type": "single",
+      "points": 3,
+      "text": "Was bedeutet dieses Verkehrszeichen?",
+      "media": { "kind": "sign", "placeholder": "Rundes blaues Schild mit rotem Rand und rotem Kreuz (X)", "alt": "Verkehrszeichen 283: Absolutes Haltverbot", "signNumber": "283" },
+      "answers": [
+        { "id": "a", "text": "Halten ist verboten", "correct": true },
+        { "id": "b", "text": "Nur das Parken ist verboten, kurzes Halten ist erlaubt", "correct": false, "explanation": "Das ist das eingeschränkte Haltverbot (Zeichen 286, nur ein Schrägbalken)." },
+        { "id": "c", "text": "Durchfahrt verboten", "correct": false }
+      ],
+      "explanation": "Zeichen 283 „Absolutes Haltverbot“ verbietet jedes Halten auf der Fahrbahn, auch zum Ein- oder Aussteigen.",
+      "mnemonic": "Ein Kreuz: gar nicht halten. Ein Strich: kurz halten erlaubt."
+    },
+    {
+      "id": "seed-verkehrszeichen-005",
+      "category": "verkehrszeichen",
+      "subcategory": "Halteverbote",
+      "material": "grundstoff",
+      "type": "number",
+      "points": 3,
+      "text": "Wie viele Minuten dürfen Sie im Bereich eines eingeschränkten Haltverbots (Zeichen 286) höchstens halten, wenn Sie nicht ein- oder aussteigen bzw. be- oder entladen?",
+      "media": { "kind": "sign", "placeholder": "Rundes blaues Schild mit rotem Rand und einem roten Schrägbalken", "alt": "Verkehrszeichen 286: Eingeschränktes Haltverbot", "signNumber": "286" },
+      "numberAnswer": { "value": 3, "unit": "Minuten", "prefix": "Höchstens" },
+      "explanation": "Beim eingeschränkten Haltverbot darf man nicht länger als 3 Minuten halten. Ausnahmen gelten für das Ein- und Aussteigen sowie das Be- und Entladen.",
+      "mnemonic": "Ein Strich: drei Minuten."
+    },
+    {
+      "id": "seed-verkehrszeichen-006",
+      "category": "verkehrszeichen",
+      "subcategory": "Verbote",
+      "material": "grundstoff",
+      "type": "single",
+      "points": 3,
+      "text": "Was bedeutet dieses Verkehrszeichen?",
+      "media": { "kind": "sign", "placeholder": "Rundes weißes Schild mit rotem Rand, ohne Symbol", "alt": "Verkehrszeichen 250: Verbot für Fahrzeuge aller Art", "signNumber": "250" },
+      "answers": [
+        { "id": "a", "text": "Verbot für Fahrzeuge aller Art", "correct": true },
+        { "id": "b", "text": "Einbahnstraße", "correct": false },
+        { "id": "c", "text": "Ende aller Verbote", "correct": false, "explanation": "Aufhebungszeichen sind weiß mit schwarzen bzw. grauen Schrägstrichen." }
+      ],
+      "explanation": "Zeichen 250 verbietet die Einfahrt für Fahrzeuge aller Art. Krafträder und Fahrräder dürfen geschoben werden.",
+      "mnemonic": "Leerer roter Ring: leere Straße für Fahrzeuge."
+    },
+    {
+      "id": "seed-verkehrszeichen-007",
+      "category": "verkehrszeichen",
+      "subcategory": "Verbote",
+      "material": "grundstoff",
+      "type": "single",
+      "points": 3,
+      "text": "Was bedeutet dieses Verkehrszeichen?",
+      "media": { "kind": "sign", "placeholder": "Rundes rotes Schild mit waagrechtem weißem Balken", "alt": "Verkehrszeichen 267: Verbot der Einfahrt", "signNumber": "267" },
+      "answers": [
+        { "id": "a", "text": "Verbot der Einfahrt", "correct": true },
+        { "id": "b", "text": "Halteverbot", "correct": false },
+        { "id": "c", "text": "Vorfahrt gewähren", "correct": false }
+      ],
+      "explanation": "Zeichen 267 verbietet die Einfahrt. Man findet es typischerweise am Ende einer Einbahnstraße.",
+      "mnemonic": "Roter Kreis mit Balken: Schranke zu."
+    },
+    {
+      "id": "seed-verkehrszeichen-008",
+      "category": "verkehrszeichen",
+      "subcategory": "Verbote",
+      "material": "grundstoff",
+      "type": "single",
+      "points": 4,
+      "text": "Was bedeutet dieses Verkehrszeichen?",
+      "media": { "kind": "sign", "placeholder": "Rundes weißes Schild mit rotem Rand: links ein rotes Auto, rechts ein schwarzes Auto", "alt": "Verkehrszeichen 276: Überholverbot", "signNumber": "276" },
+      "answers": [
+        { "id": "a", "text": "Mehrspurige Kraftfahrzeuge dürfen nicht überholt werden", "correct": true },
+        { "id": "b", "text": "Radfahrer dürfen nicht überholt werden", "correct": false, "explanation": "Einspurige Fahrzeuge wie Fahrräder oder Motorräder ohne Beiwagen dürfen überholt werden, sofern dies sonst zulässig ist." },
+        { "id": "c", "text": "Ich darf nicht schneller als der Vordermann fahren", "correct": false }
+      ],
+      "explanation": "Zeichen 276 verbietet das Überholen von mehrspurigen Kraftfahrzeugen und Krafträdern mit Beiwagen.",
+      "mnemonic": "Rotes Auto links = ich: Ich darf nicht links vorbei."
+    },
+    {
+      "id": "seed-verkehrszeichen-009",
+      "category": "verkehrszeichen",
+      "subcategory": "Gefahrzeichen",
+      "material": "grundstoff",
+      "type": "single",
+      "points": 2,
+      "text": "Was bedeutet dieses Verkehrszeichen?",
+      "media": { "kind": "sign", "placeholder": "Dreieck mit rotem Rand, Spitze oben, schwarzes Ausrufezeichen", "alt": "Verkehrszeichen 101: Gefahrstelle", "signNumber": "101" },
+      "answers": [
+        { "id": "a", "text": "Gefahrstelle", "correct": true },
+        { "id": "b", "text": "Achtung Polizeikontrolle", "correct": false },
+        { "id": "c", "text": "Vorfahrt gewähren", "correct": false }
+      ],
+      "explanation": "Zeichen 101 warnt vor einer Gefahrstelle. Oft steht ein Zusatzzeichen darunter, das die Gefahr näher beschreibt. Gefahrzeichen stehen außerorts meist 150 bis 250 m vor der Gefahrstelle.",
+      "mnemonic": "Dreieck nach oben = Achtung, gleich wird’s ungemütlich."
+    },
+    {
+      "id": "seed-verkehrszeichen-010",
+      "category": "verkehrszeichen",
+      "subcategory": "Gefahrzeichen",
+      "material": "grundstoff",
+      "type": "multiple",
+      "points": 4,
+      "text": "Wie verhalten Sie sich bei diesem Verkehrszeichen?",
+      "media": { "kind": "sign", "placeholder": "Dreieck mit rotem Rand, Spitze oben, zwei laufende Kinder", "alt": "Verkehrszeichen 136: Kinder", "signNumber": "136" },
+      "answers": [
+        { "id": "a", "text": "Geschwindigkeit verringern und bremsbereit sein", "correct": true },
+        { "id": "b", "text": "Damit rechnen, dass Kinder unvermittelt auf die Fahrbahn laufen", "correct": true },
+        { "id": "c", "text": "Hupen, damit die Kinder stehen bleiben", "correct": false }
+      ],
+      "explanation": "Zeichen 136 warnt vor Kindern, etwa in der Nähe von Schulen, Kindergärten oder Spielplätzen. Kinder können Gefahren schlecht einschätzen und handeln spontan.",
+      "mnemonic": "Kinderschild: Fuß aufs Bremspedal, Augen auf den Rand."
+    },
+    {
+      "id": "seed-verkehrszeichen-011",
+      "category": "verkehrszeichen",
+      "subcategory": "Richtzeichen",
+      "material": "grundstoff",
+      "type": "single",
+      "points": 4,
+      "text": "Wie schnell dürfen Sie in einem verkehrsberuhigten Bereich fahren?",
+      "media": { "kind": "sign", "placeholder": "Rechteckiges blaues Schild: Haus, spielendes Kind, Fußgänger und Auto", "alt": "Verkehrszeichen 325.1: Verkehrsberuhigter Bereich", "signNumber": "325.1" },
+      "answers": [
+        { "id": "a", "text": "Schrittgeschwindigkeit", "correct": true },
+        { "id": "b", "text": "Höchstens 30 km/h", "correct": false },
+        { "id": "c", "text": "Höchstens 20 km/h", "correct": false }
+      ],
+      "explanation": "Im verkehrsberuhigten Bereich gilt Schrittgeschwindigkeit. Fußgänger dürfen die ganze Straße nutzen und Kinder überall spielen. Parken ist nur auf gekennzeichneten Flächen erlaubt.",
+      "mnemonic": "Spielstraße: so schnell wie ein Fußgänger."
+    },
+    {
+      "id": "seed-verkehrszeichen-012",
+      "category": "verkehrszeichen",
+      "subcategory": "Zonen",
+      "material": "grundstoff",
+      "type": "multiple",
+      "points": 3,
+      "text": "Sie fahren in eine Tempo-30-Zone ein. Was gilt in der Regel?",
+      "media": { "kind": "sign", "placeholder": "Rechteckiges Schild mit rundem Zeichen 30 und dem Wort „ZONE“", "alt": "Verkehrszeichen 274.1: Beginn einer Tempo-30-Zone", "signNumber": "274.1" },
+      "answers": [
+        { "id": "a", "text": "In der gesamten Zone höchstens 30 km/h", "correct": true },
+        { "id": "b", "text": "An Kreuzungen gilt meist „rechts vor links“", "correct": true },
+        { "id": "c", "text": "Die Beschränkung gilt nur bis zur nächsten Kreuzung", "correct": false, "explanation": "Sie gilt bis zum Zeichen „Ende der Tempo-30-Zone“." }
+      ],
+      "explanation": "In einer Tempo-30-Zone gilt 30 km/h bis zum Zonenende. Vorfahrtstraßen gibt es dort in der Regel nicht, deshalb gilt meist rechts vor links.",
+      "mnemonic": "Zone heißt: gilt überall, bis „Ende“ dran steht."
+    },
+    {
+      "id": "seed-verkehrszeichen-013",
+      "category": "verkehrszeichen",
+      "subcategory": "Richtzeichen",
+      "material": "grundstoff",
+      "type": "single",
+      "points": 3,
+      "text": "Was bedeutet dieses Verkehrszeichen?",
+      "media": { "kind": "sign", "placeholder": "Rechteckiges blaues Schild mit weißem Pfeil nach rechts und der Aufschrift „Einbahnstraße“", "alt": "Verkehrszeichen 220: Einbahnstraße", "signNumber": "220" },
+      "answers": [
+        { "id": "a", "text": "Einbahnstraße, Fahrzeuge dürfen nur in Pfeilrichtung fahren", "correct": true },
+        { "id": "b", "text": "Vorgeschriebene Fahrtrichtung rechts", "correct": false, "explanation": "Das wäre ein rundes blaues Gebotszeichen (Zeichen 209)." },
+        { "id": "c", "text": "Umleitung", "correct": false }
+      ],
+      "explanation": "Zeichen 220 kennzeichnet eine Einbahnstraße. Fahrzeuge dürfen nur in Pfeilrichtung fahren. Oft ist Radverkehr in Gegenrichtung per Zusatzzeichen erlaubt.",
+      "mnemonic": "Eckig und blau mit Pfeil: eine Richtung."
+    },
+    {
+      "id": "seed-verkehrszeichen-014",
+      "category": "verkehrszeichen",
+      "subcategory": "Richtzeichen",
+      "material": "grundstoff",
+      "type": "number",
+      "points": 2,
+      "text": "Sie passieren eine gelbe Ortstafel. Welche Höchstgeschwindigkeit gilt ab hier für Ihren Pkw, wenn nichts anderes angeordnet ist?",
+      "media": { "kind": "sign", "placeholder": "Gelbes rechteckiges Schild mit Ortsname „Musterstadt“", "alt": "Verkehrszeichen 310: Ortstafel", "signNumber": "310" },
+      "numberAnswer": { "value": 50, "unit": "km/h", "prefix": "Höchstens" },
+      "explanation": "Mit der gelben Ortstafel beginnt die geschlossene Ortschaft. Dort gilt eine Höchstgeschwindigkeit von 50 km/h.",
+      "mnemonic": "Gelbes Schild: 50 im Bild."
+    },
+    {
+      "id": "seed-verkehrszeichen-015",
+      "category": "verkehrszeichen",
+      "subcategory": "Verbote",
+      "material": "zusatzstoff",
+      "type": "single",
+      "points": 4,
+      "text": "Ein Zeichen verbietet die Durchfahrt für Kraftfahrzeuge über 3,5 t zulässige Gesamtmasse (Lkw-Symbol, Zeichen 253). Dürfen Sie mit Ihrem Pkw mit Anhänger durchfahren, wenn das Gespann zusammen mehr als 3,5 t wiegt?",
+      "media": { "kind": "sign", "placeholder": "Rundes weißes Schild mit rotem Rand und schwarzem Lkw-Symbol", "alt": "Verkehrszeichen 253: Verbot für Kraftfahrzeuge über 3,5 t", "signNumber": "253" },
+      "answers": [
+        { "id": "a", "text": "Ja, Personenkraftwagen sind von diesem Verbot ausgenommen", "correct": true },
+        { "id": "b", "text": "Nein, weil die Kombination schwerer als 3,5 t ist", "correct": false },
+        { "id": "c", "text": "Nur mit Sondergenehmigung", "correct": false }
+      ],
+      "explanation": "Zeichen 253 gilt für Kraftfahrzeuge über 3,5 t einschließlich ihrer Anhänger sowie für Zugmaschinen, ausdrücklich ausgenommen sind Personenkraftwagen und Kraftomnibusse.",
+      "mnemonic": "Lkw-Schild meint Lkw, nicht deinen Pkw."
+    },
+    {
+      "id": "seed-verkehrszeichen-016",
+      "category": "verkehrszeichen",
+      "subcategory": "Richtzeichen",
+      "material": "zusatzstoff",
+      "type": "multiple",
+      "points": 4,
+      "text": "Was gilt auf einer Kraftfahrstraße (blaues Schild mit weißem Pkw)?",
+      "media": { "kind": "sign", "placeholder": "Rechteckiges blaues Schild mit weißem Pkw-Symbol", "alt": "Verkehrszeichen 331.1: Kraftfahrstraße", "signNumber": "331.1" },
+      "answers": [
+        { "id": "a", "text": "Sie darf nur mit Kraftfahrzeugen benutzt werden, die bauartbedingt schneller als 60 km/h fahren können", "correct": true },
+        { "id": "b", "text": "Halten ist verboten, auch auf dem Seitenstreifen", "correct": true },
+        { "id": "c", "text": "Wenden ist erlaubt, wenn die Straße frei ist", "correct": false }
+      ],
+      "explanation": "Auf Kraftfahrstraßen gelten ähnliche Regeln wie auf Autobahnen: nur schnelle Kraftfahrzeuge, kein Halten, kein Wenden und kein Rückwärtsfahren. Ein- und ausgefahren wird nur an Kreuzungen und Einmündungen.",
+      "mnemonic": "Kraftfahrstraße: kleine Autobahn."
+    },
+    {
+      "id": "seed-verkehrszeichen-017",
+      "category": "verkehrszeichen",
+      "subcategory": "Zusatzzeichen",
+      "material": "zusatzstoff",
+      "type": "single",
+      "points": 3,
+      "text": "Unter einem Schild „Höchstgeschwindigkeit 80“ steht das Zusatzzeichen „bei Nässe“. Die Fahrbahn ist trocken. Was gilt?",
+      "media": { "kind": "sign", "placeholder": "Rundes Schild „80“, darunter Zusatzzeichen mit Regenschirm-Symbol und „bei Nässe“", "alt": "Zeichen 274 mit Zusatzzeichen bei Nässe", "signNumber": "274" },
+      "answers": [
+        { "id": "a", "text": "Die Beschränkung gilt nicht, sie gilt nur bei nasser Fahrbahn", "correct": true },
+        { "id": "b", "text": "Die Beschränkung gilt immer", "correct": false },
+        { "id": "c", "text": "Die Beschränkung gilt nur bei Regen, nicht bei nasser Fahrbahn ohne Regen", "correct": false, "explanation": "Entscheidend ist die nasse Fahrbahn, nicht der Niederschlag." }
+      ],
+      "explanation": "Das Zusatzzeichen „bei Nässe“ schränkt das Hauptzeichen auf Situationen mit nasser Fahrbahn ein.",
+      "mnemonic": "Zusatzzeichen sagen: wann, wer, wie lange."
     }
   ]
 }

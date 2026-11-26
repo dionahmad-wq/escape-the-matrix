@@ -1,47 +1,63 @@
-import { useMemo } from 'react';
+import { useMemo, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
+import { PlayCircle, Search } from 'lucide-react';
 import { catalog } from '@/data/catalog';
-import { CATEGORIES, CATEGORY_LIST } from '@/domain/categories';
-import type { CategoryId, Material, Question } from '@/domain/types';
-import { MediaPlaceholder } from '@/components/MediaPlaceholder';
+import { CATEGORY_LIST, type CategoryId } from '@/domain/categories';
+import { filterQuestions, type StatusFilter } from '@/domain/selection';
+import type { Material } from '@/domain/types';
+import { QuestionListItem } from '@/components/QuestionListItem';
+import { Button, EmptyState, PageTitle } from '@/components/ui';
+import { usePracticeLauncher } from '@/features/practice/usePracticeLauncher';
+import { useAppStore } from '@/store/useAppStore';
 
-const TYPE_LABEL: Record<Question['type'], string> = {
-  single: 'Eine Antwort',
-  multiple: 'Mehrfachauswahl',
-  number: 'Zahlenfrage',
-};
+const PAGE = 50;
 
-/** Vorläufiger Katalog-Browser zum Prüfen der Daten (Meilenstein 1). */
 export function CatalogPage() {
   const [params, setParams] = useSearchParams();
   const category = params.get('kategorie') as CategoryId | null;
-  const material = params.get('stoff') as Material | null;
+  const material = (params.get('stoff') as Material | null) ?? 'all';
+  const status = (params.get('status') as StatusFilter | null) ?? 'all';
+  const [search, setSearch] = useState('');
+  const [limit, setLimit] = useState(PAGE);
+  const progress = useAppStore((s) => s.progress);
+  const bookmarks = useAppStore((s) => s.bookmarks);
+  const launcher = usePracticeLauncher();
 
   const questions = useMemo(
-    () =>
-      catalog.questions.filter(
-        (q) => (!category || q.category === category) && (!material || q.material === material),
-      ),
-    [category, material],
+    () => filterQuestions(catalog.questions, { categories: category ? [category] : [], material, status, search }, progress, bookmarks),
+    [category, material, status, search, progress, bookmarks],
   );
 
   const update = (key: string, value: string) => {
     const next = new URLSearchParams(params);
-    if (value) next.set(key, value);
+    if (value && value !== 'all') next.set(key, value);
     else next.delete(key);
     setParams(next, { replace: true });
+    setLimit(PAGE);
   };
 
+  const select = 'rounded-lg border border-slate-300 bg-white px-2 py-2 text-sm';
+
   return (
-    <div className="space-y-6">
-      <div className="flex flex-wrap items-end gap-3">
-        <h1 className="text-2xl font-semibold tracking-tight mr-auto">Katalog</h1>
-        <select
-          aria-label="Kategorie"
-          value={category ?? ''}
-          onChange={(e) => update('kategorie', e.target.value)}
-          className="rounded-md border border-slate-300 bg-white px-2 py-1.5 text-sm"
-        >
+    <div className="space-y-5">
+      <PageTitle sub={`${catalog.questions.length} Fragen aus ${catalog.files.length} Katalogdateien`}>Fragenkatalog</PageTitle>
+
+      <div className="flex flex-wrap gap-2">
+        <label className="relative min-w-48 flex-1">
+          <Search size={16} className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-slate-400" />
+          <input
+            type="search"
+            value={search}
+            onChange={(e) => {
+              setSearch(e.target.value);
+              setLimit(PAGE);
+            }}
+            placeholder="Suchen (Text, Nummer …)"
+            aria-label="Fragen durchsuchen"
+            className="w-full rounded-lg border border-slate-300 bg-white py-2 pl-9 pr-3 text-sm"
+          />
+        </label>
+        <select aria-label="Kategorie" value={category ?? ''} onChange={(e) => update('kategorie', e.target.value)} className={select}>
           <option value="">Alle Kategorien</option>
           {CATEGORY_LIST.map((c) => (
             <option key={c.id} value={c.id}>
@@ -49,56 +65,49 @@ export function CatalogPage() {
             </option>
           ))}
         </select>
-        <select
-          aria-label="Stoff"
-          value={material ?? ''}
-          onChange={(e) => update('stoff', e.target.value)}
-          className="rounded-md border border-slate-300 bg-white px-2 py-1.5 text-sm"
-        >
-          <option value="">Grund- & Zusatzstoff</option>
+        <select aria-label="Stoff" value={material} onChange={(e) => update('stoff', e.target.value)} className={select}>
+          <option value="all">Grund- & Zusatzstoff</option>
           <option value="grundstoff">Grundstoff</option>
           <option value="zusatzstoff">Zusatzstoff</option>
         </select>
+        <select aria-label="Status" value={status} onChange={(e) => update('status', e.target.value)} className={select}>
+          <option value="all">Jeder Status</option>
+          <option value="new">Neu</option>
+          <option value="unmastered">Nicht gemeistert</option>
+          <option value="wrong">Zuletzt falsch</option>
+          <option value="mastered">Gemeistert</option>
+          <option value="bookmarked">Lesezeichen</option>
+        </select>
       </div>
 
-      <p className="text-sm text-slate-500">{questions.length} Fragen</p>
+      <div className="flex items-center justify-between gap-3">
+        <p className="text-sm text-slate-500">{questions.length} Fragen</p>
+        <Button variant="secondary" size="sm" disabled={!questions.length} onClick={() => launcher.start('custom', 'Katalogauswahl', questions.map((q) => q.id))}>
+          <PlayCircle size={16} /> Auswahl üben
+        </Button>
+      </div>
 
-      <ul className="space-y-4">
-        {questions.map((q) => (
-          <li key={q.id} className="rounded-xl border border-slate-200 bg-white p-4 sm:p-5 space-y-3">
-            <div className="flex flex-wrap gap-1.5 text-xs">
-              <Badge>{CATEGORIES[q.category].label}</Badge>
-              <Badge>{q.material === 'grundstoff' ? 'Grundstoff' : 'Zusatzstoff'}</Badge>
-              <Badge>{TYPE_LABEL[q.type]}</Badge>
-              <Badge tone="blue">{q.points} Punkte</Badge>
-              <span className="ml-auto font-mono text-slate-400">{q.officialNumber ?? q.id}</span>
-            </div>
-            <p className="font-medium">{q.text}</p>
-            {q.media && <MediaPlaceholder media={q.media} />}
-            {q.answers && (
-              <ul className="space-y-1 text-sm">
-                {q.answers.map((a) => (
-                  <li key={a.id} className={a.correct ? 'text-emerald-700' : 'text-slate-600'}>
-                    {a.correct ? '✓' : '✗'} {a.text}
-                  </li>
-                ))}
-              </ul>
-            )}
-            {q.numberAnswer && (
-              <p className="text-sm text-emerald-700">
-                ✓ {q.numberAnswer.prefix} {q.numberAnswer.value.toLocaleString('de-DE')} {q.numberAnswer.unit}
-              </p>
-            )}
-            <p className="text-sm text-slate-600">{q.explanation}</p>
-            {q.mnemonic && <p className="text-sm italic text-slate-500">💡 {q.mnemonic}</p>}
-          </li>
-        ))}
-      </ul>
+      {questions.length === 0 ? (
+        <EmptyState title="Keine Fragen gefunden">Passe Suche oder Filter an.</EmptyState>
+      ) : (
+        <ul className="space-y-2">
+          {questions.slice(0, limit).map((q) => (
+            <QuestionListItem key={q.id} question={q} progress={progress[q.id]} />
+          ))}
+        </ul>
+      )}
+      {questions.length > limit && (
+        <div className="text-center">
+          <Button variant="secondary" onClick={() => setLimit((l) => l + PAGE)}>
+            Weitere {Math.min(PAGE, questions.length - limit)} anzeigen
+          </Button>
+        </div>
+      )}
+      {catalog.issues.length > 0 && (
+        <p className="rounded-lg border border-amber-200 bg-amber-50 px-3 py-2 text-sm text-amber-800">
+          Beim Laden des Katalogs gab es {catalog.issues.length} Hinweise. Details mit <code>npm run validate</code>.
+        </p>
+      )}
     </div>
   );
-}
-
-function Badge({ children, tone = 'slate' }: { children: React.ReactNode; tone?: 'slate' | 'blue' }) {
-  const cls = tone === 'blue' ? 'bg-blue-50 text-blue-700' : 'bg-slate-100 text-slate-600';
-  return <span className={`rounded px-1.5 py-0.5 ${cls}`}>{children}</span>;
 }

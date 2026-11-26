@@ -3,7 +3,7 @@ import type { Media } from '@/domain/types';
 /** Zeigt das Bild, falls vorhanden, sonst einen beschrifteten Platzhalter. */
 export function MediaPlaceholder({ media }: { media: Media }) {
   if (media.src) {
-    const src = /^https?:\/\//.test(media.src) ? media.src : `/media/${media.src}`;
+    const src = /^https?:\/\//.test(media.src) ? media.src : `${import.meta.env.BASE_URL}media/${media.src}`;
     return media.kind === 'video' ? (
       <video src={src} controls className="w-full rounded-lg border border-slate-200" aria-label={media.alt} />
     ) : (

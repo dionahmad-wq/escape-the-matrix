@@ -19,6 +19,178 @@
       "numberAnswer": { "value": 1.6, "unit": "mm", "prefix": "Mindestprofiltiefe:" },
       "explanation": "Gesetzlich vorgeschrieben sind mindestens 1,6 mm Profiltiefe. Empfohlen werden für Sommerreifen 3 mm und für Winterreifen 4 mm, weil die Haftung bei Nässe stark nachlässt.",
       "mnemonic": "1,6 ist das Minimum, 3 bis 4 sind sicher."
+    },
+    {
+      "id": "seed-technik-002",
+      "category": "technik",
+      "subcategory": "Bremsen",
+      "material": "grundstoff",
+      "type": "multiple",
+      "points": 4,
+      "text": "Woran erkennen Sie, dass die Bremsanlage defekt sein könnte?",
+      "answers": [
+        { "id": "a", "text": "Das Fahrzeug zieht beim Bremsen zu einer Seite", "correct": true },
+        { "id": "b", "text": "Das Bremspedal lässt sich ungewöhnlich weit durchtreten", "correct": true },
+        { "id": "c", "text": "Die Kühlwassertemperatur steigt an", "correct": false }
+      ],
+      "explanation": "Schiefziehen, ein weiches oder weit durchzutretendes Pedal, Schleifgeräusche oder eine leuchtende Bremswarnleuchte deuten auf Mängel hin. Dann sofort in die Werkstatt.",
+      "mnemonic": "Zieht’s oder sackt’s: ab in die Werkstatt."
+    },
+    {
+      "id": "seed-technik-003",
+      "category": "technik",
+      "subcategory": "Assistenzsysteme",
+      "material": "grundstoff",
+      "type": "single",
+      "points": 3,
+      "text": "Was bewirkt ein Antiblockiersystem (ABS)?",
+      "answers": [
+        { "id": "a", "text": "Das Fahrzeug bleibt auch bei einer Vollbremsung lenkbar", "correct": true },
+        { "id": "b", "text": "Der Bremsweg ist auf jedem Untergrund immer kürzer", "correct": false, "explanation": "Auf losem Untergrund wie Schotter oder Neuschnee kann der Bremsweg mit ABS sogar länger sein." },
+        { "id": "c", "text": "Es verhindert das Durchdrehen der Räder beim Anfahren", "correct": false, "explanation": "Das macht die Antriebsschlupfregelung (ASR)." }
+      ],
+      "explanation": "ABS verhindert das Blockieren der Räder beim Bremsen. Dadurch bleibt das Fahrzeug lenkbar und man kann einem Hindernis ausweichen.",
+      "mnemonic": "ABS: Bremsen und Lenken gleichzeitig."
+    },
+    {
+      "id": "seed-technik-004",
+      "category": "technik",
+      "subcategory": "Bremsen",
+      "material": "grundstoff",
+      "type": "multiple",
+      "points": 4,
+      "text": "Wie führen Sie in einem Fahrzeug mit ABS und Schaltgetriebe eine Gefahrbremsung richtig durch?",
+      "answers": [
+        { "id": "a", "text": "Das Bremspedal kräftig durchtreten und gedrückt halten", "correct": true },
+        { "id": "b", "text": "Gleichzeitig die Kupplung treten", "correct": true },
+        { "id": "c", "text": "Stotterbremsung (Pedal wiederholt lösen und treten)", "correct": false, "explanation": "Das übernimmt das ABS selbst, und zwar viel schneller. Manuelles Stottern verlängert den Bremsweg." }
+      ],
+      "explanation": "Bei einer Gefahrbremsung mit ABS gilt: voll auf die Bremse, Kupplung treten und das Pedal gedrückt halten, auch wenn es pulsiert. Wenn nötig, um das Hindernis herumlenken.",
+      "mnemonic": "Voll drauf und drauf bleiben."
+    },
+    {
+      "id": "seed-technik-005",
+      "category": "technik",
+      "subcategory": "Reifen",
+      "material": "grundstoff",
+      "type": "single",
+      "points": 3,
+      "text": "Wann sollten Sie den Reifendruck prüfen?",
+      "answers": [
+        { "id": "a", "text": "Bei kalten Reifen, also vor der Fahrt", "correct": true },
+        { "id": "b", "text": "Direkt nach einer längeren Autobahnfahrt", "correct": false, "explanation": "Warme Reifen zeigen einen höheren Druck an, das Messergebnis wäre verfälscht." },
+        { "id": "c", "text": "Nur bei der Hauptuntersuchung", "correct": false }
+      ],
+      "explanation": "Der Reifendruck sollte regelmäßig, etwa alle zwei Wochen und vor längeren Fahrten, bei kalten Reifen geprüft werden. Die Sollwerte stehen in der Betriebsanleitung, oft auch im Tankdeckel oder in der Fahrertür.",
+      "mnemonic": "Kalt messen, nicht vergessen."
+    },
+    {
+      "id": "seed-technik-006",
+      "category": "technik",
+      "subcategory": "Bremsen",
+      "material": "grundstoff",
+      "type": "single",
+      "points": 3,
+      "text": "Warum muss die Bremsflüssigkeit regelmäßig gewechselt werden?",
+      "answers": [
+        { "id": "a", "text": "Weil sie Wasser aufnimmt und dadurch ihr Siedepunkt sinkt", "correct": true, "explanation": "Bei starker Beanspruchung können sich Dampfblasen bilden, die Bremse fällt dann teilweise aus." },
+        { "id": "b", "text": "Weil sie mit der Zeit verdunstet", "correct": false },
+        { "id": "c", "text": "Weil sie sonst zu dickflüssig wird", "correct": false }
+      ],
+      "explanation": "Bremsflüssigkeit ist hygroskopisch, sie zieht also Wasser an. Dadurch sinkt der Siedepunkt, und bei langen Bergabfahrten können sich Dampfblasen bilden. Die Folge ist ein Bremsversagen. Deshalb wird sie meist alle zwei Jahre gewechselt.",
+      "mnemonic": "Wasser in der Bremse = Blasen statt Bremsen."
+    },
+    {
+      "id": "seed-technik-007",
+      "category": "technik",
+      "subcategory": "Reifen",
+      "material": "zusatzstoff",
+      "type": "single",
+      "points": 4,
+      "text": "Bei welchen Straßenverhältnissen müssen Sie Winterreifen (mit Alpine-Symbol) benutzen?",
+      "answers": [
+        { "id": "a", "text": "Bei Glatteis, Schneeglätte, Schneematsch, Eis- oder Reifglätte", "correct": true },
+        { "id": "b", "text": "Generell von Oktober bis Ostern", "correct": false, "explanation": "„O bis O“ ist nur eine Faustregel, gesetzlich gilt eine situative Winterreifenpflicht." },
+        { "id": "c", "text": "Nur auf Autobahnen", "correct": false }
+      ],
+      "explanation": "In Deutschland gilt eine situative Winterreifenpflicht: Bei winterlichen Straßenverhältnissen dürfen nur Reifen mit dem Alpine-Symbol (Bergpiktogramm mit Schneeflocke) gefahren werden.",
+      "mnemonic": "Von O bis O ist ein guter Rat, Pflicht ist’s bei Schnee und Glätte."
+    },
+    {
+      "id": "seed-technik-008",
+      "category": "technik",
+      "subcategory": "Fahrwerk",
+      "material": "zusatzstoff",
+      "type": "multiple",
+      "points": 3,
+      "text": "Das Lenkrad flattert bei höherer Geschwindigkeit. Was kann die Ursache sein?",
+      "answers": [
+        { "id": "a", "text": "Unwuchtige Räder", "correct": true },
+        { "id": "b", "text": "Defekte Stoßdämpfer oder ausgeschlagene Lenkungsteile", "correct": true },
+        { "id": "c", "text": "Ein voller Kraftstofftank", "correct": false }
+      ],
+      "explanation": "Lenkradflattern deutet auf Unwucht, verschlissene Stoßdämpfer oder Spiel in der Lenkung hin. Das sollte zeitnah in einer Werkstatt geprüft werden.",
+      "mnemonic": "Flattert’s vorn: auswuchten und prüfen."
+    },
+    {
+      "id": "seed-technik-009",
+      "category": "technik",
+      "subcategory": "Kontrollleuchten",
+      "material": "zusatzstoff",
+      "type": "single",
+      "points": 4,
+      "text": "Während der Fahrt leuchtet die rote Öldruck-Kontrollleuchte auf. Was tun Sie?",
+      "answers": [
+        { "id": "a", "text": "Möglichst bald gefahrlos anhalten und den Motor abstellen", "correct": true },
+        { "id": "b", "text": "Bis zur nächsten Werkstatt weiterfahren", "correct": false, "explanation": "Ohne Öldruck kann der Motor in kurzer Zeit schwer beschädigt werden." },
+        { "id": "c", "text": "Die Leuchte ignorieren, solange der Motor normal läuft", "correct": false }
+      ],
+      "explanation": "Rote Warnleuchten bedeuten: sofort reagieren. Bei fehlendem Öldruck droht ein Motorschaden. Anhalten, Motor abstellen, Ölstand prüfen und gegebenenfalls Pannenhilfe rufen.",
+      "mnemonic": "Rot heißt Stopp, gelb heißt bald zur Werkstatt."
+    },
+    {
+      "id": "seed-technik-010",
+      "category": "technik",
+      "subcategory": "Reifen",
+      "material": "zusatzstoff",
+      "type": "number",
+      "points": 2,
+      "text": "Welche Profiltiefe wird für Winterreifen aus Sicherheitsgründen mindestens empfohlen?",
+      "numberAnswer": { "value": 4, "unit": "mm", "prefix": "Mindestens" },
+      "explanation": "Gesetzlich gelten 1,6 mm, Fachleute empfehlen für Winterreifen jedoch mindestens 4 mm, weil die Wintereigenschaften bei geringerer Tiefe deutlich nachlassen.",
+      "mnemonic": "1,6 ist das Minimum, 3 bis 4 sind sicher."
+    },
+    {
+      "id": "seed-technik-011",
+      "category": "technik",
+      "subcategory": "Assistenzsysteme",
+      "material": "zusatzstoff",
+      "type": "multiple",
+      "points": 4,
+      "text": "Was gilt für Fahrerassistenzsysteme wie Spurhalteassistent oder Abstandsregeltempomat?",
+      "answers": [
+        { "id": "a", "text": "Sie entbinden mich nicht von meiner Verantwortung als Fahrer", "correct": true },
+        { "id": "b", "text": "Ich muss jederzeit eingreifen können", "correct": true },
+        { "id": "c", "text": "Ich darf währenddessen das Smartphone in der Hand bedienen", "correct": false }
+      ],
+      "explanation": "Assistenzsysteme unterstützen, ersetzen aber nicht die Aufmerksamkeit. Sie haben Systemgrenzen, zum Beispiel bei schlechter Sicht oder fehlenden Markierungen. Der Fahrer bleibt voll verantwortlich.",
+      "mnemonic": "Assistent hilft, Fahrer haftet."
+    },
+    {
+      "id": "seed-technik-012",
+      "category": "technik",
+      "subcategory": "Batterie",
+      "material": "zusatzstoff",
+      "type": "single",
+      "points": 3,
+      "text": "In welcher Reihenfolge schließen Sie ein Starthilfekabel an?",
+      "answers": [
+        { "id": "a", "text": "Rotes Kabel an beide Pluspole, dann schwarzes Kabel vom Minuspol der Spenderbatterie an Masse (z. B. Motorblock) des Pannenfahrzeugs", "correct": true },
+        { "id": "b", "text": "Zuerst das schwarze Kabel an beide Minuspole, dann das rote Kabel", "correct": false },
+        { "id": "c", "text": "Die Reihenfolge ist egal", "correct": false, "explanation": "Eine falsche Reihenfolge kann zu Kurzschlüssen, Funken oder Schäden an der Elektronik führen." }
+      ],
+      "explanation": "Zuerst Plus mit Plus verbinden (rot), dann Minus der Spenderbatterie mit einem Massepunkt am Pannenfahrzeug (schwarz). Abklemmen erfolgt in umgekehrter Reihenfolge.",
+      "mnemonic": "Rot zuerst, schwarz an Masse: Plus vor Minus."
     }
   ]
 }

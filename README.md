@@ -1,15 +1,55 @@
 # Theorie-Trainer: Führerschein Klasse B
 
 Web-App zum Lernen für die theoretische Führerscheinprüfung (Klasse B, Deutschland).
-Läuft komplett im Browser: Der Lernfortschritt bleibt lokal, ein Server ist nicht nötig.
+Läuft komplett im Browser, offline-fähig (PWA). Der Lernstand bleibt lokal auf dem Gerät.
 
-> **Hinweis zu Inhalten:** Die mitgelieferten Fragen unter `data/seed/` sind **eigene
-> Übungsfragen** und keine amtlichen Prüfungsfragen. Lizenzierte Kataloge lassen sich
-> über den Import-Mechanismus einspielen (siehe unten).
+> **Hinweis zu Inhalten:** Die mitgelieferten 109 Fragen unter `data/seed/` sind **eigene,
+> realistische Übungsfragen** und keine amtlichen Prüfungsfragen. Bilder und Verkehrszeichen
+> sind beschriftete Platzhalter. Lizenzierte Kataloge lassen sich über den Import-Mechanismus
+> einspielen (siehe unten). Angaben ohne Gewähr.
+
+## Funktionen
+
+**Lernmodi**
+- **Schnelle Runde**: 10 Fragen (einstellbar), intelligent gemischt aus etwa 40 % Schwächen, 20 % fälligen Wiederholungen und 30 % neuen Fragen
+- **Themen-Training**: Filter nach Kategorie (mehrere wählbar), Grund- oder Zusatzstoff, Status (neu, nicht gemeistert, zuletzt falsch, Lesezeichen, gemeistert), Reihenfolge und Anzahl
+- **Schwächen-Training**: falsch oder unsicher beantwortete Fragen, die dringendsten zuerst
+- **Wiederholung**: gemeisterte Fragen werden nach 3, 7, 14 bzw. 30 Tagen wieder fällig (vereinfachte Spaced Repetition)
+- **Lesezeichen**: Fragen markieren und gesammelt üben
+- **Prüfungssimulation**: 20 Grundstoff- und 10 Zusatzstofffragen mit genau 110 Punkten, über die Kategorien gestreut
+  - Zeitlimit wählbar (Standard 45 Minuten)
+  - Fragen markieren, Übersichtsraster, Antworten bis zur Abgabe änderbar
+  - Bewertung nach Fehlerpunkten: bestanden mit höchstens 10, **nicht bestanden bei zwei falschen 5-Punkte-Fragen**
+  - Auswertung nach Bereich mit Musterlösung für jede Frage
+  - Läuft nach einem Neuladen weiter, bei Zeitablauf wird automatisch abgegeben
+
+**Feedback & Fortschritt**
+- Sofortiges Feedback: jede Option als richtig, falsch oder übersehen markiert, Erklärung pro Antwort, Musterlösung und Eselsbrücke
+- Konkreter Fehlerhinweis, z. B. „1 richtige Antwort übersehen“ oder „richtig wäre 36 Monate“
+- **Mastery**: Eine Frage gilt als gemeistert nach 2× sicher richtig in Folge. „Unsicher“ (Taste U) zählt nicht für die Serie, ein Fehler setzt sie zurück.
+- Dashboard mit Tagesziel, Lernserie, Prüfungsreife und **Empfehlungen** (schwächstes Thema, fällige Wiederholungen, unbearbeitete Bereiche, Zeitpunkt für eine Simulation)
+- Statistik:
+  - Status aller Fragen und Aktivität der letzten 14 Tage (mit Tabellenansicht)
+  - Fortschritt und Trefferquote pro Thema
+  - häufigste Fehler und Simulationsverlauf
+- Backup-Export und -Import (JSON) sowie Zurücksetzen des Lernstands
+
+**Bedienung**: responsive (Tab-Leiste auf dem Smartphone), ablenkungsfreie Vollbildansicht beim Lernen und in der Prüfung, vollständig per Tastatur bedienbar.
+
+| Taste | Lernen | Prüfung |
+|---|---|---|
+| `1`–`5` | Antwort wählen | Antwort an-/abwählen |
+| `Enter` | Prüfen / Weiter | Nächste Frage (letzte: Abgeben) |
+| `←` `→` | Blättern | Blättern |
+| `U` | Als unsicher markieren | |
+| `B` | Lesezeichen | |
+| `E` | Erklärung ein-/ausblenden | |
+| `M` | | Frage markieren |
+| `Esc` | Sitzung beenden (mit Auswertung) | |
 
 ## Stack
 
-Vite · React 18 · TypeScript · Tailwind CSS 4 · React Router · Zustand (Fortschritt, ab Meilenstein 4) · Zod (Datenvalidierung) · Vitest
+Vite · React 18 · TypeScript · Tailwind CSS 4 · React Router (HashRouter) · Zustand (persistiert in `localStorage`) · Zod · Vitest · lucide-react
 
 ## Befehle
 
@@ -17,29 +57,48 @@ Vite · React 18 · TypeScript · Tailwind CSS 4 · React Router · Zustand (For
 |---|---|
 | `npm install` | Abhängigkeiten installieren |
 | `npm run dev` | Entwicklungsserver auf http://localhost:5173 |
-| `npm test` | Unit-Tests (Schema, Katalog-Loader, Import) |
+| `npm test` | Unit-Tests (Schema, Import, Auswertung, Mastery, Auswahl, Prüfungslogik, Statistik, Backup) |
 | `npm run validate` | Alle Katalogdateien prüfen und Statistik ausgeben (`-- --strict`: Warnungen = Fehler) |
 | `npm run import -- --in <datei> …` | CSV/JSON-Katalog importieren (siehe unten) |
 | `npm run schema:export` | JSON-Schema für Editor-Autovervollständigung neu erzeugen |
 | `npm run build` | Prüfen, Typecheck und Produktions-Build nach `dist/` |
+| `npm run preview` | Produktions-Build lokal ansehen |
+
+**Deployment:** `dist/` ist rein statisch, mit relativen Pfaden und HashRouter. Der Ordner läuft auf jedem Webspace, auch in Unterordnern (z. B. GitHub Pages), ohne Server-Konfiguration.
 
 ## Ordnerstruktur
 
 ```
 data/
-  seed/            eigene Übungsfragen, eine Datei pro Themenbereich
+  seed/            eigene Übungsfragen, eine Datei pro Themenbereich (109 Fragen)
   imports/         lizenzierte Kataloge (gitignored)
   examples/        Beispiel-CSV für den Import
   schema/          generiertes JSON-Schema der Katalogdateien
 scripts/           Node-Skripte: validate, import, schema:export
-public/media/      Bilder/Videos/Verkehrszeichen
+public/            PWA-Manifest, Service Worker, Icon, media/ für Bilder
 src/
-  domain/          reine Logik ohne React (Schema, Kategorien, Katalog-Loader, Import-Mapping)
+  domain/          reine Logik ohne React, vollständig getestet
+                   schema · categories · catalog · importMapping · answers ·
+                   progress (Mastery) · selection (Modi) · exam · stats (Empfehlungen)
+  store/           Zustand-Store (Fortschritt, Lesezeichen, Sitzungen, Prüfungen, Einstellungen), Backup
   data/            bindet die Katalogdateien per Vite-Glob ein
-  components/      UI-Bausteine
-  features/        Seiten bzw. Module (dashboard, catalog, später training, exam, stats …)
+  hooks/           useHotkeys
+  components/      QuestionView, QuestionListItem, Layout, UI-Bausteine
+  features/        dashboard · training · practice · exam · stats · bookmarks · catalog · settings
 tests/             Vitest
 ```
+
+## Gespeicherte Daten
+
+Alles liegt im `localStorage` unter dem Schlüssel `fuehrerschein-theorie-trainer`:
+- Fortschritt pro Frage (gesehen, richtig, falsch, Serie, gemeistert, unsicher)
+- Lesezeichen
+- Prüfungshistorie (bis zu 100 Einträge)
+- Tagesaktivität
+- Einstellungen
+- laufende Lern- und Prüfungssitzung
+
+Das Format ist versioniert (`version` und `migrate` im Store). Fortschritt hängt an der **Frage-ID**: IDs deshalb nie ändern.
 
 ## Datenmodell
 

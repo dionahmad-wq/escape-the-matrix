@@ -16,11 +16,7 @@
       "type": "single",
       "points": 5,
       "text": "Sie erreichen eine Kreuzung ohne Verkehrszeichen und ohne Ampel. Von rechts nähert sich ein Pkw. Wer darf zuerst fahren?",
-      "media": {
-        "kind": "image",
-        "placeholder": "Kreuzung ohne Beschilderung, eigenes Fahrzeug von unten, blauer Pkw von rechts",
-        "alt": "Ungeregelte Kreuzung mit Pkw von rechts"
-      },
+      "media": { "kind": "image", "placeholder": "Kreuzung ohne Beschilderung, eigenes Fahrzeug von unten, blauer Pkw von rechts", "alt": "Ungeregelte Kreuzung mit Pkw von rechts" },
       "answers": [
         { "id": "a", "text": "Der Pkw von rechts", "correct": true, "explanation": "Ohne Regelung durch Zeichen oder Ampel gilt „rechts vor links“ (§ 8 StVO)." },
         { "id": "b", "text": "Ich, weil ich zuerst an der Kreuzung war", "correct": false, "explanation": "Wer zuerst ankommt, spielt keine Rolle, entscheidend ist allein die Richtung." },
@@ -37,12 +33,7 @@
       "type": "multiple",
       "points": 5,
       "text": "Wie verhalten Sie sich an diesem Verkehrszeichen?",
-      "media": {
-        "kind": "sign",
-        "placeholder": "Achteckiges rotes Schild mit weißer Aufschrift „STOP“",
-        "alt": "Verkehrszeichen 206: Halt. Vorfahrt gewähren.",
-        "signNumber": "206"
-      },
+      "media": { "kind": "sign", "placeholder": "Achteckiges rotes Schild mit weißer Aufschrift „STOP“", "alt": "Verkehrszeichen 206: Halt. Vorfahrt gewähren.", "signNumber": "206" },
       "answers": [
         { "id": "a", "text": "Ich muss an der Haltlinie anhalten, auch wenn die Straße frei ist", "correct": true, "explanation": "Das Stoppschild verlangt immer vollständiges Anhalten, unabhängig vom Verkehr." },
         { "id": "b", "text": "Ich muss dem Verkehr auf der Querstraße Vorfahrt gewähren", "correct": true, "explanation": "Zeichen 206 bedeutet „Halt. Vorfahrt gewähren.“" },
@@ -66,6 +57,205 @@
       ],
       "explanation": "Zeichen von Polizeibeamten gehen allen anderen Regeln vor. Seitlich ausgestreckte Arme wirken wie Rot für den Verkehr von vorn und hinten und wie Grün für den Verkehr von der Seite.",
       "mnemonic": "Brust oder Rücken: rote Lücken. Von der Seite: freie Weite."
+    },
+    {
+      "id": "seed-vorfahrt-004",
+      "category": "vorfahrt",
+      "subcategory": "Lichtzeichen",
+      "material": "grundstoff",
+      "type": "single",
+      "points": 4,
+      "text": "Die Ampel zeigt Rot. Rechts daneben ist ein Schild mit grünem Pfeil auf schwarzem Grund angebracht. Was gilt beim Rechtsabbiegen?",
+      "media": { "kind": "sign", "placeholder": "Ampel auf Rot, daneben kleines schwarzes Schild mit grünem Pfeil nach rechts", "alt": "Grünpfeilschild neben roter Ampel", "signNumber": "720" },
+      "answers": [
+        { "id": "a", "text": "Ich muss zuerst anhalten und darf dann abbiegen, wenn niemand behindert oder gefährdet wird", "correct": true },
+        { "id": "b", "text": "Ich darf ohne anzuhalten zügig abbiegen", "correct": false, "explanation": "Am Grünpfeil ist Anhalten Pflicht, wie an einem Stoppschild." },
+        { "id": "c", "text": "Ich habe Vorrang vor Fußgängern", "correct": false, "explanation": "Fußgänger und Radfahrer mit Grün haben Vorrang." }
+      ],
+      "explanation": "Der Grünpfeil erlaubt das Rechtsabbiegen bei Rot, aber nur nach vollständigem Anhalten und nur, wenn andere, insbesondere Fußgänger und Radfahrer, nicht behindert oder gefährdet werden.",
+      "mnemonic": "Grünpfeil heißt: erst stehen, dann sehen, dann gehen."
+    },
+    {
+      "id": "seed-vorfahrt-005",
+      "category": "vorfahrt",
+      "subcategory": "Abbiegen",
+      "material": "grundstoff",
+      "type": "single",
+      "points": 5,
+      "text": "Sie wollen an einer Kreuzung links abbiegen. Der Gegenverkehr fährt geradeaus. Wer darf zuerst fahren?",
+      "media": { "kind": "image", "placeholder": "Kreuzung: eigenes Fahrzeug blinkt links, entgegenkommender Pkw fährt geradeaus", "alt": "Linksabbiegen mit Gegenverkehr" },
+      "answers": [
+        { "id": "a", "text": "Der Gegenverkehr", "correct": true },
+        { "id": "b", "text": "Ich, weil ich zuerst geblinkt habe", "correct": false },
+        { "id": "c", "text": "Wer von rechts kommt", "correct": false }
+      ],
+      "explanation": "Wer links abbiegen will, muss entgegenkommende Fahrzeuge durchfahren lassen.",
+      "mnemonic": "Links abbiegen heißt: Gegenverkehr geht vor."
+    },
+    {
+      "id": "seed-vorfahrt-006",
+      "category": "vorfahrt",
+      "subcategory": "Kreisverkehr",
+      "material": "grundstoff",
+      "type": "multiple",
+      "points": 5,
+      "text": "Sie fahren in einen Kreisverkehr ein, der mit „Kreisverkehr“ (Zeichen 215) und „Vorfahrt gewähren“ (Zeichen 205) beschildert ist. Was ist richtig?",
+      "media": { "kind": "sign", "placeholder": "Blaues rundes Schild mit drei weißen Pfeilen im Kreis, darunter rot-weißes Dreieck auf der Spitze", "alt": "Zeichen 215 Kreisverkehr mit Zeichen 205", "signNumber": "215" },
+      "answers": [
+        { "id": "a", "text": "Fahrzeuge im Kreisverkehr haben Vorfahrt", "correct": true },
+        { "id": "b", "text": "Beim Hineinfahren darf ich nicht blinken", "correct": true, "explanation": "Blinken beim Einfahren ist unzulässig, weil es andere verwirren würde." },
+        { "id": "c", "text": "Beim Hinausfahren muss ich blinken", "correct": true },
+        { "id": "d", "text": "Beim Hineinfahren muss ich links blinken", "correct": false }
+      ],
+      "explanation": "Im beschilderten Kreisverkehr hat der Verkehr auf der Kreisfahrbahn Vorfahrt. Beim Einfahren wird nicht geblinkt, beim Ausfahren muss rechts geblinkt werden.",
+      "mnemonic": "Rein ohne Blinker, raus mit Blinker."
+    },
+    {
+      "id": "seed-vorfahrt-007",
+      "category": "vorfahrt",
+      "subcategory": "Lichtzeichen",
+      "material": "grundstoff",
+      "type": "single",
+      "points": 4,
+      "text": "Die Ampel wechselt von Grün auf Gelb. Was bedeutet das?",
+      "answers": [
+        { "id": "a", "text": "Vor der Kreuzung auf das nächste Zeichen warten, wenn ein Anhalten noch gefahrlos möglich ist", "correct": true },
+        { "id": "b", "text": "Beschleunigen, um noch vor Rot über die Kreuzung zu kommen", "correct": false },
+        { "id": "c", "text": "Gelb gilt nur für Fußgänger", "correct": false }
+      ],
+      "explanation": "Gelb ordnet an: Vor der Kreuzung auf das nächste Zeichen warten. Nur wer nicht mehr gefahrlos anhalten kann, darf weiterfahren.",
+      "mnemonic": "Gelb heißt: Halt, wenn’s noch geht."
+    },
+    {
+      "id": "seed-vorfahrt-008",
+      "category": "vorfahrt",
+      "subcategory": "Polizeibeamte",
+      "material": "grundstoff",
+      "type": "single",
+      "points": 4,
+      "text": "Die Ampel zeigt Grün, ein Polizeibeamter gibt Ihnen jedoch ein Haltzeichen. Was gilt?",
+      "answers": [
+        { "id": "a", "text": "Das Zeichen des Polizeibeamten", "correct": true },
+        { "id": "b", "text": "Die grüne Ampel", "correct": false },
+        { "id": "c", "text": "Die Vorfahrtsregeln der Verkehrszeichen", "correct": false }
+      ],
+      "explanation": "Rangfolge: Polizeibeamte vor Ampeln, Ampeln vor Verkehrszeichen, Verkehrszeichen vor allgemeinen Regeln (z. B. rechts vor links).",
+      "mnemonic": "Polizei > Ampel > Schild > Regel."
+    },
+    {
+      "id": "seed-vorfahrt-009",
+      "category": "vorfahrt",
+      "subcategory": "Feld- und Waldwege",
+      "material": "grundstoff",
+      "type": "single",
+      "points": 4,
+      "text": "Sie kommen aus einem Feldweg und wollen auf eine Landstraße einbiegen. Ein Pkw nähert sich von links. Wer hat Vorfahrt?",
+      "answers": [
+        { "id": "a", "text": "Der Pkw auf der Landstraße", "correct": true },
+        { "id": "b", "text": "Ich, weil der Pkw von links kommt", "correct": false, "explanation": "„Rechts vor links“ gilt nicht für Fahrzeuge, die aus Feld- oder Waldwegen kommen." },
+        { "id": "c", "text": "Wer zuerst da ist", "correct": false }
+      ],
+      "explanation": "Wer aus einem Feld- oder Waldweg auf eine andere Straße einbiegt, muss deren Verkehr Vorfahrt gewähren, egal aus welcher Richtung er kommt.",
+      "mnemonic": "Aus Feld und Wald: Ich halt."
+    },
+    {
+      "id": "seed-vorfahrt-010",
+      "category": "vorfahrt",
+      "subcategory": "Vorfahrtregelnde Zeichen",
+      "material": "grundstoff",
+      "type": "single",
+      "points": 4,
+      "text": "Was bedeutet das Zeichen „Vorfahrt“ (rot umrandetes Dreieck mit schwarzem Pfeil)?",
+      "media": { "kind": "sign", "placeholder": "Weißes Dreieck mit rotem Rand, Spitze oben, schwarzer senkrechter Pfeil mit Querbalken", "alt": "Verkehrszeichen 301: Vorfahrt", "signNumber": "301" },
+      "answers": [
+        { "id": "a", "text": "Vorfahrt nur an der nächsten Kreuzung oder Einmündung", "correct": true },
+        { "id": "b", "text": "Vorfahrt bis zum nächsten Ortsschild", "correct": false },
+        { "id": "c", "text": "Vorfahrt auf der gesamten Straße", "correct": false, "explanation": "Das wäre Zeichen 306 „Vorfahrtstraße“ (gelbe Raute)." }
+      ],
+      "explanation": "Zeichen 301 gibt Vorfahrt nur an der nächsten Kreuzung oder Einmündung. Danach gilt wieder die allgemeine Regel, sofern nichts anderes angeordnet ist.",
+      "mnemonic": "Dreieck mit Pfeil: einmal Vorfahrt. Raute: Vorfahrt am Stück."
+    },
+    {
+      "id": "seed-vorfahrt-011",
+      "category": "vorfahrt",
+      "subcategory": "Vorfahrtregelnde Zeichen",
+      "material": "grundstoff",
+      "type": "single",
+      "points": 4,
+      "text": "Bis wohin gilt das Zeichen „Vorfahrtstraße“ (gelbe Raute mit weißem Rand)?",
+      "media": { "kind": "sign", "placeholder": "Auf der Spitze stehendes Quadrat: gelbe Fläche, weißer und schwarzer Rand", "alt": "Verkehrszeichen 306: Vorfahrtstraße", "signNumber": "306" },
+      "answers": [
+        { "id": "a", "text": "Bis zum Zeichen „Ende der Vorfahrtstraße“ oder einem Zeichen, das die Vorfahrt anders regelt", "correct": true },
+        { "id": "b", "text": "Nur bis zur nächsten Kreuzung", "correct": false },
+        { "id": "c", "text": "Nur innerhalb geschlossener Ortschaften", "correct": false }
+      ],
+      "explanation": "Die Vorfahrtstraße gilt bis zum nächsten Zeichen „Vorfahrt gewähren“, „Halt. Vorfahrt gewähren.“ oder „Ende der Vorfahrtstraße“ (durchgestrichene Raute).",
+      "mnemonic": "Gelbe Raute: Vorfahrt, bis sie durchgestrichen wird."
+    },
+    {
+      "id": "seed-vorfahrt-012",
+      "category": "vorfahrt",
+      "subcategory": "Fußgänger",
+      "material": "grundstoff",
+      "type": "multiple",
+      "points": 5,
+      "text": "Sie biegen ab. Fußgänger überqueren gerade die Straße, in die Sie einbiegen wollen. Was gilt?",
+      "answers": [
+        { "id": "a", "text": "Die Fußgänger haben Vorrang, ich muss warten", "correct": true },
+        { "id": "b", "text": "Ich habe Vorrang, weil ich Grün habe", "correct": false, "explanation": "Auch bei Grün müssen Abbiegende auf Fußgänger besondere Rücksicht nehmen." },
+        { "id": "c", "text": "Ich muss auf die Fußgänger besondere Rücksicht nehmen", "correct": true }
+      ],
+      "explanation": "Wer abbiegt, muss auf Fußgänger besondere Rücksicht nehmen und notfalls warten.",
+      "mnemonic": "Abbiegen? Erst Füße, dann Räder."
+    },
+    {
+      "id": "seed-vorfahrt-013",
+      "category": "vorfahrt",
+      "subcategory": "Einsatzfahrzeuge",
+      "material": "zusatzstoff",
+      "type": "single",
+      "points": 4,
+      "text": "Ein Fahrzeug mit Blaulicht und Einsatzhorn nähert sich. Was müssen Sie tun?",
+      "answers": [
+        { "id": "a", "text": "Sofort freie Bahn schaffen", "correct": true },
+        { "id": "b", "text": "Nur ausweichen, wenn ich mich auf derselben Fahrspur befinde", "correct": false },
+        { "id": "c", "text": "Weiterfahren, weil ich Vorfahrt habe", "correct": false }
+      ],
+      "explanation": "Blaues Blinklicht zusammen mit dem Einsatzhorn ordnet an: Alle anderen Verkehrsteilnehmer müssen sofort freie Bahn schaffen.",
+      "mnemonic": "Blau und Ton heißt: Platz machen, schon!"
+    },
+    {
+      "id": "seed-vorfahrt-014",
+      "category": "vorfahrt",
+      "subcategory": "Fußgängerüberweg",
+      "material": "grundstoff",
+      "type": "multiple",
+      "points": 4,
+      "text": "Was gilt an einem Fußgängerüberweg (Zebrastreifen)?",
+      "media": { "kind": "image", "placeholder": "Zebrastreifen, eine Fußgängerin steht am Bordstein und will die Straße überqueren", "alt": "Fußgängerüberweg mit wartender Fußgängerin" },
+      "answers": [
+        { "id": "a", "text": "Fußgängern, die erkennbar überqueren wollen, muss ich das Überqueren ermöglichen", "correct": true },
+        { "id": "b", "text": "Ich darf nur mit mäßiger Geschwindigkeit heranfahren", "correct": true },
+        { "id": "c", "text": "Auf dem Fußgängerüberweg darf überholt werden", "correct": false, "explanation": "Überholen ist an Fußgängerüberwegen verboten." }
+      ],
+      "explanation": "Am Fußgängerüberweg haben Fußgänger sowie Rollstuhlfahrer Vorrang, wenn sie ihn erkennbar benutzen wollen. Man fährt mit mäßiger Geschwindigkeit heran und darf dort nicht überholen.",
+      "mnemonic": "Zebra heißt: Fuß hat Vorrang."
+    },
+    {
+      "id": "seed-vorfahrt-015",
+      "category": "vorfahrt",
+      "subcategory": "Straßenbahn",
+      "material": "zusatzstoff",
+      "type": "single",
+      "points": 5,
+      "text": "Sie wollen links abbiegen. Neben Ihnen verlaufen Straßenbahngleise, eine Straßenbahn kommt von hinten in gleicher Richtung. Was gilt?",
+      "answers": [
+        { "id": "a", "text": "Ich muss die Straßenbahn durchfahren lassen", "correct": true },
+        { "id": "b", "text": "Ich darf vor der Straßenbahn abbiegen, weil ich vorne bin", "correct": false },
+        { "id": "c", "text": "Die Straßenbahn muss warten, bis ich abgebogen bin", "correct": false }
+      ],
+      "explanation": "Wer abbiegt, muss Schienenfahrzeuge, die in gleicher Richtung fahren, durchfahren lassen.",
+      "mnemonic": "Schiene schlägt Blinker."
     }
   ]
 }

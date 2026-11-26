@@ -23,6 +23,118 @@
       ],
       "explanation": "Vorausschauend fahren, früh hochschalten und unnötigen Leerlauf vermeiden spart Kraftstoff und reduziert Lärm und Abgase.",
       "mnemonic": "Früh hoch, spät runter, Motor aus im Stau."
+    },
+    {
+      "id": "seed-umwelt-002",
+      "category": "umwelt",
+      "subcategory": "Kraftstoff sparen",
+      "material": "grundstoff",
+      "type": "multiple",
+      "points": 3,
+      "text": "Wodurch erhöht sich der Kraftstoffverbrauch unnötig?",
+      "answers": [
+        { "id": "a", "text": "Durch zu niedrigen Reifendruck", "correct": true, "explanation": "Mehr Rollwiderstand bedeutet mehr Verbrauch und mehr Reifenverschleiß." },
+        { "id": "b", "text": "Durch einen nicht benötigten Dachgepäckträger", "correct": true, "explanation": "Er erhöht den Luftwiderstand deutlich." },
+        { "id": "c", "text": "Durch vorausschauendes Fahren", "correct": false }
+      ],
+      "explanation": "Zu wenig Luftdruck, unnötige Aufbauten und Ballast im Kofferraum steigern den Verbrauch. Reifendruck regelmäßig prüfen und Dachträger nach Gebrauch abbauen.",
+      "mnemonic": "Luft rein (Reifen), Ballast raus (Dach & Kofferraum)."
+    },
+    {
+      "id": "seed-umwelt-003",
+      "category": "umwelt",
+      "subcategory": "Leerlauf",
+      "material": "grundstoff",
+      "type": "single",
+      "points": 3,
+      "text": "Sie warten vor einer geschlossenen Bahnschranke, die Wartezeit wird voraussichtlich länger dauern. Wie verhalten Sie sich umweltbewusst?",
+      "answers": [
+        { "id": "a", "text": "Den Motor abstellen", "correct": true },
+        { "id": "b", "text": "Den Motor laufen lassen, weil ein Neustart mehr verbraucht", "correct": false, "explanation": "Bei modernen Motoren lohnt sich das Abschalten schon nach kurzer Wartezeit." },
+        { "id": "c", "text": "Den Motor mit leicht erhöhter Drehzahl laufen lassen, damit die Batterie lädt", "correct": false }
+      ],
+      "explanation": "Bei längeren Wartezeiten, zum Beispiel an Bahnschranken oder im Stau, sollte der Motor abgestellt werden. Das spart Kraftstoff und vermeidet Lärm und Abgase.",
+      "mnemonic": "Stehst du lang, Motor aus, kein Gestank."
+    },
+    {
+      "id": "seed-umwelt-004",
+      "category": "umwelt",
+      "subcategory": "Vorausschauend fahren",
+      "material": "grundstoff",
+      "type": "single",
+      "points": 3,
+      "text": "Sie nähern sich einer roten Ampel. Wie fahren Sie kraftstoffsparend heran?",
+      "answers": [
+        { "id": "a", "text": "Frühzeitig Gas wegnehmen und mit eingelegtem Gang ausrollen lassen", "correct": true, "explanation": "Mit eingelegtem Gang greift die Schubabschaltung, der Motor verbraucht dann fast nichts." },
+        { "id": "b", "text": "Bis kurz vor die Ampel beschleunigen und dann stark bremsen", "correct": false },
+        { "id": "c", "text": "Auskuppeln und im Leerlauf ausrollen lassen", "correct": false, "explanation": "Im Leerlauf braucht der Motor Kraftstoff, um weiterzulaufen." }
+      ],
+      "explanation": "Wer vorausschauend fährt, nutzt den Schwung: früh vom Gas, im Gang rollen lassen (Schubabschaltung) und unnötiges Bremsen vermeiden.",
+      "mnemonic": "Rollen im Gang ist gratis."
+    },
+    {
+      "id": "seed-umwelt-005",
+      "category": "umwelt",
+      "subcategory": "Lärm",
+      "material": "grundstoff",
+      "type": "multiple",
+      "points": 2,
+      "text": "Welche Folgen hat es, wenn Sie den Motor unnötig hochdrehen lassen?",
+      "answers": [
+        { "id": "a", "text": "Höherer Kraftstoffverbrauch", "correct": true },
+        { "id": "b", "text": "Mehr Lärm", "correct": true },
+        { "id": "c", "text": "Weniger Motorverschleiß", "correct": false }
+      ],
+      "explanation": "Hohe Drehzahlen erhöhen Verbrauch, Lärm, Schadstoffausstoß und Verschleiß. Unnötiger Lärm ist außerdem verboten.",
+      "mnemonic": "Hohe Drehzahl, hohe Qual: für Umwelt, Ohr und Geldbeutel."
+    },
+    {
+      "id": "seed-umwelt-006",
+      "category": "umwelt",
+      "subcategory": "Entsorgung",
+      "material": "grundstoff",
+      "type": "single",
+      "points": 3,
+      "text": "Wie entsorgen Sie Altöl richtig?",
+      "answers": [
+        { "id": "a", "text": "Über eine Altöl-Annahmestelle, z. B. an der Verkaufsstelle oder in der Werkstatt", "correct": true },
+        { "id": "b", "text": "In kleinen Mengen in die Kanalisation", "correct": false, "explanation": "Schon ein Liter Öl kann rund eine Million Liter Trinkwasser verunreinigen." },
+        { "id": "c", "text": "Im Hausmüll", "correct": false }
+      ],
+      "explanation": "Altöl ist Sondermüll. Verkaufsstellen sind zur kostenlosen Rücknahme in der gekauften Menge verpflichtet.",
+      "mnemonic": "Öl zurück, wo es herkam."
+    },
+    {
+      "id": "seed-umwelt-007",
+      "category": "umwelt",
+      "subcategory": "Luftwiderstand",
+      "material": "zusatzstoff",
+      "type": "multiple",
+      "points": 3,
+      "text": "Wie wirken sich Anhänger und Dachaufbauten auf den Kraftstoffverbrauch aus?",
+      "answers": [
+        { "id": "a", "text": "Der höhere Luftwiderstand erhöht den Verbrauch", "correct": true },
+        { "id": "b", "text": "Ein unbenutzter Dachträger sollte abgebaut werden", "correct": true },
+        { "id": "c", "text": "Sie haben keinen Einfluss auf den Verbrauch", "correct": false }
+      ],
+      "explanation": "Anhänger, Dachboxen und Fahrradträger erhöhen den Luftwiderstand und die Masse, vor allem bei höheren Geschwindigkeiten steigt der Verbrauch deutlich.",
+      "mnemonic": "Alles, was im Wind steht, kostet Sprit."
+    },
+    {
+      "id": "seed-umwelt-008",
+      "category": "umwelt",
+      "subcategory": "Nebenverbraucher",
+      "material": "zusatzstoff",
+      "type": "single",
+      "points": 2,
+      "text": "Wie nutzen Sie die Klimaanlage kraftstoffsparend?",
+      "answers": [
+        { "id": "a", "text": "Nur bei Bedarf einschalten", "correct": true },
+        { "id": "b", "text": "Immer auf höchster Stufe laufen lassen", "correct": false },
+        { "id": "c", "text": "Bei geöffneten Fenstern einschalten", "correct": false }
+      ],
+      "explanation": "Die Klimaanlage erhöht den Kraftstoffverbrauch spürbar. Sie sollte nur bei Bedarf und mit geschlossenen Fenstern betrieben werden. Heckscheibenheizung, Sitzheizung und andere Verbraucher bei Nichtgebrauch ausschalten.",
+      "mnemonic": "Strom im Auto kommt aus dem Tank."
     }
   ]
 }

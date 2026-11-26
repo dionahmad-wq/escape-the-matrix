@@ -1,0 +1,165 @@
+{
+  "$schema": "../schema/question-catalog.schema.json",
+  "meta": {
+    "id": "seed-betrieb",
+    "title": "Übungsfragen: Vorschriften über den Betrieb der Fahrzeuge",
+    "version": "2026.11-1",
+    "source": "seed",
+    "license": "Eigene Übungsfragen (keine amtlichen Prüfungsfragen)"
+  },
+  "questions": [
+    {
+      "id": "seed-betrieb-001",
+      "category": "betrieb",
+      "subcategory": "Ladung",
+      "material": "grundstoff",
+      "type": "multiple",
+      "points": 4,
+      "text": "Wie müssen Sie Ladung sichern?",
+      "answers": [
+        { "id": "a", "text": "So, dass sie auch bei einer Vollbremsung oder plötzlichen Ausweichbewegung nicht verrutscht, umfällt oder herabfällt", "correct": true },
+        { "id": "b", "text": "Nur dann, wenn die Ladung schwer ist", "correct": false, "explanation": "Auch leichte Gegenstände werden bei einer Vollbremsung zu gefährlichen Geschossen." },
+        { "id": "c", "text": "Zum Beispiel mit Spanngurten, Netzen oder Antirutschmatten", "correct": true }
+      ],
+      "explanation": "Ladung einschließlich Ladungssicherungsmitteln muss so verstaut und gesichert sein, dass sie selbst bei Vollbremsung oder plötzlicher Ausweichbewegung nicht verrutschen, umfallen, hin- und herrollen oder herabfallen kann.",
+      "mnemonic": "Was nicht festgemacht ist, fliegt."
+    },
+    {
+      "id": "seed-betrieb-002",
+      "category": "betrieb",
+      "subcategory": "Beleuchtung",
+      "material": "grundstoff",
+      "type": "multiple",
+      "points": 3,
+      "text": "Wann müssen Sie mit Abblendlicht fahren?",
+      "answers": [
+        { "id": "a", "text": "Wenn die Sichtverhältnisse es erfordern, z. B. bei Nebel, Schneefall oder Regen", "correct": true },
+        { "id": "b", "text": "Während der Dämmerung und bei Dunkelheit", "correct": true },
+        { "id": "c", "text": "Nie, das Tagfahrlicht reicht in jeder Situation", "correct": false, "explanation": "Tagfahrlicht beleuchtet nicht die Rückleuchten und reicht bei schlechter Sicht nicht aus." }
+      ],
+      "explanation": "Während der Dämmerung, bei Dunkelheit oder wenn die Sichtverhältnisse es erfordern, ist die vorgeschriebene Beleuchtung einzuschalten. Tagfahrlicht ersetzt das Abblendlicht dann nicht.",
+      "mnemonic": "Sehen und gesehen werden: Abblendlicht an, wenn’s trüb wird."
+    },
+    {
+      "id": "seed-betrieb-003",
+      "category": "betrieb",
+      "subcategory": "Dokumente",
+      "material": "grundstoff",
+      "type": "multiple",
+      "points": 3,
+      "text": "Welche Dokumente müssen Sie beim Fahren mit einem Pkw mitführen?",
+      "answers": [
+        { "id": "a", "text": "Den Führerschein", "correct": true },
+        { "id": "b", "text": "Die Zulassungsbescheinigung Teil I (Fahrzeugschein)", "correct": true },
+        { "id": "c", "text": "Die Zulassungsbescheinigung Teil II (Fahrzeugbrief)", "correct": false, "explanation": "Teil II sollte sicher zu Hause aufbewahrt werden." }
+      ],
+      "explanation": "Führerschein und Zulassungsbescheinigung Teil I müssen mitgeführt und auf Verlangen ausgehändigt werden. Die Zulassungsbescheinigung Teil II gehört nicht ins Auto.",
+      "mnemonic": "Teil I fährt mit, Teil II bleibt daheim."
+    },
+    {
+      "id": "seed-betrieb-004",
+      "category": "betrieb",
+      "subcategory": "Ausrüstung",
+      "material": "grundstoff",
+      "type": "number",
+      "points": 2,
+      "text": "Wie viele Warnwesten müssen in einem Pkw in Deutschland mindestens mitgeführt werden?",
+      "numberAnswer": { "value": 1, "unit": "Stück" },
+      "explanation": "In Deutschland ist mindestens eine Warnweste vorgeschrieben. Empfehlenswert ist eine pro Sitzplatz, griffbereit im Innenraum. Außerdem gehören ein Warndreieck und ein Verbandkasten ins Fahrzeug.",
+      "mnemonic": "Dreieck, Kasten, Weste: die Pflicht-Ausrüstung."
+    },
+    {
+      "id": "seed-betrieb-005",
+      "category": "betrieb",
+      "subcategory": "Hauptuntersuchung",
+      "material": "zusatzstoff",
+      "type": "number",
+      "points": 3,
+      "text": "Nach wie vielen Monaten muss ein neu zugelassener Pkw erstmals zur Hauptuntersuchung (HU)?",
+      "numberAnswer": { "value": 36, "unit": "Monaten", "prefix": "Nach" },
+      "explanation": "Neue Pkw müssen erstmals nach 36 Monaten zur Hauptuntersuchung, danach alle 24 Monate.",
+      "mnemonic": "Erst drei Jahre, dann alle zwei."
+    },
+    {
+      "id": "seed-betrieb-006",
+      "category": "betrieb",
+      "subcategory": "Hauptuntersuchung",
+      "material": "zusatzstoff",
+      "type": "number",
+      "points": 2,
+      "text": "In welchem Abstand muss ein Pkw nach der ersten Hauptuntersuchung regelmäßig zur HU?",
+      "numberAnswer": { "value": 24, "unit": "Monate", "prefix": "Alle" },
+      "explanation": "Nach der ersten HU (nach 36 Monaten) ist die Hauptuntersuchung für Pkw alle 24 Monate fällig. Die Prüfplakette am hinteren Kennzeichen zeigt den nächsten Termin.",
+      "mnemonic": "Erst drei Jahre, dann alle zwei."
+    },
+    {
+      "id": "seed-betrieb-007",
+      "category": "betrieb",
+      "subcategory": "Anhänger",
+      "material": "zusatzstoff",
+      "type": "multiple",
+      "points": 4,
+      "text": "Was müssen Sie beim Ankuppeln und Beladen eines Anhängers beachten?",
+      "answers": [
+        { "id": "a", "text": "Die zulässige Anhängelast des Zugfahrzeugs darf nicht überschritten werden", "correct": true },
+        { "id": "b", "text": "Die zulässige Stützlast muss eingehalten werden", "correct": true },
+        { "id": "c", "text": "Bei gebremsten Anhängern muss das Abreißseil angebracht werden", "correct": true },
+        { "id": "d", "text": "Die Beleuchtung muss nur bei Dunkelheit funktionieren", "correct": false, "explanation": "Blinker und Bremsleuchten werden auch tagsüber gebraucht und müssen immer funktionieren." }
+      ],
+      "explanation": "Vor der Fahrt mit Anhänger prüfen: Anhängelast und Stützlast laut Fahrzeugschein, sichere Kupplung, Abreißseil (bei gebremsten Anhängern), funktionierende Beleuchtung und Reifen.",
+      "mnemonic": "Last, Stütze, Seil, Licht."
+    },
+    {
+      "id": "seed-betrieb-008",
+      "category": "betrieb",
+      "subcategory": "Fahrerlaubnis",
+      "material": "zusatzstoff",
+      "type": "number",
+      "points": 4,
+      "text": "Mit Klasse B darf ein Anhänger über 750 kg zulässiger Gesamtmasse gezogen werden, wenn die zulässige Gesamtmasse der Kombination einen bestimmten Wert nicht übersteigt. Wie hoch ist dieser?",
+      "numberAnswer": { "value": 3500, "unit": "kg", "prefix": "Höchstens" },
+      "explanation": "Mit Klasse B dürfen Anhänger bis 750 kg immer gezogen werden. Schwerere Anhänger sind erlaubt, wenn die Kombination insgesamt höchstens 3.500 kg zulässige Gesamtmasse hat. Mit der Schlüsselzahl B96 sind bis 4.250 kg möglich, darüber hinaus ist BE nötig.",
+      "mnemonic": "B: 750 immer, Kombi bis 3.500."
+    },
+    {
+      "id": "seed-betrieb-009",
+      "category": "betrieb",
+      "subcategory": "Fahrerlaubnis",
+      "material": "zusatzstoff",
+      "type": "number",
+      "points": 3,
+      "text": "Bis zu welcher zulässigen Gesamtmasse dürfen Sie mit Klasse B einen Anhänger immer ziehen (sofern das Zugfahrzeug höchstens 3.500 kg hat)?",
+      "numberAnswer": { "value": 750, "unit": "kg", "prefix": "Bis" },
+      "explanation": "Anhänger bis 750 kg zulässiger Gesamtmasse dürfen mit Klasse B ohne weitere Bedingungen gezogen werden.",
+      "mnemonic": "B: 750 immer, Kombi bis 3.500."
+    },
+    {
+      "id": "seed-betrieb-010",
+      "category": "betrieb",
+      "subcategory": "Ladung",
+      "material": "zusatzstoff",
+      "type": "multiple",
+      "points": 3,
+      "text": "Ihre Ladung ragt mehr als 1 m über die Rückstrahler nach hinten hinaus. Wie müssen Sie sie kennzeichnen?",
+      "answers": [
+        { "id": "a", "text": "Mit einer hellroten Fahne (mindestens 30 × 30 cm), einem gleich großen Schild oder einem roten zylindrischen Körper", "correct": true },
+        { "id": "b", "text": "Bei Dunkelheit zusätzlich mit einer roten Leuchte", "correct": true },
+        { "id": "c", "text": "Eine Kennzeichnung ist nur bei Dunkelheit nötig", "correct": false }
+      ],
+      "explanation": "Ragt Ladung mehr als 1 m über die Rückstrahler nach hinten hinaus, muss das Ende gut sichtbar gekennzeichnet werden: tagsüber mit einer hellroten Fahne, einem Schild oder einem Zylinder, bei Dunkelheit zusätzlich mit einer roten Leuchte und einem roten Rückstrahler.",
+      "mnemonic": "Über ein Meter hinten raus: rot markieren."
+    },
+    {
+      "id": "seed-betrieb-011",
+      "category": "betrieb",
+      "subcategory": "Ladung",
+      "material": "zusatzstoff",
+      "type": "number",
+      "points": 3,
+      "text": "Wie viele Meter darf Ladung grundsätzlich höchstens nach hinten hinausragen (Fahrtstrecke über 100 km)?",
+      "numberAnswer": { "value": 1.5, "unit": "m", "prefix": "Höchstens" },
+      "explanation": "Nach hinten darf Ladung bis zu 1,5 m hinausragen. Bei einer Fahrtstrecke von höchstens 100 km sind bis zu 3 m erlaubt. Ab 1 m Überstand ist eine Kennzeichnung nötig.",
+      "mnemonic": "1 – 1,5 – 3: markieren, Grenze, Kurzstrecke."
+    }
+  ]
+}
