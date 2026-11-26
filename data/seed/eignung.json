@@ -117,7 +117,7 @@
       "type": "multiple",
       "points": 5,
       "text": "Sie kommen als Erster an eine Unfallstelle mit Verletzten. Was tun Sie?",
-      "media": { "kind": "image", "placeholder": "Landstraße: Pkw im Graben, Warnblinklicht an, eine Person am Straßenrand", "alt": "Unfallstelle auf Landstraße" },
+      "media": { "kind": "image", "src": "seed/seed-eignung-008.svg", "placeholder": "Landstraße: Pkw im Graben, Warnblinklicht an, eine Person am Straßenrand", "alt": "Unfallstelle auf Landstraße" },
       "answers": [
         { "id": "a", "text": "Die Unfallstelle absichern", "correct": true },
         { "id": "b", "text": "Den Notruf 112 wählen", "correct": true },

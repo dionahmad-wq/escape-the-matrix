@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="Zeichen 331.1: Kraftfahrstraße">
+<title>Zeichen 331.1: Kraftfahrstraße</title>
+<rect x="1" y="1" width="198" height="198" rx="10" fill="#ffffff" stroke="#9aa0a6"/>
+<rect x="6" y="6" width="188" height="188" rx="8" fill="#1d5aa8"/>
+
+<g transform="translate(100 102) scale(2)">
+  <path d="M-22 -8 L-15 -26 Q-14 -29 -10 -29 L10 -29 Q14 -29 15 -26 L22 -8 Z" fill="#ffffff"/>
+  <rect x="-27" y="-10" width="54" height="22" rx="5" fill="#ffffff"/>
+  <rect x="-25" y="10" width="11" height="12" rx="2" fill="#ffffff"/>
+  <rect x="14" y="10" width="11" height="12" rx="2" fill="#ffffff"/>
+  <path d="M-15 -10 L-10 -24 L10 -24 L15 -10 Z" fill="#1d5aa8"/>
+</g>
+</svg>

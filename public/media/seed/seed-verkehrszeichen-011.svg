@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200" width="300" height="200" role="img" aria-label="Zeichen 325.1: Verkehrsberuhigter Bereich">
+<title>Zeichen 325.1: Verkehrsberuhigter Bereich</title>
+<rect x="1" y="1" width="298" height="198" rx="8" fill="#ffffff" stroke="#9aa0a6"/>
+<rect x="6" y="6" width="288" height="188" rx="6" fill="#1d5aa8"/>
+<g fill="#ffffff" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M30 168 V96 L64 66 L98 96 V168 Z" stroke="none"/>
+  <rect x="54" y="128" width="20" height="40" fill="#1d5aa8" stroke="none"/>
+  <circle cx="128" cy="98" r="9" stroke="none"/>
+  <path d="M128 108 V140 M128 116 L114 132 M128 116 L142 130 M128 140 L118 166 M128 140 L138 166" stroke-width="7" fill="none"/>
+  <circle cx="164" cy="124" r="7" stroke="none"/>
+  <path d="M164 132 V150 M164 138 L154 146 M164 138 L174 132 M164 150 L157 166 M164 150 L171 166" stroke-width="5" fill="none"/>
+  <circle cx="184" cy="160" r="6" stroke="none"/>
+  <path d="M204 150 L214 132 H252 L264 150 H272 V164 H200 V150 Z" stroke="none"/>
+  <circle cx="218" cy="166" r="8" stroke="#1d5aa8" stroke-width="3"/>
+  <circle cx="256" cy="166" r="8" stroke="#1d5aa8" stroke-width="3"/>
+  <line x1="20" y1="178" x2="282" y2="178" stroke-width="3"/>
+</g>
+</svg>

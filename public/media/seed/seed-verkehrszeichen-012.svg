@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 270" width="220" height="270" role="img" aria-label="Zeichen 274.1: Beginn einer Tempo-30-Zone">
+<title>Zeichen 274.1: Beginn einer Tempo-30-Zone</title>
+<rect x="2" y="2" width="216" height="266" rx="10" fill="#ffffff" stroke="#1a1a1a" stroke-width="4"/>
+<g transform="translate(30 18) scale(0.8)">
+<circle cx="100" cy="100" r="99" fill="#ffffff" stroke="#9aa0a6" stroke-width="1"/>
+<circle cx="100" cy="100" r="95" fill="#c1272d"/>
+<circle cx="100" cy="100" r="74" fill="#ffffff"/>
+<text x="100" y="132" font-size="92" fill="#1a1a1a" text-anchor="middle" font-family="'DIN 1451', 'Arial Narrow', Arial, Helvetica, sans-serif" font-weight="700" >30</text></g>
+<text x="110" y="245" font-size="54" fill="#1a1a1a" text-anchor="middle" font-family="'DIN 1451', 'Arial Narrow', Arial, Helvetica, sans-serif" font-weight="700" >ZONE</text>
+</svg>

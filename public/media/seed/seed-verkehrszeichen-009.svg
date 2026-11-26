@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 180" width="200" height="180" role="img" aria-label="Zeichen 101: Gefahrstelle">
+<title>Zeichen 101: Gefahrstelle</title>
+
+<path d="M100 6 L195 172 L5 172 Z" fill="#ffffff" stroke="#9aa0a6" stroke-width="1" stroke-linejoin="round"/>
+<path d="M100 14 L187 166 L13 166 Z" fill="#c1272d" stroke="#c1272d" stroke-width="8" stroke-linejoin="round"/>
+<path d="M100 46 L160 150 L40 150 Z" fill="#ffffff"/>
+<rect x="92" y="70" width="16" height="50" rx="4" fill="#1a1a1a"/><circle cx="100" cy="134" r="9" fill="#1a1a1a"/>
+</svg>

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="640" height="360" role="img" aria-label="Landstraße bei Nacht, Reh im Scheinwerferlicht">
+<title>Landstraße bei Nacht, Reh im Scheinwerferlicht</title>
+<defs><radialGradient id="beam" cx="0.5" cy="1" r="0.9"><stop offset="0" stop-color="#fff6c8" stop-opacity="0.85"/><stop offset="1" stop-color="#fff6c8" stop-opacity="0"/></radialGradient></defs>
+
+<rect width="640" height="150" fill="#0b1430"/>
+<rect y="150" width="640" height="210" fill="#0f1f14"/>
+<path d="M60 360 L306 150 H334 L580 360 Z" fill="#2a2d33"/>
+<path d="M313 360.0 L315.1 315.4 H324.9 L327 360.0 Z" fill="#9a9a9a"/><path d="M315.28 280.2 L316.696 252.5 H323.304 L324.72 280.2 Z" fill="#9a9a9a"/><path d="M316.6936 230.7 L317.68552 213.6 H322.31448 L323.3064 230.7 Z" fill="#9a9a9a"/><path d="M317.570032 200.0 L318.2990224 189.4 H321.7009776 L322.429968 200.0 Z" fill="#9a9a9a"/><path d="M318.11341984 181.0 L318.679393888 174.4 H321.320606112 L321.88658016 181.0 Z" fill="#9a9a9a"/><path d="M318.4503203008 169.2 L318.91522421056 165.1 H321.08477578944 L321.5496796992 169.2 Z" fill="#9a9a9a"/>
+<g fill="#f8fafc" opacity="0.7"><circle cx="80" cy="40" r="1.5"/><circle cx="200" cy="70" r="1.2"/><circle cx="420" cy="30" r="1.6"/><circle cx="560" cy="80" r="1.2"/><circle cx="600" cy="20" r="1.4"/></g>
+<path d="M80 360 L270 175 H370 L560 360 Z" fill="url(#beam)"/>
+<g transform="translate(330 214)">
+  <ellipse cx="0" cy="0" rx="34" ry="15" fill="#9a6a45"/>
+  <path d="M-24 6 L-27 40 M-12 8 L-13 40 M16 8 L15 40 M26 6 L28 40" stroke="#7a5236" stroke-width="5" stroke-linecap="round"/>
+  <path d="M24 -6 L36 -34 L46 -30 L34 -2 Z" fill="#9a6a45"/>
+  <ellipse cx="44" cy="-38" rx="11" ry="8" fill="#a8774f"/>
+  <path d="M38 -44 L33 -56 L42 -46 Z M47 -45 L50 -57 L52 -44 Z" fill="#8a5a3b"/>
+  <circle cx="47" cy="-39" r="2.6" fill="#ffffd0"/><circle cx="47" cy="-39" r="6" fill="#ffffd0" opacity="0.35"/>
+</g>
+<g><rect x="12" y="320" width="450.4" height="28" rx="14" fill="#1a1a1a" opacity="0.72"/><text x="24" y="339" font-size="15" fill="#ffffff" font-family="Arial, Helvetica, sans-serif">Nachts auf der Landstraße – Reh im Scheinwerferlicht</text></g>
+</svg>

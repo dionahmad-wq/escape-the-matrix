@@ -7,7 +7,15 @@ export function MediaPlaceholder({ media }: { media: Media }) {
     return media.kind === 'video' ? (
       <video src={src} controls className="w-full rounded-lg border border-slate-200" aria-label={media.alt} />
     ) : (
-      <img src={src} alt={media.alt} className="w-full max-h-72 object-contain rounded-lg border border-slate-200 bg-white" />
+      <figure className={`overflow-hidden rounded-lg border border-slate-200 ${media.kind === 'sign' ? 'bg-slate-50 py-4' : 'bg-white'}`}>
+        <img
+          src={src}
+          alt={media.alt}
+          loading="lazy"
+          decoding="async"
+          className={media.kind === 'sign' ? 'mx-auto h-36 w-auto object-contain sm:h-44' : 'block h-auto max-h-80 w-full object-contain'}
+        />
+      </figure>
     );
   }
   const label = media.kind === 'sign' ? `Verkehrszeichen${media.signNumber ? ` ${media.signNumber}` : ''}` : media.kind === 'video' ? 'Video' : 'Bild';

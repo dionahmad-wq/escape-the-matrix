@@ -16,7 +16,7 @@
       "type": "multiple",
       "points": 4,
       "text": "Ein Ball rollt zwischen geparkten Autos auf die Fahrbahn. Womit müssen Sie rechnen?",
-      "media": { "kind": "image", "placeholder": "Wohnstraße mit parkenden Autos, ein Ball rollt von rechts auf die Fahrbahn", "alt": "Ball rollt zwischen parkenden Autos auf die Straße" },
+      "media": { "kind": "image", "src": "seed/seed-gefahrenlehre-001.svg", "placeholder": "Wohnstraße mit parkenden Autos, ein Ball rollt von rechts auf die Fahrbahn", "alt": "Ball rollt zwischen parkenden Autos auf die Straße" },
       "answers": [
         { "id": "a", "text": "Dass ein Kind hinter dem Ball herläuft", "correct": true, "explanation": "Kinder konzentrieren sich auf den Ball und achten nicht auf den Verkehr." },
         { "id": "b", "text": "Dass keine Gefahr besteht, weil der Ball von allein weiterrollt", "correct": false, "explanation": "Der Ball ist ein Warnsignal: Fast immer folgt ein Kind." },
@@ -33,7 +33,7 @@
       "type": "multiple",
       "points": 4,
       "text": "Ein Linienbus hält mit eingeschaltetem Warnblinklicht an einer Haltestelle. Was gilt beim Vorbeifahren?",
-      "media": { "kind": "image", "placeholder": "Linienbus mit Warnblinklicht an einer Haltestelle, Fahrgäste steigen aus", "alt": "Bus mit Warnblinklicht an Haltestelle" },
+      "media": { "kind": "image", "src": "seed/seed-gefahrenlehre-002.svg", "placeholder": "Linienbus mit Warnblinklicht an einer Haltestelle, Fahrgäste steigen aus", "alt": "Bus mit Warnblinklicht an Haltestelle" },
       "answers": [
         { "id": "a", "text": "Ich darf nur mit Schrittgeschwindigkeit vorbeifahren", "correct": true },
         { "id": "b", "text": "Auch der Gegenverkehr darf nur mit Schrittgeschwindigkeit vorbeifahren", "correct": true, "explanation": "Die Regel gilt für beide Fahrtrichtungen, denn Fahrgäste überqueren oft vor oder hinter dem Bus die Straße." },
@@ -114,7 +114,7 @@
       "type": "number",
       "points": 3,
       "text": "Nebel schränkt die Sichtweite auf unter 50 m ein. Wie schnell dürfen Sie höchstens fahren?",
-      "media": { "kind": "image", "placeholder": "Landstraße im dichten Nebel, Leitpfosten im Abstand von 50 m kaum erkennbar", "alt": "Landstraße bei dichtem Nebel" },
+      "media": { "kind": "image", "src": "seed/seed-gefahrenlehre-007.svg", "placeholder": "Landstraße im dichten Nebel, Leitpfosten im Abstand von 50 m kaum erkennbar", "alt": "Landstraße bei dichtem Nebel" },
       "numberAnswer": { "value": 50, "unit": "km/h", "prefix": "Höchstens" },
       "explanation": "Beträgt die Sichtweite durch Nebel, Schneefall oder Regen weniger als 50 m, darf man nicht schneller als 50 km/h fahren, wenn nötig deutlich langsamer. Die Leitpfosten am Straßenrand stehen in der Regel 50 m auseinander und helfen beim Abschätzen.",
       "mnemonic": "Unter 50 Meter Sicht: über 50 km/h nicht."
@@ -143,7 +143,7 @@
       "type": "multiple",
       "points": 5,
       "text": "Sie wollen rechts abbiegen. Rechts neben Ihnen fährt ein Radfahrer auf dem Radweg geradeaus. Wie verhalten Sie sich?",
-      "media": { "kind": "image", "placeholder": "Kreuzung aus Fahrersicht: eigener Pkw blinkt rechts, daneben Radfahrer auf dem Radweg", "alt": "Rechtsabbiegen mit Radfahrer auf dem Radweg" },
+      "media": { "kind": "image", "src": "seed/seed-gefahrenlehre-009.svg", "placeholder": "Kreuzung aus Fahrersicht: eigener Pkw blinkt rechts, daneben Radfahrer auf dem Radweg", "alt": "Rechtsabbiegen mit Radfahrer auf dem Radweg" },
       "answers": [
         { "id": "a", "text": "Den Radfahrer durchfahren lassen", "correct": true, "explanation": "Wer abbiegt, muss Radfahrer in gleicher Richtung durchfahren lassen." },
         { "id": "b", "text": "Vor dem Abbiegen einen Schulterblick nach rechts machen", "correct": true, "explanation": "Radfahrer verschwinden leicht im toten Winkel." },
@@ -192,7 +192,7 @@
       "type": "multiple",
       "points": 4,
       "text": "Nachts steht ein Reh im Scheinwerferlicht auf der Fahrbahn. Was tun Sie?",
-      "media": { "kind": "image", "placeholder": "Landstraße bei Nacht, Reh im Scheinwerferlicht", "alt": "Reh auf nächtlicher Landstraße" },
+      "media": { "kind": "image", "src": "seed/seed-gefahrenlehre-012.svg", "placeholder": "Landstraße bei Nacht, Reh im Scheinwerferlicht", "alt": "Reh auf nächtlicher Landstraße" },
       "answers": [
         { "id": "a", "text": "Abblenden", "correct": true, "explanation": "Im Fernlicht bleiben Tiere oft geblendet stehen." },
         { "id": "b", "text": "Hupen", "correct": true },

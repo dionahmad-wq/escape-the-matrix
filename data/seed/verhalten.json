@@ -40,7 +40,7 @@
       "type": "number",
       "points": 4,
       "text": "Welchen Seitenabstand müssen Sie innerorts beim Überholen von Radfahrern mindestens einhalten?",
-      "media": { "kind": "image", "placeholder": "Pkw überholt Radfahrer innerorts, Abstand mit Maßpfeil markiert", "alt": "Pkw überholt Radfahrer mit Seitenabstand" },
+      "media": { "kind": "image", "src": "seed/seed-verhalten-003.svg", "placeholder": "Pkw überholt Radfahrer innerorts, Abstand mit Maßpfeil markiert", "alt": "Pkw überholt Radfahrer mit Seitenabstand" },
       "numberAnswer": { "value": 1.5, "unit": "m", "prefix": "Mindestens" },
       "explanation": "Beim Überholen von Radfahrern, Fußgängern und Elektrokleinstfahrzeugen gilt innerorts ein Mindestseitenabstand von 1,5 m, außerorts von 2 m.",
       "mnemonic": "Innen anderthalb, außen zwei."
@@ -133,7 +133,7 @@
       "type": "single",
       "points": 5,
       "text": "Sie nähern sich einem Bahnübergang mit Andreaskreuz. Ein Zug kommt. Was gilt?",
-      "media": { "kind": "sign", "placeholder": "Andreaskreuz: weißes X mit roten Rändern", "alt": "Verkehrszeichen 201: Andreaskreuz", "signNumber": "201" },
+      "media": { "kind": "sign", "src": "seed/seed-verhalten-010.svg", "placeholder": "Andreaskreuz: weißes X mit roten Rändern", "alt": "Verkehrszeichen 201: Andreaskreuz", "signNumber": "201" },
       "answers": [
         { "id": "a", "text": "Schienenfahrzeuge haben Vorrang, ich muss warten", "correct": true },
         { "id": "b", "text": "Ich darf noch zügig vor dem Zug drüberfahren", "correct": false },
@@ -178,7 +178,7 @@
       "type": "single",
       "points": 4,
       "text": "Auf einer dreistreifigen Autobahn stockt der Verkehr. Sie fahren auf dem mittleren Fahrstreifen. Wie bilden Sie die Rettungsgasse?",
-      "media": { "kind": "image", "placeholder": "Draufsicht: dreistreifige Autobahn im Stau, Rettungsgasse zwischen linkem und mittlerem Streifen", "alt": "Rettungsgasse auf dreistreifiger Autobahn" },
+      "media": { "kind": "image", "src": "seed/seed-verhalten-013.svg", "placeholder": "Draufsicht: dreistreifige Autobahn im Stau, Rettungsgasse zwischen linkem und mittlerem Streifen", "alt": "Rettungsgasse auf dreistreifiger Autobahn" },
       "answers": [
         { "id": "a", "text": "Ich weiche nach rechts aus", "correct": true },
         { "id": "b", "text": "Ich weiche nach links aus", "correct": false },

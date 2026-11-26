@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="Zeichen 276: Überholverbot für Kraftfahrzeuge aller Art">
+<title>Zeichen 276: Überholverbot für Kraftfahrzeuge aller Art</title>
+
+<circle cx="100" cy="100" r="99" fill="#ffffff" stroke="#9aa0a6" stroke-width="1"/>
+<circle cx="100" cy="100" r="95" fill="#c1272d"/>
+<circle cx="100" cy="100" r="74" fill="#ffffff"/>
+
+<g transform="translate(70 104)">
+  <path d="M-22 -8 L-15 -26 Q-14 -29 -10 -29 L10 -29 Q14 -29 15 -26 L22 -8 Z" fill="#c1272d"/>
+  <rect x="-27" y="-10" width="54" height="22" rx="5" fill="#c1272d"/>
+  <rect x="-25" y="10" width="11" height="12" rx="2" fill="#c1272d"/>
+  <rect x="14" y="10" width="11" height="12" rx="2" fill="#c1272d"/>
+  <path d="M-15 -10 L-10 -24 L10 -24 L15 -10 Z" fill="#ffffff"/>
+</g>
+<g transform="translate(130 104)">
+  <path d="M-22 -8 L-15 -26 Q-14 -29 -10 -29 L10 -29 Q14 -29 15 -26 L22 -8 Z" fill="#1a1a1a"/>
+  <rect x="-27" y="-10" width="54" height="22" rx="5" fill="#1a1a1a"/>
+  <rect x="-25" y="10" width="11" height="12" rx="2" fill="#1a1a1a"/>
+  <rect x="14" y="10" width="11" height="12" rx="2" fill="#1a1a1a"/>
+  <path d="M-15 -10 L-10 -24 L10 -24 L15 -10 Z" fill="#ffffff"/>
+</g>
+</svg>

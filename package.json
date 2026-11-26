@@ -12,7 +12,8 @@
     "test:watch": "vitest",
     "validate": "tsx scripts/validate-catalog.ts",
     "import": "tsx scripts/import-catalog.ts",
-    "schema:export": "tsx scripts/export-json-schema.ts"
+    "schema:export": "tsx scripts/export-json-schema.ts",
+    "media": "tsx scripts/generate-media.ts"
   },
   "dependencies": {
     "lucide-react": "^1.81.0",

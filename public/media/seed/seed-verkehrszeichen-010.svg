@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 180" width="200" height="180" role="img" aria-label="Zeichen 136: Kinder">
+<title>Zeichen 136: Kinder</title>
+
+<path d="M100 6 L195 172 L5 172 Z" fill="#ffffff" stroke="#9aa0a6" stroke-width="1" stroke-linejoin="round"/>
+<path d="M100 14 L187 166 L13 166 Z" fill="#c1272d" stroke="#c1272d" stroke-width="8" stroke-linejoin="round"/>
+<path d="M100 46 L160 150 L40 150 Z" fill="#ffffff"/>
+
+<g fill="#1a1a1a" stroke="#1a1a1a" stroke-linecap="round" stroke-linejoin="round">
+  <circle cx="86" cy="80" r="8" stroke="none"/>
+  <path d="M86 90 L82 116 M84 98 L70 108 M84 98 L98 104 M82 116 L72 140 M82 116 L94 138" stroke-width="7" fill="none"/>
+  <circle cx="118" cy="94" r="7" stroke="none"/>
+  <path d="M118 103 L116 124 M117 110 L104 116 M117 110 L130 118 M116 124 L108 144 M116 124 L126 143" stroke-width="6" fill="none"/>
+</g>
+</svg>

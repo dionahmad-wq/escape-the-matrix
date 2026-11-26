@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 170" width="240" height="170" role="img" aria-label="Zeichen 201: Andreaskreuz">
+<title>Zeichen 201: Andreaskreuz</title>
+<g transform="translate(120 85)">
+  <g transform="rotate(32)"><rect x="-112" y="-17" width="224" height="34" fill="#ffffff" stroke="#c1272d" stroke-width="7"/></g>
+  <g transform="rotate(-32)"><rect x="-112" y="-17" width="224" height="34" fill="#ffffff" stroke="#c1272d" stroke-width="7"/></g>
+  <g transform="rotate(32)"><rect x="-40" y="-13.5" width="80" height="27" fill="#ffffff"/></g>
+</g>
+</svg>

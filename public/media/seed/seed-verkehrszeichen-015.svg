@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="Zeichen 253: Verbot für Kraftfahrzeuge über 3,5 t">
+<title>Zeichen 253: Verbot für Kraftfahrzeuge über 3,5 t</title>
+
+<circle cx="100" cy="100" r="99" fill="#ffffff" stroke="#9aa0a6" stroke-width="1"/>
+<circle cx="100" cy="100" r="95" fill="#c1272d"/>
+<circle cx="100" cy="100" r="74" fill="#ffffff"/>
+
+<g fill="#1a1a1a">
+  <rect x="44" y="74" width="74" height="44" rx="2"/>
+  <path d="M122 88 H142 L156 104 V122 H122 Z"/>
+  <rect x="128" y="92" width="12" height="11" fill="#ffffff"/>
+  <rect x="44" y="118" width="112" height="6"/>
+  <circle cx="62" cy="128" r="10"/><circle cx="84" cy="128" r="10"/><circle cx="140" cy="128" r="10"/>
+</g>
+</svg>

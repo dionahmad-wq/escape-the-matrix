@@ -1,3 +1,5 @@
+import { existsSync } from 'node:fs';
+import { join } from 'node:path';
 import { describe, expect, it } from 'vitest';
 import { computeCatalogStats, loadCatalog } from '../src/domain/catalog';
 import { readCatalogFiles } from '../scripts/lib/catalogFiles';
@@ -72,5 +74,13 @@ describe('Seed-Datensatz', () => {
     const c = loadCatalog(readCatalogFiles(['data/seed']));
     expect(c.issues).toEqual([]);
     expect(c.questions.length).toBeGreaterThan(0);
+  });
+
+  it('hat für jede Abbildung eine vorhandene Bilddatei', () => {
+    const c = loadCatalog(readCatalogFiles(['data/seed']));
+    const withMedia = c.questions.filter((q) => q.media);
+    expect(withMedia.length).toBeGreaterThan(0);
+    const missing = withMedia.filter((q) => !q.media!.src || !existsSync(join(import.meta.dirname, '../public/media', q.media!.src)));
+    expect(missing.map((q) => q.id)).toEqual([]);
   });
 });

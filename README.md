@@ -4,8 +4,9 @@ Web-App zum Lernen für die theoretische Führerscheinprüfung (Klasse B, Deutsc
 Läuft komplett im Browser, offline-fähig (PWA). Der Lernstand bleibt lokal auf dem Gerät.
 
 > **Hinweis zu Inhalten:** Die mitgelieferten 109 Fragen unter `data/seed/` sind **eigene,
-> realistische Übungsfragen** und keine amtlichen Prüfungsfragen. Bilder und Verkehrszeichen
-> sind beschriftete Platzhalter. Lizenzierte Kataloge lassen sich über den Import-Mechanismus
+> realistische Übungsfragen** und keine amtlichen Prüfungsfragen. Die 34 Abbildungen (23 Verkehrszeichen
+> nach StVO-Vorbild, 11 Situationsskizzen) werden per `npm run media` als SVG erzeugt
+> (`scripts/generate-media.ts`). Lizenzierte Kataloge lassen sich über den Import-Mechanismus
 > einspielen (siehe unten). Angaben ohne Gewähr.
 
 ## Funktionen
@@ -60,6 +61,7 @@ Vite · React 18 · TypeScript · Tailwind CSS 4 · React Router (HashRouter) ·
 | `npm test` | Unit-Tests (Schema, Import, Auswertung, Mastery, Auswahl, Prüfungslogik, Statistik, Backup) |
 | `npm run validate` | Alle Katalogdateien prüfen und Statistik ausgeben (`-- --strict`: Warnungen = Fehler) |
 | `npm run import -- --in <datei> …` | CSV/JSON-Katalog importieren (siehe unten) |
+| `npm run media` | Abbildungen (SVG) für die Seed-Fragen neu erzeugen und verknüpfen |
 | `npm run schema:export` | JSON-Schema für Editor-Autovervollständigung neu erzeugen |
 | `npm run build` | Prüfen, Typecheck und Produktions-Build nach `dist/` |
 | `npm run preview` | Produktions-Build lokal ansehen |
@@ -75,7 +77,7 @@ data/
   examples/        Beispiel-CSV für den Import
   schema/          generiertes JSON-Schema der Katalogdateien
 scripts/           Node-Skripte: validate, import, schema:export
-public/            PWA-Manifest, Service Worker, Icon, media/ für Bilder
+public/            PWA-Manifest, Service Worker, Icon, media/seed/ (generierte SVG-Abbildungen)
 src/
   domain/          reine Logik ohne React, vollständig getestet
                    schema · categories · catalog · importMapping · answers ·

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="Zeichen 283: Absolutes Haltverbot">
+<title>Zeichen 283: Absolutes Haltverbot</title>
+
+<circle cx="100" cy="100" r="99" fill="#ffffff" stroke="#9aa0a6" stroke-width="1"/>
+<circle cx="100" cy="100" r="95" fill="#c1272d"/>
+<circle cx="100" cy="100" r="74" fill="#1d5aa8"/>
+
+<clipPath id="c"><circle cx="100" cy="100" r="80"/></clipPath>
+<g clip-path="url(#c)" stroke="#c1272d" stroke-width="17"><line x1="35" y1="35" x2="165" y2="165"/><line x1="165" y1="35" x2="35" y2="165"/></g>
+</svg>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300" width="200" height="300" role="img" aria-label="Zeichen 274 (80 km/h) mit Zusatzzeichen „bei Nässe“">
+<title>Zeichen 274 (80 km/h) mit Zusatzzeichen „bei Nässe“</title>
+
+<circle cx="100" cy="100" r="99" fill="#ffffff" stroke="#9aa0a6" stroke-width="1"/>
+<circle cx="100" cy="100" r="95" fill="#c1272d"/>
+<circle cx="100" cy="100" r="74" fill="#ffffff"/>
+<text x="100" y="132" font-size="92" fill="#1a1a1a" text-anchor="middle" font-family="'DIN 1451', 'Arial Narrow', Arial, Helvetica, sans-serif" font-weight="700" >80</text>
+<rect x="10" y="212" width="180" height="76" rx="6" fill="#ffffff" stroke="#1a1a1a" stroke-width="4"/>
+<text x="100" y="262" font-size="36" fill="#1a1a1a" text-anchor="middle" font-family="'DIN 1451', 'Arial Narrow', Arial, Helvetica, sans-serif" font-weight="700" >bei Nässe</text>
+</svg>

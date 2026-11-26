@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 180" width="200" height="180" role="img" aria-label="Zeichen 301: Vorfahrt">
+<title>Zeichen 301: Vorfahrt</title>
+
+<path d="M100 6 L195 172 L5 172 Z" fill="#ffffff" stroke="#9aa0a6" stroke-width="1" stroke-linejoin="round"/>
+<path d="M100 14 L187 166 L13 166 Z" fill="#c1272d" stroke="#c1272d" stroke-width="8" stroke-linejoin="round"/>
+<path d="M100 46 L160 150 L40 150 Z" fill="#ffffff"/>
+<path d="M100 62 L114 84 H106 V148 H94 V84 H86 Z" fill="#1a1a1a"/><rect x="64" y="110" width="72" height="9" fill="#1a1a1a"/>
+</svg>

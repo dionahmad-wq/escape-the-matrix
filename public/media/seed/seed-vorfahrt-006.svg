@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 400" width="200" height="400" role="img" aria-label="Zeichen 215: Kreisverkehr mit Zeichen 205">
+<title>Zeichen 215: Kreisverkehr mit Zeichen 205</title>
+<rect x="94" y="180" width="12" height="220" fill="#9aa0a6"/>
+<circle cx="100" cy="100" r="99" fill="#ffffff" stroke="#9aa0a6" stroke-width="1"/>
+<circle cx="100" cy="100" r="95" fill="#1d5aa8"/>
+<path d="M100.0 152.0 A52 52 0 0 0 149.5 116.1" fill="none" stroke="#ffffff" stroke-width="15"/>
+<path d="M166.6 121.6 L151.9 96.4 L132.3 110.5 Z" fill="#ffffff"/><path d="M55.0 74.0 A52 52 0 0 0 61.4 134.8" fill="none" stroke="#ffffff" stroke-width="15"/>
+<path d="M48.0 146.8 L77.2 146.7 L74.7 122.8 Z" fill="#ffffff"/><path d="M145.0 74.0 A52 52 0 0 0 89.2 49.1" fill="none" stroke="#ffffff" stroke-width="15"/>
+<path d="M85.4 31.5 L70.9 56.9 L92.9 66.7 Z" fill="#ffffff"/>
+
+<g transform="translate(0 210)">
+<path d="M5 8 L195 8 L100 174 Z" fill="#ffffff" stroke="#9aa0a6" stroke-width="1" stroke-linejoin="round"/>
+<path d="M14 14 L186 14 L100 164 Z" fill="#c1272d" stroke="#c1272d" stroke-width="8" stroke-linejoin="round"/>
+<path d="M44 30 L156 30 L100 128 Z" fill="#ffffff"/>
+</g>
+</svg>

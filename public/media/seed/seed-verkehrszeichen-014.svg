@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 160" width="340" height="160" role="img" aria-label="Zeichen 310: Ortstafel Musterstadt">
+<title>Zeichen 310: Ortstafel Musterstadt</title>
+<rect x="2" y="2" width="336" height="156" rx="10" fill="#f5b800" stroke="#1a1a1a" stroke-width="5"/>
+<text x="170" y="86" font-size="54" fill="#1a1a1a" text-anchor="middle" font-family="'DIN 1451', 'Arial Narrow', Arial, Helvetica, sans-serif" font-weight="700" >Musterstadt</text>
+<text x="170" y="126" font-size="24" fill="#1a1a1a" text-anchor="middle" font-family="Arial, Helvetica, sans-serif">Landkreis Beispiel</text>
+</svg>

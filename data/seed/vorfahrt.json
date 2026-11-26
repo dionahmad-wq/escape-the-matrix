@@ -16,7 +16,7 @@
       "type": "single",
       "points": 5,
       "text": "Sie erreichen eine Kreuzung ohne Verkehrszeichen und ohne Ampel. Von rechts nähert sich ein Pkw. Wer darf zuerst fahren?",
-      "media": { "kind": "image", "placeholder": "Kreuzung ohne Beschilderung, eigenes Fahrzeug von unten, blauer Pkw von rechts", "alt": "Ungeregelte Kreuzung mit Pkw von rechts" },
+      "media": { "kind": "image", "src": "seed/seed-vorfahrt-001.svg", "placeholder": "Kreuzung ohne Beschilderung, eigenes Fahrzeug von unten, blauer Pkw von rechts", "alt": "Ungeregelte Kreuzung mit Pkw von rechts" },
       "answers": [
         { "id": "a", "text": "Der Pkw von rechts", "correct": true, "explanation": "Ohne Regelung durch Zeichen oder Ampel gilt „rechts vor links“ (§ 8 StVO)." },
         { "id": "b", "text": "Ich, weil ich zuerst an der Kreuzung war", "correct": false, "explanation": "Wer zuerst ankommt, spielt keine Rolle, entscheidend ist allein die Richtung." },
@@ -33,7 +33,7 @@
       "type": "multiple",
       "points": 5,
       "text": "Wie verhalten Sie sich an diesem Verkehrszeichen?",
-      "media": { "kind": "sign", "placeholder": "Achteckiges rotes Schild mit weißer Aufschrift „STOP“", "alt": "Verkehrszeichen 206: Halt. Vorfahrt gewähren.", "signNumber": "206" },
+      "media": { "kind": "sign", "src": "seed/seed-vorfahrt-002.svg", "placeholder": "Achteckiges rotes Schild mit weißer Aufschrift „STOP“", "alt": "Verkehrszeichen 206: Halt. Vorfahrt gewähren.", "signNumber": "206" },
       "answers": [
         { "id": "a", "text": "Ich muss an der Haltlinie anhalten, auch wenn die Straße frei ist", "correct": true, "explanation": "Das Stoppschild verlangt immer vollständiges Anhalten, unabhängig vom Verkehr." },
         { "id": "b", "text": "Ich muss dem Verkehr auf der Querstraße Vorfahrt gewähren", "correct": true, "explanation": "Zeichen 206 bedeutet „Halt. Vorfahrt gewähren.“" },
@@ -66,7 +66,7 @@
       "type": "single",
       "points": 4,
       "text": "Die Ampel zeigt Rot. Rechts daneben ist ein Schild mit grünem Pfeil auf schwarzem Grund angebracht. Was gilt beim Rechtsabbiegen?",
-      "media": { "kind": "sign", "placeholder": "Ampel auf Rot, daneben kleines schwarzes Schild mit grünem Pfeil nach rechts", "alt": "Grünpfeilschild neben roter Ampel", "signNumber": "720" },
+      "media": { "kind": "sign", "src": "seed/seed-vorfahrt-004.svg", "placeholder": "Ampel auf Rot, daneben kleines schwarzes Schild mit grünem Pfeil nach rechts", "alt": "Grünpfeilschild neben roter Ampel", "signNumber": "720" },
       "answers": [
         { "id": "a", "text": "Ich muss zuerst anhalten und darf dann abbiegen, wenn niemand behindert oder gefährdet wird", "correct": true },
         { "id": "b", "text": "Ich darf ohne anzuhalten zügig abbiegen", "correct": false, "explanation": "Am Grünpfeil ist Anhalten Pflicht, wie an einem Stoppschild." },
@@ -83,7 +83,7 @@
       "type": "single",
       "points": 5,
       "text": "Sie wollen an einer Kreuzung links abbiegen. Der Gegenverkehr fährt geradeaus. Wer darf zuerst fahren?",
-      "media": { "kind": "image", "placeholder": "Kreuzung: eigenes Fahrzeug blinkt links, entgegenkommender Pkw fährt geradeaus", "alt": "Linksabbiegen mit Gegenverkehr" },
+      "media": { "kind": "image", "src": "seed/seed-vorfahrt-005.svg", "placeholder": "Kreuzung: eigenes Fahrzeug blinkt links, entgegenkommender Pkw fährt geradeaus", "alt": "Linksabbiegen mit Gegenverkehr" },
       "answers": [
         { "id": "a", "text": "Der Gegenverkehr", "correct": true },
         { "id": "b", "text": "Ich, weil ich zuerst geblinkt habe", "correct": false },
@@ -100,7 +100,7 @@
       "type": "multiple",
       "points": 5,
       "text": "Sie fahren in einen Kreisverkehr ein, der mit „Kreisverkehr“ (Zeichen 215) und „Vorfahrt gewähren“ (Zeichen 205) beschildert ist. Was ist richtig?",
-      "media": { "kind": "sign", "placeholder": "Blaues rundes Schild mit drei weißen Pfeilen im Kreis, darunter rot-weißes Dreieck auf der Spitze", "alt": "Zeichen 215 Kreisverkehr mit Zeichen 205", "signNumber": "215" },
+      "media": { "kind": "sign", "src": "seed/seed-vorfahrt-006.svg", "placeholder": "Blaues rundes Schild mit drei weißen Pfeilen im Kreis, darunter rot-weißes Dreieck auf der Spitze", "alt": "Zeichen 215 Kreisverkehr mit Zeichen 205", "signNumber": "215" },
       "answers": [
         { "id": "a", "text": "Fahrzeuge im Kreisverkehr haben Vorfahrt", "correct": true },
         { "id": "b", "text": "Beim Hineinfahren darf ich nicht blinken", "correct": true, "explanation": "Blinken beim Einfahren ist unzulässig, weil es andere verwirren würde." },
@@ -166,7 +166,7 @@
       "type": "single",
       "points": 4,
       "text": "Was bedeutet das Zeichen „Vorfahrt“ (rot umrandetes Dreieck mit schwarzem Pfeil)?",
-      "media": { "kind": "sign", "placeholder": "Weißes Dreieck mit rotem Rand, Spitze oben, schwarzer senkrechter Pfeil mit Querbalken", "alt": "Verkehrszeichen 301: Vorfahrt", "signNumber": "301" },
+      "media": { "kind": "sign", "src": "seed/seed-vorfahrt-010.svg", "placeholder": "Weißes Dreieck mit rotem Rand, Spitze oben, schwarzer senkrechter Pfeil mit Querbalken", "alt": "Verkehrszeichen 301: Vorfahrt", "signNumber": "301" },
       "answers": [
         { "id": "a", "text": "Vorfahrt nur an der nächsten Kreuzung oder Einmündung", "correct": true },
         { "id": "b", "text": "Vorfahrt bis zum nächsten Ortsschild", "correct": false },
@@ -183,7 +183,7 @@
       "type": "single",
       "points": 4,
       "text": "Bis wohin gilt das Zeichen „Vorfahrtstraße“ (gelbe Raute mit weißem Rand)?",
-      "media": { "kind": "sign", "placeholder": "Auf der Spitze stehendes Quadrat: gelbe Fläche, weißer und schwarzer Rand", "alt": "Verkehrszeichen 306: Vorfahrtstraße", "signNumber": "306" },
+      "media": { "kind": "sign", "src": "seed/seed-vorfahrt-011.svg", "placeholder": "Auf der Spitze stehendes Quadrat: gelbe Fläche, weißer und schwarzer Rand", "alt": "Verkehrszeichen 306: Vorfahrtstraße", "signNumber": "306" },
       "answers": [
         { "id": "a", "text": "Bis zum Zeichen „Ende der Vorfahrtstraße“ oder einem Zeichen, das die Vorfahrt anders regelt", "correct": true },
         { "id": "b", "text": "Nur bis zur nächsten Kreuzung", "correct": false },
@@ -232,7 +232,7 @@
       "type": "multiple",
       "points": 4,
       "text": "Was gilt an einem Fußgängerüberweg (Zebrastreifen)?",
-      "media": { "kind": "image", "placeholder": "Zebrastreifen, eine Fußgängerin steht am Bordstein und will die Straße überqueren", "alt": "Fußgängerüberweg mit wartender Fußgängerin" },
+      "media": { "kind": "image", "src": "seed/seed-vorfahrt-014.svg", "placeholder": "Zebrastreifen, eine Fußgängerin steht am Bordstein und will die Straße überqueren", "alt": "Fußgängerüberweg mit wartender Fußgängerin" },
       "answers": [
         { "id": "a", "text": "Fußgängern, die erkennbar überqueren wollen, muss ich das Überqueren ermöglichen", "correct": true },
         { "id": "b", "text": "Ich darf nur mit mäßiger Geschwindigkeit heranfahren", "correct": true },
