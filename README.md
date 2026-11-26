@@ -65,6 +65,7 @@ Vite · React 18 · TypeScript · Tailwind CSS 4 · React Router (HashRouter) ·
 | `npm run schema:export` | JSON-Schema für Editor-Autovervollständigung neu erzeugen |
 | `npm run build` | Prüfen, Typecheck und Produktions-Build nach `dist/` |
 | `npm run preview` | Produktions-Build lokal ansehen |
+| `npm run build:single` | Alles in **eine** HTML-Datei (`dist-single/index.html`, ca. 520 KB, Bilder eingebettet), läuft per Doppelklick ohne Server |
 
 **Deployment:** `dist/` ist rein statisch, mit relativen Pfaden und HashRouter. Der Ordner läuft auf jedem Webspace, auch in Unterordnern (z. B. GitHub Pages), ohne Server-Konfiguration.
 

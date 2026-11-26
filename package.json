@@ -13,7 +13,8 @@
     "validate": "tsx scripts/validate-catalog.ts",
     "import": "tsx scripts/import-catalog.ts",
     "schema:export": "tsx scripts/export-json-schema.ts",
-    "media": "tsx scripts/generate-media.ts"
+    "media": "tsx scripts/generate-media.ts",
+    "build:single": "npm run build && tsx scripts/build-single.ts"
   },
   "dependencies": {
     "lucide-react": "^1.81.0",
